@@ -1,0 +1,13 @@
+{
+  "active_blocking_count": 0,
+  "classification_counts": {
+    "ACTIVE_RUNTIME": 61,
+    "ACTIVE_TEST_DEV": 40,
+    "COMMENT_OR_EXAMPLE_ONLY": 5,
+    "FIRST_PARTY_LOCAL": 341,
+    "OPTIONAL_ACTIVE": 140,
+    "STANDARD_LIBRARY": 825
+  },
+  "import_count": 1412,
+  "scientific_notebook_cells_executed": 0
+}

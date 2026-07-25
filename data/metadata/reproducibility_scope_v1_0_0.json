@@ -1,0 +1,5 @@
+{
+  "computational_reproducibility": "CONDITIONAL_ON_LAWFUL_DATA_REACQUISITION",
+  "exact_environment_reproducibility": "PLATFORM_AND_ARCHIVE_LIMITED",
+  "verification_reproducibility": "SUPPORTED"
+}

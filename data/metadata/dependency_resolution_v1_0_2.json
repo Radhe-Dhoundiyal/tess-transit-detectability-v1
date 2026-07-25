@@ -1,0 +1,13 @@
+{
+  "classification_counts": {
+    "ACTIVE_RUNTIME": 3,
+    "ACTIVE_TEST_DEV": 1,
+    "HISTORICAL_ONLY": 1,
+    "OPTIONAL_ACTIVE": 6
+  },
+  "first_party_resolution_applied": true,
+  "no_versions_invented": true,
+  "protocol_version": "1.0.2",
+  "status": "PASSED",
+  "unresolved_active_dependencies": []
+}

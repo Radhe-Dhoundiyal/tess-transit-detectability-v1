@@ -1,0 +1,10 @@
+{
+  "decision": "RC3_STAGING_IS_RECOMMENDED_REPOSITORY_ROOT",
+  "gitattributes_present": true,
+  "gitignore_present": true,
+  "project_root_authorized": false,
+  "recommended_root": "release/TESS_Transit_Detectability_Benchmark_v1.0.0-rc.3",
+  "self_contained": true,
+  "track_release_zip_inside_repository": false,
+  "verification_from_root": "SUPPORTED"
+}

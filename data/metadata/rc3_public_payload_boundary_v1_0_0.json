@@ -1,0 +1,12 @@
+{
+  "classification_counts": {
+    "PUBLIC_INCLUDE": 133,
+    "PUBLIC_INCLUDE_PROVENANCE": 4,
+    "PUBLIC_INCLUDE_SANITIZED": 3
+  },
+  "member_count": 140,
+  "private_count": 0,
+  "restricted_count": 0,
+  "status": "PASSED",
+  "temporary_count": 0
+}

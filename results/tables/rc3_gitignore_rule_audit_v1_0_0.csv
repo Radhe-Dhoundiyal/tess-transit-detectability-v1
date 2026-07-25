@@ -1,0 +1,15 @@
+candidate_path,candidate_class,expected_ignored,actual_ignored,status,evidence
+.secrets/token,SENSITIVE,TRUE,TRUE,PASSED,deterministic rule matching against RC3 .gitignore
+secrets/cloud.json,SENSITIVE,TRUE,TRUE,PASSED,deterministic rule matching against RC3 .gitignore
+credentials.local.json,SENSITIVE,TRUE,TRUE,PASSED,deterministic rule matching against RC3 .gitignore
+private.pem,SENSITIVE,TRUE,TRUE,PASSED,deterministic rule matching against RC3 .gitignore
+private.key,SENSITIVE,TRUE,TRUE,PASSED,deterministic rule matching against RC3 .gitignore
+identity.p12,SENSITIVE,TRUE,TRUE,PASSED,deterministic rule matching against RC3 .gitignore
+certificate.pfx,SENSITIVE,TRUE,TRUE,PASSED,deterministic rule matching against RC3 .gitignore
+keystore.jks,SENSITIVE,TRUE,TRUE,PASSED,deterministic rule matching against RC3 .gitignore
+settings.local,SENSITIVE,TRUE,TRUE,PASSED,deterministic rule matching against RC3 .gitignore
+config.local.toml,SENSITIVE,TRUE,TRUE,PASSED,deterministic rule matching against RC3 .gitignore
+results/tables/evidence.json,LEGITIMATE_EVIDENCE,FALSE,FALSE,PASSED,deterministic rule matching against RC3 .gitignore
+data/metadata/authority.json,LEGITIMATE_EVIDENCE,FALSE,FALSE,PASSED,deterministic rule matching against RC3 .gitignore
+results/figures/figure.png,LEGITIMATE_EVIDENCE,FALSE,FALSE,PASSED,deterministic rule matching against RC3 .gitignore
+release/terminal_manifest.json,LEGITIMATE_EVIDENCE,FALSE,FALSE,PASSED,deterministic rule matching against RC3 .gitignore

@@ -1,0 +1,16 @@
+{
+  "active_import_count": 0,
+  "classification": "HISTORICAL_ONLY_NOT_REQUIRED",
+  "included_in_active_requirements": false,
+  "installed_distribution_found": false,
+  "packaged_artifact_requires_statsmodels": false,
+  "protocol_version": "1.0.2",
+  "references": [
+    "PROJECT_CONTEXT.md"
+  ],
+  "reproducibility_implication": "Historical prose corrected; current SciPy implementation is pinned from installed evidence.",
+  "reverified_at_utc": "2026-07-24T13:06:47Z",
+  "scientific_implication": "NONE",
+  "scipy_active_import_count": 4,
+  "version_status": "UNAVAILABLE_NOT_REQUIRED"
+}

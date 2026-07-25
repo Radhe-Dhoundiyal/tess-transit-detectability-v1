@@ -1,0 +1,15 @@
+authorization_id: TS-DETECTABILITY-PUBLIC-REPOSITORY-READINESS-1.0.0-P6F2
+protocol_version: 1.0.0
+phase: 6F.2
+status: FROZEN_BEFORE_RC3
+parent_completion: data/metadata/rc2_documentation_complete_v1_0_4.json
+rc2_changes: 0
+scientific_changes: 0
+source_data_changes: 0
+git_initialization: forbidden
+remote_creation: forbidden
+public_upload: forbidden
+release_action: forbidden
+doi_action: forbidden
+completion_marker: data/metadata/public_repository_readiness_complete_v1_0_0.json
+failure_marker: data/metadata/public_repository_readiness_failure_v1_0_0.json

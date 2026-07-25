@@ -1,0 +1,53 @@
+{
+  "archive_byte_changes": 0,
+  "authorization_id": "TS-DETECTABILITY-RELEASE-READINESS-1.0.0-P6D",
+  "blocker_count": 3,
+  "bls_executions": 0,
+  "candidate_archive_sha256": "99EF7AE0771516DA080156D657EA5DA93275078C9DAD24D1C58F7ABD717FAF68",
+  "citation_field_status_counts": {
+    "NOT_APPLICABLE": 1,
+    "PLACEHOLDER": 1,
+    "REQUIRES_EXTERNAL_AUTHORITY": 3,
+    "REQUIRES_USER_INPUT": 7,
+    "UNVERIFIED": 1,
+    "VERIFIED": 2
+  },
+  "combined_lineage_sha256": "DA0316B105FE22188088473C2EDAABF635DCC1A8A71029FD07704901205306FB",
+  "combined_manifest_sha256": "B8C0676C6402430D9A4D7810CA8B1EA876B34524086BEF4E5EB7E34F25DC090A",
+  "completed_at_utc": "2026-07-24T07:18:26Z",
+  "data_changes": 0,
+  "injection_executions": 0,
+  "manual_overrides": 0,
+  "notebook": {
+    "executed": true,
+    "path": "notebooks/15_release_readiness_licensing_citation_review.ipynb",
+    "sections": 16
+  },
+  "origin_classification_counts": {
+    "FIRST_PARTY_DERIVED": 24,
+    "FIRST_PARTY_ORIGINAL": 32,
+    "MIXED_ORIGIN": 2,
+    "UNKNOWN_ORIGIN": 6
+  },
+  "payload_file_count": 64,
+  "phase6b4_completion_sha256": "EE22ADEDB5DEF5A9421DDBA7B5BD27190F7E226F2D1EC3800F73F0652E8E1705",
+  "phase6c_completion_sha256": "F3DFD3C3BF4C3E0FFB30EE19BC42126CBD358B0831AA83CCADDC1E4BB1FE5BC1",
+  "privacy_status_counts": {
+    "CLEAR": 60,
+    "REDACTION_RECOMMENDED": 4
+  },
+  "protocol_version": "1.0.0",
+  "refits": 0,
+  "release_decision": "BLOCKED_PENDING_RIGHTS_VERIFICATION",
+  "release_manifest_csv_sha256": "394364150198FE25BD2AFBDB29F730380E77EB1856DCA9690CF8D94A441DA703",
+  "release_manifest_json_sha256": "E27A3B6097ECBE72EC17F081AE218F9FD1478262246B354120266BCF1503581F",
+  "remediation_action_count": 8,
+  "replacements": 0,
+  "reviewed_file_count": 64,
+  "rights_status_counts": {
+    "REDISTRIBUTION_NOT_ESTABLISHED": 64
+  },
+  "scientific_changes": 0,
+  "status": "COMPLETE",
+  "tests_passed": 306
+}

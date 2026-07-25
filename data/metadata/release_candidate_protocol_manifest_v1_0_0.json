@@ -1,0 +1,24 @@
+{
+  "authorization_id": "TS-DETECTABILITY-RELEASE-CANDIDATE-1.0.0-P6E",
+  "authorization_sha256": "04FB2CFF36D5EA285BDFFA6F2CDAA687AD250B0959D8756FE70C811EABB7E662",
+  "frozen_at_utc": "2026-07-24T10:40:09Z",
+  "git_commit": null,
+  "modeling_changes": 0,
+  "original_archive_changes": 0,
+  "parent_hashes": {
+    "data/metadata/detectability_modeling_complete_v1_0_4.json": "EE22ADEDB5DEF5A9421DDBA7B5BD27190F7E226F2D1EC3800F73F0652E8E1705",
+    "data/metadata/release_readiness_review_complete_v1_0_0.json": "FABC3CBEC6BFFDBB43AD82910F92737828C81E82B5EA7A77D5E68547BED59082",
+    "data/metadata/terminal_evidence_review_complete_v1_0_0.json": "F3DFD3C3BF4C3E0FFB30EE19BC42126CBD358B0831AA83CCADDC1E4BB1FE5BC1",
+    "release/TESS_Transit_Detectability_Terminal_Benchmark_v1.0.0.zip": "99EF7AE0771516DA080156D657EA5DA93275078C9DAD24D1C58F7ABD717FAF68",
+    "release/terminal_benchmark_release_manifest_v1_0_0.csv": "394364150198FE25BD2AFBDB29F730380E77EB1856DCA9690CF8D94A441DA703",
+    "release/terminal_benchmark_release_manifest_v1_0_0.json": "E27A3B6097ECBE72EC17F081AE218F9FD1478262246B354120266BCF1503581F"
+  },
+  "protocol_document_sha256": "FA5627468FBB6404863996D8D30DC52CA7209C12323C92CB406DE7ED28EF2FBC",
+  "protocol_sha256": "BDDD4F08A3E250805823B16449463A9C426D4CD9496E6678B029746C63D79AC4",
+  "protocol_version": "1.0.0",
+  "scientific_changes": 0,
+  "source_data_changes": 0,
+  "statistical_changes": 0,
+  "status": "FROZEN_BEFORE_RC1_CONSTRUCTION",
+  "user_decisions_sha256": "ADD036E3AF7D48114F3E44C426DF1F82BA24DE6451AEFCA5067A83E1AE704ECC"
+}

@@ -1,0 +1,13 @@
+{
+  "authorization_id": "TS-DETECTABILITY-RELEASE-CANDIDATE-1.0.0-P6E",
+  "decision": "NOT_USED",
+  "evidence": [
+    "No Zooniverse classification export was found in scientific data directories.",
+    "No Planet Hunters TESS subject ID or volunteer aggregate was found in target selection, labels, modeling inputs, or conclusions.",
+    "Repository path naming and Phase 6D acknowledgment discussion are contextual and are not data-lineage evidence."
+  ],
+  "revisit_if_new_lineage_evidence_appears": true,
+  "scope": "material inputs to target selection, labels, modeling, or conclusions",
+  "status": "COMPLETE",
+  "zooniverse_acknowledgment_required_for_rc1": false
+}

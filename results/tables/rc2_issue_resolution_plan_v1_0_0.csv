@@ -1,0 +1,7 @@
+original_issue_id,severity,affected_path,required_correction,planned_rc2_artifact,verification_method,closure_status,unresolved_reason
+RC1-001,MAJOR,README_TERMINAL_BENCHMARK.md,Add installation and locked environment,requirements-lock.txt; docs/CLEAN_MACHINE_SETUP_V1_0_0.md,RC2 docs and tests,PLANNED,
+RC1-002,MAJOR,results/tables/upstream_source_citation_ledger_v1_0_0.csv,Complete row-level bibliography review,results/tables/source_specific_bibliography_v1_0_0_rc2.csv,verified bibliography ledger,PLANNED,
+RC1-003,MAJOR,.gitignore,Promote reviewed draft in RC2,release_rc2_sources/.gitignore; release_rc2_sources/.gitattributes,RC2 path audit,PLANNED,
+RC1-004,MINOR,README_TERMINAL_BENCHMARK.md,Add read-only commands,release_rc2_sources/README.md; docs/QUICK_VERIFICATION_GUIDE_V1_0_0.md,README review pass,PLANNED,
+RC1-005,MINOR,NOTICE,Add verified dependency notice,docs/DEPENDENCY_NOTICES.md; results/tables/dependency_license_inventory_v1_0_0.csv,notice audit,PLANNED,
+RC1-006,INFO,CITATION.cff,Resolve URL in Phase 6G; DOI later,release_rc2_sources/CITATION.cff,captured URL,PLANNED,

@@ -1,0 +1,20 @@
+{
+  "ambiguous": [],
+  "checks": {
+    "every_active_import_mapped": true,
+    "first_party_paths_concrete": true,
+    "no_absence_only_local_classification": true,
+    "no_active_ambiguous": true,
+    "no_active_unresolved_dynamic": true,
+    "no_active_unresolved_local": true,
+    "no_unresolved_active_third_party": true,
+    "pins_evidence_backed": true,
+    "statsmodels_historical_only": true
+  },
+  "first_party_local_count": 341,
+  "statsmodels_classification": "HISTORICAL_ONLY_NOT_REQUIRED",
+  "status": "PASSED",
+  "unresolved_active_dependencies": [],
+  "unresolved_dynamic": [],
+  "unresolved_local": []
+}

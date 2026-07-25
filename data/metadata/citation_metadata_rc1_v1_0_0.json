@@ -1,0 +1,18 @@
+{
+  "affiliation": "Independent student researcher",
+  "author": "Radhe Dhoundiyal",
+  "contributors": [],
+  "doi": "PENDING",
+  "doi_actions": 0,
+  "final_release_date": "PENDING",
+  "licenses": {
+    "first_party_code": "MIT",
+    "first_party_content": "CC-BY-4.0"
+  },
+  "public_uploads": 0,
+  "rc_build_date_utc": "2026-07-24",
+  "repository_url": "PENDING",
+  "status": "RELEASE_CANDIDATE_NOT_PUBLICLY_RELEASED",
+  "title": "TESS Transit Detectability Benchmark: A Reproducible Injection–Recovery and Statistical Modeling Study",
+  "version": "1.0.0-rc.1"
+}

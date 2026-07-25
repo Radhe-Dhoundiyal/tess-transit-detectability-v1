@@ -1,0 +1,14 @@
+field,value,status
+status,RELEASE_CANDIDATE_NOT_PUBLICLY_RELEASED,USER_AUTHORIZED_OR_BUILD_VERIFIED
+title,TESS Transit Detectability Benchmark: A Reproducible Injection–Recovery and Statistical Modeling Study,USER_AUTHORIZED_OR_BUILD_VERIFIED
+version,1.0.0-rc.1,USER_AUTHORIZED_OR_BUILD_VERIFIED
+rc_build_date_utc,2026-07-24,USER_AUTHORIZED_OR_BUILD_VERIFIED
+author,Radhe Dhoundiyal,USER_AUTHORIZED_OR_BUILD_VERIFIED
+affiliation,Independent student researcher,USER_AUTHORIZED_OR_BUILD_VERIFIED
+contributors,[],USER_AUTHORIZED_OR_BUILD_VERIFIED
+repository_url,PENDING,PENDING
+doi,PENDING,PENDING
+final_release_date,PENDING,PENDING
+licenses,"{""first_party_code"": ""MIT"", ""first_party_content"": ""CC-BY-4.0""}",USER_AUTHORIZED_OR_BUILD_VERIFIED
+public_uploads,0,USER_AUTHORIZED_OR_BUILD_VERIFIED
+doi_actions,0,USER_AUTHORIZED_OR_BUILD_VERIFIED

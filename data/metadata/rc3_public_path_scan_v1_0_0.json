@@ -1,0 +1,18 @@
+{
+  "after_count": 0,
+  "after_counts": {},
+  "before_count": 17,
+  "before_counts": {
+    "WINDOWS_ABSOLUTE_PATH": 9,
+    "WINDOWS_USER_PATH": 8
+  },
+  "exposed_usernames_after": 0,
+  "home_directory_paths_after": 0,
+  "local_windows_user_paths_after": 0,
+  "sanitized_documents": [
+    "HANDOVER_PUBLIC.md",
+    "PROJECT_CONTEXT_PUBLIC.md"
+  ],
+  "status": "PASSED",
+  "unjustified_absolute_local_paths_after": 0
+}

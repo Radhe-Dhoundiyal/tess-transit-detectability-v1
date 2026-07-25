@@ -1,0 +1,40 @@
+{
+  "allowed": [
+    "RC3 staging",
+    "public path sanitization",
+    "gitignore hardening",
+    "privacy scanning",
+    "documentation",
+    "metadata",
+    "deterministic packaging"
+  ],
+  "authorization_id": "TS-DETECTABILITY-PUBLIC-REPOSITORY-READINESS-1.0.0-P6F2",
+  "authorized_at_utc": "2026-07-24T13:45:02Z",
+  "forbidden": [
+    "RC2 modification",
+    "scientific changes",
+    "raw_or_processed_data_changes",
+    "Git initialization",
+    "remote creation",
+    "upload",
+    "release",
+    "DOI action"
+  ],
+  "parent_hashes": {
+    "data/metadata/rc2_documentation_complete_v1_0_4.json": "4F1CFA491F92AB7347A7091A313FDCC2BDEDF0DE76CC2BF701D4DC5F0247D1C7",
+    "data/metadata/rc2_documentation_failure_v1_0_0.json": "BA78E9968CBE8EFFD8B606981A5F764C557182957E6C488A8B53B6D062564C08",
+    "data/metadata/rc2_documentation_failure_v1_0_1.json": "1CF68547B60DA4FA3B0FB82608D0F7B10D239CF27B6E41CABEAF10F136021DB4",
+    "data/metadata/rc2_documentation_failure_v1_0_2.json": "0558CD48579379D58CF0A64FB93BC5017C0398E2DDD95C707EC8F589CF46C896",
+    "data/metadata/rc2_documentation_failure_v1_0_3.json": "C280FD7E08AD5248D0B5D7EF8B20547CF1D506EDC636DF3F9B8F4F9F4913F1EF",
+    "release/TESS_Transit_Detectability_Benchmark_v1.0.0-rc.1.zip": "F295861FF419348A6EA21055F2976A6A1436747BF5F076364CD34A1C88144E50",
+    "release/TESS_Transit_Detectability_Benchmark_v1.0.0-rc.2.zip": "E2E28A478AB48C0BD09B8F8B9ECB438A5F4EEF86C43919F8E897E8569E3C4DD2",
+    "release/TESS_Transit_Detectability_Terminal_Benchmark_v1.0.0.zip": "99EF7AE0771516DA080156D657EA5DA93275078C9DAD24D1C58F7ABD717FAF68",
+    "release/terminal_benchmark_release_manifest_v1_0_0_rc1.csv": "AB6E915B7F80A91550B1EA3E20BF75A2E725A0DD783C286B7496A6E2AA283F08",
+    "release/terminal_benchmark_release_manifest_v1_0_0_rc1.json": "898903FC848AA40B06974E44F0B9E553E8057129F0B8F1D2889F5E5F0ABAEC11",
+    "release/terminal_benchmark_release_manifest_v1_0_0_rc2.csv": "DF91B729BC9D0F2697D2D4F7B580FEE05D80D6BA20E7D9D62BF481300EA6415C",
+    "release/terminal_benchmark_release_manifest_v1_0_0_rc2.json": "8E2AD0ABD4B9A978FBFBDC7DFE00C29788216C83A2697047BFD316EA61647EA1"
+  },
+  "phase": "6F.2",
+  "protocol_version": "1.0.0",
+  "status": "AUTHORIZED_DOCUMENTATION_ONLY_RC3"
+}

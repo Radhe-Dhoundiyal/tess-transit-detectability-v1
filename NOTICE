@@ -1,0 +1,9 @@
+TESS Transit Detectability Benchmark — RC2 notice
+
+Copyright 2026 Radhe Dhoundiyal for identified first-party material.
+This release candidate is not publicly released and has no DOI.
+
+The benchmark used NASA Exoplanet Archive catalogue services and TESS products
+obtained through MAST. Names identify upstream services and do not imply
+endorsement. RC2 bundles no third-party Python packages; see
+DEPENDENCY_NOTICES.md for the environment inventory.

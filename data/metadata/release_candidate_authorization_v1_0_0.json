@@ -1,0 +1,22 @@
+{
+  "authorization_id": "TS-DETECTABILITY-RELEASE-CANDIDATE-1.0.0-P6E",
+  "protocol_version": "1.0.0",
+  "phase": "6E",
+  "parent_phase6d_sha256": "FABC3CBEC6BFFDBB43AD82910F92737828C81E82B5EA7A77D5E68547BED59082",
+  "parent_phase6c_sha256": "F3DFD3C3BF4C3E0FFB30EE19BC42126CBD358B0831AA83CCADDC1E4BB1FE5BC1",
+  "parent_phase6b4_sha256": "EE22ADEDB5DEF5A9421DDBA7B5BD27190F7E226F2D1EC3800F73F0652E8E1705",
+  "original_archive_sha256": "99EF7AE0771516DA080156D657EA5DA93275078C9DAD24D1C58F7ABD717FAF68",
+  "original_manifest_csv_sha256": "394364150198FE25BD2AFBDB29F730380E77EB1856DCA9690CF8D94A441DA703",
+  "original_manifest_json_sha256": "E27A3B6097ECBE72EC17F081AE218F9FD1478262246B354120266BCF1503581F",
+  "scope": [
+    "verified metadata resolution",
+    "first-party split licensing",
+    "official attribution evidence",
+    "privacy-safe copies",
+    "reduced public RC1",
+    "deterministic RC1 packaging"
+  ],
+  "public_upload_authorized": false,
+  "doi_action_authorized": false,
+  "git_status": null
+}

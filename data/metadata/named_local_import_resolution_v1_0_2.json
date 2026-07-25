@@ -1,0 +1,66 @@
+{
+  "alternate_selector": {
+    "candidate_repository_paths": [
+      "src/tess_detectability/alternate_selector.py"
+    ],
+    "deterministic": true,
+    "final_classification": "FIRST_PARTY_LOCAL",
+    "importing_paths": [
+      "src/tess_detectability/r3_reconstruction.py",
+      "src/tess_detectability/target_selection_execution.py"
+    ],
+    "packaging_support": "Repository root plus PYTHONPATH=src/script-directory invocation documented.",
+    "rules_used": [
+      "RELATIVE"
+    ],
+    "selected_paths": [
+      "src/tess_detectability/alternate_selector.py"
+    ],
+    "third_party_collisions": []
+  },
+  "config": {
+    "candidate_repository_paths": [
+      "src/tess_detectability/config.py"
+    ],
+    "deterministic": true,
+    "final_classification": "FIRST_PARTY_LOCAL",
+    "importing_paths": [
+      "src/tess_detectability/archive_query.py",
+      "src/tess_detectability/lightcurve_manifest.py",
+      "src/tess_detectability/tap_schema.py",
+      "src/tess_detectability/target_protocol_amendment.py",
+      "src/tess_detectability/target_protocol_validation.py"
+    ],
+    "packaging_support": "Repository root plus PYTHONPATH=src/script-directory invocation documented.",
+    "rules_used": [
+      "RELATIVE"
+    ],
+    "selected_paths": [
+      "src/tess_detectability/config.py"
+    ],
+    "third_party_collisions": []
+  },
+  "hashing": {
+    "candidate_repository_paths": [
+      "src/tess_detectability/hashing.py"
+    ],
+    "deterministic": true,
+    "final_classification": "FIRST_PARTY_LOCAL",
+    "importing_paths": [
+      "src/tess_detectability/archive_query.py",
+      "src/tess_detectability/canonical_catalogue.py",
+      "src/tess_detectability/catalogue_profile.py",
+      "src/tess_detectability/provenance.py",
+      "src/tess_detectability/target_protocol_amendment.py",
+      "src/tess_detectability/target_protocol_validation.py"
+    ],
+    "packaging_support": "Repository root plus PYTHONPATH=src/script-directory invocation documented.",
+    "rules_used": [
+      "RELATIVE"
+    ],
+    "selected_paths": [
+      "src/tess_detectability/hashing.py"
+    ],
+    "third_party_collisions": []
+  }
+}

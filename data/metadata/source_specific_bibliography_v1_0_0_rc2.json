@@ -1,0 +1,11 @@
+{
+  "authorization_id": "TS-DETECTABILITY-RC2-DOCUMENTATION-AMEND-1.0.2-P6F1A2",
+  "invented_metadata": false,
+  "network_actions": 0,
+  "status": "VERIFIED_PARTIAL",
+  "status_counts": {
+    "NOT_REQUIRED": 2,
+    "UNRESOLVED_EXPLICITLY_DOCUMENTED": 5,
+    "VERIFIED_COMPLETE": 1
+  }
+}

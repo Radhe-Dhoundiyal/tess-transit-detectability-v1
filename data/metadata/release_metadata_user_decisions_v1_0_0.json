@@ -1,0 +1,31 @@
+{
+  "status": "USER_AUTHORIZED",
+  "author": "Radhe Dhoundiyal",
+  "contributors": [],
+  "ai_authorship": false,
+  "copyright_owner": "Radhe Dhoundiyal",
+  "copyright_scope": "First-party original code, prose, documentation, tables, and figures created for this project only",
+  "excluded_ownership_claims": [
+    "NASA",
+    "MAST",
+    "TESS",
+    "NASA Exoplanet Archive",
+    "Zooniverse",
+    "literature",
+    "upstream datasets",
+    "third-party software",
+    "mission identifiers",
+    "other third-party material"
+  ],
+  "title": "TESS Transit Detectability Benchmark: A Reproducible Injection–Recovery and Statistical Modeling Study",
+  "version": "1.0.0-rc.1",
+  "affiliation": "Independent student researcher",
+  "repository_url": "PENDING",
+  "doi": "PENDING",
+  "final_public_release_date": "PENDING",
+  "code_license": "MIT",
+  "first_party_content_license": "CC-BY-4.0",
+  "original_notebooks_public": false,
+  "public_upload_authorized": false,
+  "zenodo_deposit_authorized": false
+}

@@ -1,0 +1,9 @@
+data_element,fields,upstream_source,local_evidence,source_reference,status
+Planet identity and target metadata,"pl_name, hostname and catalogue identifiers",NASA Exoplanet Archive pscomppars,docs/DATA_PROVENANCE.md and raw/canonical catalogue manifests,Archive acknowledgment page; row-level literature references retained in catalogue evidence,SOURCE_IDENTIFIED_BIBLIOGRAPHY_REVIEW_REQUIRED
+Orbital period,pl_orbper,NASA Exoplanet Archive pscomppars,canonical catalogue,Source-specific literature reference associated with archive record,SOURCE_IDENTIFIED_BIBLIOGRAPHY_REVIEW_REQUIRED
+Transit epoch,pl_tranmid,NASA Exoplanet Archive pscomppars,canonical catalogue,Source-specific literature reference associated with archive record,SOURCE_IDENTIFIED_BIBLIOGRAPHY_REVIEW_REQUIRED
+Planet radius and transit depth,"pl_rade, pl_trandep",NASA Exoplanet Archive pscomppars,canonical catalogue and remediation provenance,Source-specific literature reference associated with archive record,SOURCE_IDENTIFIED_BIBLIOGRAPHY_REVIEW_REQUIRED
+Stellar parameters,"st_rad, st_mass, st_teff and related fields",NASA Exoplanet Archive pscomppars,canonical catalogue,Source-specific literature reference associated with archive record,SOURCE_IDENTIFIED_BIBLIOGRAPHY_REVIEW_REQUIRED
+TESS light curves and cadence metadata,SPOC light-curve products and headers,TESS via MAST,acquisition manifests and FITS provenance,TESS mission and SPOC pipeline references from official TESS documentation,SOURCE_IDENTIFIED
+Recovery labels,blind BLS match/recovery outcomes,Repository Phase 5B computation,Phase 5B authorities and truth-matching outputs,First-party derived; depends on catalogue ephemerides and TESS data,FIRST_PARTY_DERIVED
+Injection labels and model endpoints,"injected parameters, recovered endpoint, grouped folds",Repository Phase 6A.2 and Phase 6B,"completion markers, modeling dataset, protocol",First-party derived under frozen authorities,FIRST_PARTY_DERIVED

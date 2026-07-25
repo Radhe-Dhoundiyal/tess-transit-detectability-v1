@@ -1,0 +1,8 @@
+{
+  "authorization_id": "TS-DETECTABILITY-RELEASE-CANDIDATE-1.0.0-P6E",
+  "captured_at_utc": "2026-07-24T10:40:09Z",
+  "evidence_sha256": "1BCCDEEB495FE79CCFAB266CBBFFF1A99A90E0F12001C7C843A5E75D19CB5F31",
+  "primary_sources_only": true,
+  "source_count": 9,
+  "status": "COMPLETE"
+}

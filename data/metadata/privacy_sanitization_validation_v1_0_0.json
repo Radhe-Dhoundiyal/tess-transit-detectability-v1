@@ -1,0 +1,10 @@
+{
+  "all_numeric_outputs_equal": true,
+  "all_structurally_equivalent": true,
+  "all_transformations_authorized": true,
+  "authorization_id": "TS-DETECTABILITY-RELEASE-CANDIDATE-1.0.0-P6E",
+  "copy_count": 4,
+  "log_sha256": "6FB1258D9CEA160762B97FC4CDFFD9D810D4C5CC0AAE657E6CBD66C800DFAE03",
+  "scientific_changes": 0,
+  "status": "PASSED"
+}

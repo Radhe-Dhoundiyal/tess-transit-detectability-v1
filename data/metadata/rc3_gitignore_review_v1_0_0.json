@@ -1,0 +1,19 @@
+{
+  "additions": [
+    ".secrets/",
+    "secrets/",
+    "credentials.local.*",
+    "*.pem",
+    "*.key",
+    "*.p12",
+    "*.pfx",
+    "*.jks",
+    "*.local",
+    "config.local.*"
+  ],
+  "overbroad_rules": [],
+  "representative_failures": 0,
+  "representative_tests": 14,
+  "status": "PASSED",
+  "unsafe_omissions": []
+}

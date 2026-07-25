@@ -1,0 +1,15 @@
+{
+  "authorization_id": "TS-DETECTABILITY-RC2-DOCUMENTATION-AMEND-1.0.3-P6F1A3",
+  "checks": {
+    "all_legacy_expectations_mapped_or_obsolete": true,
+    "all_required_replacements_exist": true,
+    "dependency_gate_verified_from_v1_0_2": true,
+    "environment_yml_omitted_with_evidence": true,
+    "inventory_not_recomputed": true,
+    "no_legacy_files_fabricated": true,
+    "three_prior_failures_preserved": true
+  },
+  "dependency_gate_sha256": "1632C7E14313CA283F4CB7B6D8AEB41C8E062CAD17677E2194B7A12A2A6FE1AF",
+  "mapping_count": 9,
+  "status": "PASSED"
+}

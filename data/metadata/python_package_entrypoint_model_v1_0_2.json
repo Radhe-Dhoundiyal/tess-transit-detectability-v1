@@ -1,0 +1,10 @@
+{
+  "editable_installation": "SUPPORTED_NOT_REQUIRED_FOR_VERIFICATION",
+  "package_roots": [
+    ".",
+    "src"
+  ],
+  "scientific_scripts_executed": 0,
+  "test_pythonpath": "src",
+  "verification_script_mode": "SUPPORTED_FROM_REPOSITORY_ROOT"
+}
