@@ -1,14 +1,14 @@
 cff-version: 1.2.0
-message: "Release Candidate 2; repository URL and DOI remain pending."
-title: "TESS Transit Detectability Benchmark: A Reproducible Injection–Recovery and Statistical Modeling Study"
-version: "1.0.0-rc.2"
-date-released: "2026-07-24"
-type: dataset
+message: "Cite this software using the repository URL and the exact version or commit inspected."
+type: software
+title: "TESS Transit Detectability Benchmark"
+version: "1.0.0-rc.4"
 authors:
   - family-names: "Dhoundiyal"
     given-names: "Radhe"
     affiliation: "Independent student researcher"
-abstract: "A fixed TESS benchmark covering blind recovery, normalized injection-recovery, and grouped statistical detectability modeling. RC2 is not a public release."
+repository-code: "https://github.com/Radhe-Dhoundiyal/TESS-Transit-Detectability"
+abstract: "A finite benchmark of known-signal and synthetic transit recovery, with curated V1 source and a runnable sampled-depth example."
 license:
   - MIT
   - CC-BY-4.0

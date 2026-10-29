@@ -1,0 +1,30 @@
+{
+  "amendment_id": "INJECTION-RECOVERY-AMEND-1.0.1-001",
+  "authorization_id": "TS-INJECTION-RECOVERY-AMEND-1.0.1-P6A1",
+  "bls_execution_count": 0,
+  "checkpoint_status": "NO_V1_0_1_SCIENTIFIC_CHECKPOINTS_CREATED",
+  "completed_corrected_trials": 0,
+  "completion_marker_written": false,
+  "controls_recomputed": 0,
+  "controls_reused": 0,
+  "depth_failures": 320,
+  "failed_at_utc": "2026-07-23T19:52:05Z",
+  "failed_gate": "SYNTHETIC_AND_ACTUAL_PLAN_TRANSIT_MODEL_DEPTH_CONTRACT",
+  "failure_class": "UNCHANGED_TRANSIT_MODEL_DOES_NOT_REALIZE_REQUESTED_DEPTH",
+  "failure_details": {
+    "maximum_relative_depth_error": 0.1538460107267391,
+    "median_relative_depth_error": 0.15384098047871542,
+    "minimum_relative_depth_error": 0.15376874977202182,
+    "reason": "The repository model normalizes the limb-darkened profile by disk-average intensity, so its minimum is approximately 1 - 1.153846 * requested_depth. The corrected substrate equation preserves that model but cannot repair its depth parameterization."
+  },
+  "model_training_runs": 0,
+  "next_procedural_step": "Authorize a separate amendment decision defining whether depth_ppm is disk-averaged area scale or exact realized central depth, and if exact depth is required, authorize an explicit model renormalization. Do not rerun BLS before that.",
+  "parameter_changes": 0,
+  "parent_failure_sha256": "660FBB17B34B6338A8A4B56710AD62354219EAB4AF6A2F258A10172DBAA8D21E",
+  "preprocessing_modifications": 0,
+  "protocol_version": "1.0.1",
+  "scientific_reruns_started": false,
+  "status": "BLOCKED_PRE_EXECUTION_DEPTH_VALIDATION",
+  "target_or_product_substitutions": 0,
+  "truth_matching_status": "NOT_STARTED"
+}

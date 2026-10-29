@@ -1,15 +1,23 @@
 # Acknowledgments
 
-This work made use of the NASA Exoplanet Archive and TESS data products
-obtained through the Mikulski Archive for Space Telescopes (MAST). The TESS
-mission is funded by NASA’s Science Mission Directorate. Exact final
-publication wording should be checked against the official evidence ledger.
+The observations are NASA TESS data obtained through MAST. The catalogue
+records come from the NASA Exoplanet Archive, operated at Caltech/IPAC under
+NASA support. These are external data sources, not student-created
+observations. Consult the [Exoplanet Archive acknowledgment guidance](https://exoplanetarchive.ipac.caltech.edu/docs/acknowledge.html)
+and [MAST publishing guidance](https://archive.stsci.edu/publishing/) for any
+later publication. Historical product identifiers and original references
+are preserved; no new data DOI is invented here.
+The TESS mission is funded by NASA's Science Mission Directorate. Current
+[mission acknowledgment wording](https://archive.stsci.edu/publishing/mission-acknowledgements)
+is linked for publication preparation. Exact source-specific catalogue
+literature mappings remain partial, as disclosed in the methods.
 
-Repository evidence found no Zooniverse or Planet Hunters TESS classifications
-materially used in the benchmark, so they are not acknowledged as a data
-source in RC1.
+The search uses Astropy BoxLeastSquares; numerical and statistical work uses
+NumPy, pandas and SciPy. Tests additionally use pytest and PyArrow. See the
+[BLS documentation](https://docs.astropy.org/en/stable/timeseries/bls.html) and
+[dependency notices](DEPENDENCY_NOTICES.md). No NASA endorsement is implied.
 
-AI-assisted software and documentation support was used during repository
-development and review. AI systems are not authors or contributors; scientific
-authority, release metadata, and final responsibility remain with Radhe
-Dhoundiyal.
+AI-assisted implementation and documentation support was substantial.
+Scientific interpretation and repository responsibility remain with Radhe
+Dhoundiyal. Repository evidence did not establish material use
+of Zooniverse or Planet Hunters classifications in this benchmark.

@@ -1,3 +1,19 @@
+# Observed Windows CPython 3.12 resolution; install from repository root.
+-r requirements-dev.txt
 astropy==7.2.2
+astropy-iers-data==0.2026.10.19.0.52.1
+colorama==0.4.6
+iniconfig==2.3.1
 numpy==1.26.4
+packaging==26.3
 pandas==2.2.2
+pluggy==1.7.0
+pyarrow==17.0.0
+pyerfa==2.0.1.5
+pytest==8.3.4
+python-dateutil==3.0.0
+pytz==2026.5
+PyYAML==6.0.3
+scipy==1.14.1
+six==1.17.0
+tzdata==2026.6

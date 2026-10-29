@@ -1,0 +1,69 @@
+{
+  "classification": "PRESENT_DAY_COORDINATE_DISPLAY_OF_AUTHENTIC_SAVED_REAL_OBSERVATIONS",
+  "selection_unit_id": "SYS-61D0A3F1AA5456FAC48C",
+  "host": "WASP-127",
+  "planet": "WASP-127 b",
+  "tic": "169226822",
+  "period_days": 4.17806203,
+  "epoch_btjd": -223.3787600002252,
+  "retained_count": 371497,
+  "display_count": 8000,
+  "time_unit": "BTJD = BJD_TDB - 2457000 days",
+  "flux_unit": "Stored detrended_flux; dimensionless relative flux, zero-centered; no flux change for phase mapping",
+  "sampling": "8000 deterministic equally spaced row positions after stable chronological sort; no randomness or transit-based point selection",
+  "phase_formula": "((time_btjd - epoch_btjd) / period_days + 0.5) % 1 - 0.5",
+  "products": [
+    {
+      "processed_path": "data/processed/lightcurves_preprocessed/09_SYS-61D0A3F1AA5456FAC48C/sector_35/tess2021039152502-s0035-0000000169226822-0205-a_fast-lc__primary.parquet",
+      "processed_sha256": "C5DDBA4D93A254B1EE7EEC5A9A710E7D5131DB150A8FAF1632A5AD20E7AC020A",
+      "source_product": "data/raw/tess_lightcurves/09_SYS-61D0A3F1AA5456FAC48C/sector_35/tess2021039152502-s0035-0000000169226822-0205-a_fast-lc.fits",
+      "source_product_sha256": "029A93623C8D5C4A96FD3D323220C02AA5E750BEA2BC9DD34F282276D64400FA",
+      "tic": "169226822",
+      "sector": 35,
+      "total_rows": 107986,
+      "display_eligible_final_keep_rows": 80372,
+      "flux_source": "PDCSAP_FLUX",
+      "preprocessing_variant": "PRIMARY",
+      "protocol_version_in_rows": "1.0.0"
+    },
+    {
+      "processed_path": "data/processed/lightcurves_preprocessed/09_SYS-61D0A3F1AA5456FAC48C/sector_62/tess2023043185947-s0062-0000000169226822-0254-a_fast-lc__primary.parquet",
+      "processed_sha256": "6D370D2F73EB8AD674AC884DA848F0815E8591F56E94FE5A69B35D1C7C6F2049",
+      "source_product": "data/raw/tess_lightcurves/09_SYS-61D0A3F1AA5456FAC48C/sector_62/tess2023043185947-s0062-0000000169226822-0254-a_fast-lc.fits",
+      "source_product_sha256": "84860E690509DAF0D921AC929631A852220A034CE33EB5F465229858D3D07F5F",
+      "tic": "169226822",
+      "sector": 62,
+      "total_rows": 111105,
+      "display_eligible_final_keep_rows": 94977,
+      "flux_source": "PDCSAP_FLUX",
+      "preprocessing_variant": "PRIMARY",
+      "protocol_version_in_rows": "1.0.0"
+    },
+    {
+      "processed_path": "data/processed/lightcurves_preprocessed/09_SYS-61D0A3F1AA5456FAC48C/sector_72/tess2023315124025-s0072-0000000169226822-0267-a_fast-lc__primary.parquet",
+      "processed_sha256": "31CD97FC7952E7FF4719E09F4A5911AAB6062E7356FCCADA72F6B8838DFAA000",
+      "source_product": "data/raw/tess_lightcurves/09_SYS-61D0A3F1AA5456FAC48C/sector_72/tess2023315124025-s0072-0000000169226822-0267-a_fast-lc.fits",
+      "source_product_sha256": "38A413E935D9D2BED87F1311FC9B160340AA3A45F896839B7EF7F9339200ED24",
+      "tic": "169226822",
+      "sector": 72,
+      "total_rows": 109756,
+      "display_eligible_final_keep_rows": 82652,
+      "flux_source": "PDCSAP_FLUX",
+      "preprocessing_variant": "PRIMARY",
+      "protocol_version_in_rows": "1.0.0"
+    },
+    {
+      "processed_path": "data/processed/lightcurves_preprocessed/09_SYS-61D0A3F1AA5456FAC48C/sector_89/tess2025042113628-s0089-0000000169226822-0286-a_fast-lc__primary.parquet",
+      "processed_sha256": "05D13D351964DD43F9DC53489CBD1039C3CE9BA7494B11D7BDE7097A9CE1716A",
+      "source_product": "data/raw/tess_lightcurves/09_SYS-61D0A3F1AA5456FAC48C/sector_89/tess2025042113628-s0089-0000000169226822-0286-a_fast-lc.fits",
+      "source_product_sha256": "4A341643179A722CF51A01731C97D1AF71C3E21F6C035026486FFCC1CAB23455",
+      "tic": "169226822",
+      "sector": 89,
+      "total_rows": 124470,
+      "display_eligible_final_keep_rows": 113496,
+      "flux_source": "PDCSAP_FLUX",
+      "preprocessing_variant": "PRIMARY",
+      "protocol_version_in_rows": "1.0.0"
+    }
+  ]
+}

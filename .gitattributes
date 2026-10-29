@@ -1,13 +1,48 @@
-* text=auto
-*.md text eol=lf
-*.txt text eol=lf
-*.csv text eol=lf
-*.json text eol=lf
-*.yaml text eol=lf
-*.yml text eol=lf
-*.toml text eol=lf
-*.cff text eol=lf
-*.py text eol=lf
-*.ipynb text eol=lf
+# Preserve authenticated bytes; recognize CRLF as a line ending.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 *.png binary
-*.zip binary
+# Frozen historical/source files are verified by hashes, not reformatted.
+archive/** -whitespace
+src/tess_detectability/injection_model.py -whitespace
+src/tess_detectability/injection_design.py -whitespace
+src/tess_detectability/normalization.py -whitespace
+src/tess_detectability/detrending.py -whitespace
+src/tess_detectability/lightcurve_reader.py -whitespace
+src/tess_detectability/preprocessing_config.py -whitespace
+src/tess_detectability/preprocessing_pipeline.py -whitespace
+src/tess_detectability/quality_mask.py -whitespace
+src/tess_detectability/time_cleaning.py -whitespace
+src/tess_detectability/bls_grid.py -whitespace
+src/tess_detectability/bls_search.py -whitespace
+src/tess_detectability/peak_extraction.py -whitespace
+src/tess_detectability/recovery_config.py -whitespace
+src/tess_detectability/recovery_matching.py -whitespace
+src/tess_detectability/recovery_metrics.py -whitespace
+src/tess_detectability/detectability_grid.py -whitespace
+archive/v1_tests/test_transit_recovery.py -whitespace
+archive/v1_tests/test_injection_recovery.py -whitespace
+archive/v1_tests/test_lightcurve_preprocessing.py -whitespace
+results/tables/transit_recovery_planet_results.csv -whitespace
+results/tables/transit_recovery_primary_endpoint.csv -whitespace
+results/tables/injection_recovery_primary_endpoint_v1_0_2.csv -whitespace
+results/tables/detectability_calibration_v1_0_1.csv -whitespace
+results/tables/detectability_model_performance_v1_0_1.csv -whitespace
+results/tables/detectability_cv_fold_assignment_v1_0_0.csv -whitespace
+data/records/injection_recovery_results_v1_0_2.csv -whitespace
+data/records/detectability_oof_predictions_v1_0_1.csv -whitespace
+results/development/injection_recovery_failure_v1_0_0.json -whitespace
+results/development/injection_recovery_amendment_failure_v1_0_1.json -whitespace
+results/development/injection_model_normalization_validation_v1_0_2.json -whitespace
+results/development/injection_all_trial_normalization_preflight_v1_0_2.json -whitespace
+results/figures/held_out_calibration.png -whitespace
+results/figures/expected_snr_recovery_curve.png -whitespace
+docs/original/INJECTION_MODEL_NORMALIZATION_DERIVATION.md -whitespace
+docs/original/INJECTION_BASELINE_RESTORATION_DERIVATION.md -whitespace
+demo/index.html -whitespace
+demo/app.js -whitespace
+demo/style.css -whitespace
+demo/curve_data.js -whitespace
+demo/calibration.png -whitespace
+demo/inputs/CURVE_SOURCE.json -whitespace
+docs/original/TARGET_SELECTION_EXECUTION_REPORT.md -whitespace
+docs/original/TARGET_SELECTION_PREREGISTRATION_v1_1_0.md -whitespace

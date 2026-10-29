@@ -1,0 +1,9 @@
+{
+  "bls_executions": 0,
+  "checked_trials": 320,
+  "passed_trials": 320,
+  "preflight_sha256": "0F1BA762FE9DFC6D457FE9E76AA58C815DA81271C31DF0DBD541CC507B5DAAE3",
+  "rejected_trials": 0,
+  "replacement_draws": 0,
+  "status": "PASSED"
+}

@@ -1,0 +1,59 @@
+# Restricted/source data
+data/raw/
+data/external/
+*.fits
+*.fits.gz
+*.parquet
+
+# Python and notebooks
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Local execution
+tmp/
+temp/
+*.tmp
+*.log
+build/
+dist/
+*.egg-info/
+_archive_review/
+_extracted/
+.env
+.env.*
+!.env.example
+
+# Private migration/control material
+HANDOVER.md
+PROJECT_CONTEXT.md
+TODO_NEXT.md
+SESSION_SUMMARY.md
+CHANGED_FILES_SUMMARY.md
+notebooks/*_PRIVATE.ipynb
+
+# Editors and operating systems
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+# Credentials and private keys
+.secrets/
+secrets/
+credentials.local.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local configuration
+*.jks
+*.local
+config.local.*

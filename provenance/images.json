@@ -1,0 +1,44 @@
+{
+  "images": [
+    {
+      "path": "docs/media/wasp127.png",
+      "sha256": "dcf2f3d82af49e65964a7da1d6408336f4c415cbad42520e564afe2f3acb69f4",
+      "bytes": 1015300,
+      "dimensions": [
+        3840,
+        2700
+      ],
+      "classification": "saved observed samples in two coordinates",
+      "origin": "Authenticated 2026-10-28 scientific figure collection: images/clean/IMG02_WASP127_chronological_and_folded.png",
+      "transfer": "byte-identical existing image; no pixel editing",
+      "source_data": "demo/inputs/CURVE_SOURCE.json"
+    },
+    {
+      "path": "docs/media/synthetic-trials.png",
+      "sha256": "d96cfd7f210c7904ad7c45275ffd65da0c5712cf283bcb9d599e22be482135f6",
+      "bytes": 646334,
+      "dimensions": [
+        3840,
+        3960
+      ],
+      "classification": "320 saved synthetic trial outcomes",
+      "origin": "Authenticated 2026-10-28 scientific figure collection: images/clean/IMG03_accepted_trial_matrix.png",
+      "transfer": "byte-identical existing image; no pixel editing",
+      "source_data": "data/records/injection_recovery_results_v1_0_2.csv"
+    },
+    {
+      "path": "docs/media/explorer.png",
+      "sha256": "1216e18edde708afb98c338f9e81b684598ea7a23950be4021c746a17228e012",
+      "bytes": 235430,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "classification": "genuine current Chromium capture of the saved-results explorer",
+      "origin": "Current local browser integration run; all 57 assertions passed",
+      "transfer": "Native page screenshot; no compositing or pixel editing",
+      "source_data": "demo/inputs/recorded_data.json"
+    }
+  ],
+  "scope": "Present-day displays of saved evidence; not new scientific runs"
+}

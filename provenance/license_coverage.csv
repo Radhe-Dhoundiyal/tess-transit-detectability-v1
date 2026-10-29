@@ -1,0 +1,235 @@
+path,scope,license_boundary
+.gitattributes,FIRST_PARTY_SOFTWARE,MIT
+.github/workflows/verify.yml,FIRST_PARTY_SOFTWARE,MIT
+.gitignore,FIRST_PARTY_SOFTWARE,MIT
+ACKNOWLEDGMENTS.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+archive/2026-07-25/.gitattributes.snapshot,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/.gitignore,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/ACKNOWLEDGMENTS.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/CITATION.cff,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/config/public_repository_readiness_protocol_v1_0_0.yaml,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/config/release_candidate_protocol_v1_0_0.yaml,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/citation_metadata_rc1_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/dependency_gate_v1_0_2.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/dependency_license_inventory_v1_0_1.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/dependency_resolution_v1_0_2.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/detectability_modeling_complete_v1_0_4.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/first_party_import_resolution_v1_0_2.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/gitattributes_validation_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/gitignore_validation_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/named_local_import_resolution_v1_0_2.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/official_attribution_evidence_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/privacy_sanitization_validation_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/public_repository_readiness_authorization_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/public_repository_readiness_protocol_manifest_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/python_import_inventory_v1_0_2.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/python_package_entrypoint_model_v1_0_2.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/rc2_parent_hashes_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/rc2_source_population_adapter_v1_0_3.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/rc3_gitignore_review_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/rc3_public_path_scan_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/rc3_public_payload_boundary_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/rc3_repository_root_decision_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/rc3_sensitive_content_scan_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/release_candidate_authorization_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/release_candidate_protocol_manifest_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/release_metadata_user_decisions_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/release_readiness_review_complete_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/repository_module_index_v1_0_2.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/reproducibility_scope_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/source_specific_bibliography_v1_0_0_rc2.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/statsmodels_dependency_discrepancy_v1_0_2.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/terminal_evidence_review_complete_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/upstream_source_citation_ledger_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/data/metadata/zooniverse_applicability_determination_v1_0_0.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/DATA_SOURCES.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/DEPENDENCY_NOTICES.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/CLEAN_MACHINE_SETUP_V1_0_2.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/DEPENDENCY_NOTICES_V1_0_2.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/DEPENDENCY_RESOLUTION_V1_0_2.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/ENVIRONMENT_REPRODUCTION_GUIDE_V1_0_2.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/FIRST_PARTY_IMPORT_RESOLUTION_RULES_V1_0_2.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/FIRST_PARTY_IMPORT_RESOLUTION_V1_0_2.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/HASH_AND_AUTHORITY_VERIFICATION_GUIDE_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/HISTORICAL_AND_OPTIONAL_DEPENDENCIES_V1_0_2.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/NAMED_LOCAL_IMPORT_RESOLUTION_V1_0_2.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/OFFICIAL_ATTRIBUTION_EVIDENCE_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/PHASE_6G_MANUAL_GIT_INITIALIZATION_GUIDE_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/PUBLIC_REPOSITORY_READINESS_PROTOCOL_1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/PYTHON_IMPORT_INVENTORY_V1_0_2.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/PYTHON_PACKAGE_AND_ENTRYPOINT_GUIDE_V1_0_2.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/QUICK_VERIFICATION_GUIDE_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/RC1_INDEPENDENT_REVIEW_GUIDE_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/RC2_ISSUE_RESOLUTION_PLAN_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/RC2_PAYLOAD_CHANGE_RATIONALE_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/RC2_README_CHANGELOG_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/RC2_SOURCE_POPULATION_ADAPTER_V1_0_3.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/RC3_GITIGNORE_REVIEW_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/RC3_PUBLIC_PATH_SANITIZATION_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/RC3_PUBLIC_PAYLOAD_BOUNDARY_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/RC3_README_AND_HANDOVER_REVIEW_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/RC3_REPOSITORY_ROOT_DECISION_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/RC3_SENSITIVE_CONTENT_REVIEW_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/RELEASE_CANDIDATE_DIFF_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/RELEASE_CANDIDATE_PAYLOAD_RATIONALE_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/RELEASE_CANDIDATE_PROTOCOL_1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/RELEASE_CANDIDATE_READINESS_ASSESSMENT_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/RELEASE_CANDIDATE_SCIENTIFIC_EQUIVALENCE_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/RELEASE_METADATA_RESOLUTION_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/REPOSITORY_MODULE_INDEX_V1_0_2.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/REPRODUCIBILITY_SCOPE_AND_LIMITATIONS_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/REVIEWER_HANDOVER_GUIDE_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/SOURCE_SPECIFIC_BIBLIOGRAPHY_V1_0_0_RC2.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/UPSTREAM_SOURCE_CITATION_LEDGER_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/docs/ZOONIVERSE_APPLICABILITY_DETERMINATION_V1_0_0.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/EVIDENCE_INDEX.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/HANDOVER_PUBLIC.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/LICENSE,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/LICENSE-CODE,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/LICENSE-DOCUMENTATION,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/notebooks/13e_detectability_modeling_figure_authority_PUBLIC.ipynb,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/notebooks/14_terminal_evidence_review_and_release_PUBLIC.ipynb,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/NOTICE,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/PROJECT_CONTEXT_PUBLIC.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/pyproject.toml,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/python-version.txt,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/README.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/README_TERMINAL_BENCHMARK.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/release/terminal_benchmark_release_manifest_v1_0_0_rc1.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/release/terminal_benchmark_release_manifest_v1_0_0_rc1.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/release/terminal_benchmark_release_manifest_v1_0_0_rc2.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/release/terminal_benchmark_release_manifest_v1_0_0_rc2.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/release/terminal_benchmark_release_manifest_v1_0_0_rc3.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/release/terminal_benchmark_release_manifest_v1_0_0_rc3.json,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/RELEASE_NOTES_v1.0.0-rc.2.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/requirements-dev.txt,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/requirements-lock.txt,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/requirements-optional.txt,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/requirements.txt,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/figures/detectability_modeling_v1_0_1/cadence_sensitivity.png,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/figures/detectability_modeling_v1_0_1/coefficient_intervals.png,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/figures/detectability_modeling_v1_0_1/depth_period_surface.png,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/figures/detectability_modeling_v1_0_1/expected_snr_recovery_curve.png,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/figures/detectability_modeling_v1_0_1/fit_convergence_diagnostics.png,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/figures/detectability_modeling_v1_0_1/fold_wise_performance.png,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/figures/detectability_modeling_v1_0_1/held_out_calibration.png,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/figures/detectability_modeling_v1_0_1/model_comparison.png,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/figures/detectability_modeling_v1_0_1/observed_transit_sensitivity.png,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/figures/detectability_modeling_v1_0_1/observed_vs_predicted_by_target.png,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/figures/detectability_modeling_v1_0_1/period_effect_fixed_snr.png,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/figures/detectability_modeling_v1_0_1/precision_recall_curve.png,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/figures/detectability_modeling_v1_0_1/roc_curve.png,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/figures/detectability_modeling_v1_0_1/sensitivity_summary.png,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/citation_metadata_resolution_v1_0_0.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/dependency_license_inventory_v1_0_1.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/dependency_resolution_v1_0_2.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/detectability_artifact_lineage_v1_0_4.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/detectability_existing_figure_integrity_v1_0_4.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/detectability_metric_recomputation_audit_v1_0_4.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/detectability_output_hash_manifest_v1_0_4.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/first_party_import_resolution_v1_0_2.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/license_coverage_map_v1_0_0.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/official_attribution_evidence_v1_0_0.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/privacy_sanitization_log_v1_0_0.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/python_import_inventory_v1_0_2.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/rc2_issue_resolution_plan_v1_0_0.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/rc2_source_population_mapping_v1_0_3.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/rc3_gitignore_rule_audit_v1_0_0.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/rc3_public_path_scan_v1_0_0.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/rc3_public_payload_boundary_v1_0_0.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/rc3_sensitive_content_scan_v1_0_0.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/repository_module_index_v1_0_2.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/source_specific_bibliography_v1_0_0_rc2.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/results/tables/upstream_source_citation_ledger_v1_0_0.csv,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/scripts/verify_environment.py,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/scripts/verify_hashes.py,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/scripts/verify_release_candidate.py,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/2026-07-25/THIRD_PARTY_AND_DATA_RIGHTS.md,HISTORICAL,Original notices and historical coverage; external rights excluded
+archive/README.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+archive/v1_tests/test_injection_recovery.py,FIRST_PARTY_SOFTWARE,MIT
+archive/v1_tests/test_lightcurve_preprocessing.py,FIRST_PARTY_SOFTWARE,MIT
+archive/v1_tests/test_transit_recovery.py,FIRST_PARTY_SOFTWARE,MIT
+CITATION.cff,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+data/records/detectability_oof_predictions_v1_0_1.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+data/records/injection_recovery_results_v1_0_2.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+DATA_SOURCES.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+demo/app.js,FIRST_PARTY_SOFTWARE,MIT
+demo/calibration.png,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+demo/curve_data.js,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+demo/index.html,FIRST_PARTY_SOFTWARE,MIT
+demo/inputs/CURVE_SOURCE.json,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+demo/inputs/recorded_data.json,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+demo/README.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+demo/recorded_data.js,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+demo/serve_demo.py,FIRST_PARTY_SOFTWARE,MIT
+demo/style.css,FIRST_PARTY_SOFTWARE,MIT
+DEPENDENCY_NOTICES.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+docs/DEVELOPMENT.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+docs/GETTING_STARTED.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+docs/LIMITATIONS.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+docs/media/explorer.png,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+docs/media/synthetic-trials.png,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+docs/media/wasp127.png,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+docs/MEDIA.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+docs/METHODS.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+docs/original/INJECTION_BASELINE_RESTORATION_DERIVATION.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+docs/original/INJECTION_MODEL_NORMALIZATION_DERIVATION.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+docs/original/TARGET_SELECTION_EXECUTION_REPORT.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+docs/original/TARGET_SELECTION_PREREGISTRATION_v1_1_0.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+docs/SOURCE_GUIDE.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+docs/VERIFICATION.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+examples/normalize_depth.py,FIRST_PARTY_SOFTWARE,MIT
+LICENSE,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+LICENSE-CODE,LICENSE_NOTICE,Existing MIT or CC-BY-4.0 notice
+LICENSE-DOCUMENTATION,LICENSE_NOTICE,Existing MIT or CC-BY-4.0 notice
+NOTICE,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+provenance/dependencies.json,THIRD_PARTY_LICENSE_METADATA,Original dependency notices remain in distributions
+provenance/images.json,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+provenance/license_coverage.csv,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+provenance/payload_manifest.json,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+provenance/source_manifest.json,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+pyproject.toml,FIRST_PARTY_SOFTWARE,MIT
+python-version.txt,FIRST_PARTY_SOFTWARE,MIT
+README.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+requirements-dev.txt,FIRST_PARTY_SOFTWARE,MIT
+requirements-lock.txt,FIRST_PARTY_SOFTWARE,MIT
+requirements.txt,FIRST_PARTY_SOFTWARE,MIT
+results/development/injection_all_trial_normalization_preflight_v1_0_2.json,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+results/development/injection_model_normalization_validation_v1_0_2.json,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+results/development/injection_recovery_amendment_failure_v1_0_1.json,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+results/development/injection_recovery_failure_v1_0_0.json,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+results/figures/expected_snr_recovery_curve.png,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+results/figures/held_out_calibration.png,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+results/tables/detectability_calibration_v1_0_1.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+results/tables/detectability_cv_fold_assignment_v1_0_0.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+results/tables/detectability_model_performance_v1_0_1.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+results/tables/injection_recovery_primary_endpoint_v1_0_2.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+results/tables/transit_recovery_planet_results.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+results/tables/transit_recovery_primary_endpoint.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+scripts/verify_project.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/__init__.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/bls_grid.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/bls_search.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/demonstration.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/detectability_grid.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/detrending.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/grouped_validation.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/injection_design.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/injection_model.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/lightcurve_reader.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/modeling.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/normalization.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/peak_extraction.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/preprocessing_config.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/preprocessing_pipeline.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/quality_mask.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/recovery_config.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/recovery_matching.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/recovery_metrics.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/snr.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/time_cleaning.py,FIRST_PARTY_SOFTWARE,MIT
+tests/test_injection_recovery.py,FIRST_PARTY_SOFTWARE,MIT
+tests/test_lightcurve_preprocessing.py,FIRST_PARTY_SOFTWARE,MIT
+tests/test_public_boundary.py,FIRST_PARTY_SOFTWARE,MIT
+tests/test_transit_recovery.py,FIRST_PARTY_SOFTWARE,MIT
+THIRD_PARTY_AND_DATA_RIGHTS.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded

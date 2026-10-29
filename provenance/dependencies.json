@@ -1,0 +1,194 @@
+{
+  "python": "3.12.3",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "packages": [
+    {
+      "name": "astropy",
+      "version": "7.2.2",
+      "license_files": [
+        "LICENSE.rst",
+        "licenses/AURA_LICENSE.rst",
+        "licenses/CONFIGOBJ_LICENSE.rst",
+        "licenses/DATATABLES_LICENSE.rst",
+        "licenses/ERFA.rst",
+        "licenses/EXPAT_LICENSE.rst",
+        "licenses/GATSPY_LICENSE.rst",
+        "licenses/JQUERY_LICENSE.rst",
+        "licenses/NUMPY_LICENSE.rst",
+        "licenses/PLY_LICENSE.rst",
+        "licenses/POSITIONAL_DEFAULTS.rst",
+        "licenses/PYFITS.rst",
+        "licenses/PYTHON.rst",
+        "licenses/README.rst",
+        "licenses/WCSLIB_LICENSE.rst"
+      ],
+      "license_declaration": "BSD-3-Clause",
+      "full_license_declaration_sha256": "118dbcd2d5c9f9b296a9ede9fcc469c5840f7b98ad2c88461055bf2ceda38037"
+    },
+    {
+      "name": "astropy-iers-data",
+      "version": "0.2026.10.19.0.52.1",
+      "license_files": [
+        "LICENSE.rst"
+      ],
+      "license_declaration": "BSD-3-Clause",
+      "full_license_declaration_sha256": "118dbcd2d5c9f9b296a9ede9fcc469c5840f7b98ad2c88461055bf2ceda38037"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "license_files": [
+        "LICENSE.txt"
+      ],
+      "license_declaration": "",
+      "full_license_declaration_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1",
+      "license_files": [
+        "LICENSE"
+      ],
+      "license_declaration": "MIT",
+      "full_license_declaration_sha256": "e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7"
+    },
+    {
+      "name": "numpy",
+      "version": "1.26.4",
+      "license_files": [],
+      "license_declaration": "Copyright (c) 2005-2023, NumPy Developers.",
+      "full_license_declaration_sha256": "1792a09d0d07b69a4e42c4306eb675b2877eb047dd3748608d8e50b57c19767a"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "license_files": [
+        "LICENSE",
+        "LICENSE.APACHE",
+        "LICENSE.BSD"
+      ],
+      "license_declaration": "Apache-2.0 OR BSD-2-Clause",
+      "full_license_declaration_sha256": "f83c2e92648be1cbb1637ae2858514e098ea39d79224eb8f79abb92fca93bf69"
+    },
+    {
+      "name": "pandas",
+      "version": "2.2.2",
+      "license_files": [],
+      "license_declaration": "BSD 3-Clause License",
+      "full_license_declaration_sha256": "64b22376592d40c6c3493ee0c8f6795f7dab57035a2f98ff7063502680a4448a"
+    },
+    {
+      "name": "pip",
+      "version": "24.0",
+      "license_files": [
+        "LICENSE.txt",
+        "AUTHORS.txt"
+      ],
+      "license_declaration": "MIT",
+      "full_license_declaration_sha256": "e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.7.0",
+      "license_files": [
+        "LICENSE"
+      ],
+      "license_declaration": "MIT",
+      "full_license_declaration_sha256": "e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7"
+    },
+    {
+      "name": "pyarrow",
+      "version": "17.0.0",
+      "license_files": [
+        "../LICENSE.txt",
+        "../NOTICE.txt"
+      ],
+      "license_declaration": "Apache Software License",
+      "full_license_declaration_sha256": "8abaac38411f199b1e71efd166c3218c95be016c8a2d672de0c6c168de02d5c1"
+    },
+    {
+      "name": "pyerfa",
+      "version": "2.0.1.5",
+      "license_files": [
+        "LICENSE.rst"
+      ],
+      "license_declaration": "BSD 3-Clause License",
+      "full_license_declaration_sha256": "4e552d1df242cd8fc0e5bffeee215434f9a38f1bf6ffd834b11dc00c29c5eb3f"
+    },
+    {
+      "name": "pytest",
+      "version": "8.3.4",
+      "license_files": [
+        "LICENSE",
+        "AUTHORS"
+      ],
+      "license_declaration": "MIT",
+      "full_license_declaration_sha256": "e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "3.0.0",
+      "license_files": [
+        "LICENSE"
+      ],
+      "license_declaration": "Dual License",
+      "full_license_declaration_sha256": "199628ddb098f90709bb2dc43f816a5a40fe31690de0e25d0f4d6455fe6bc609"
+    },
+    {
+      "name": "pytz",
+      "version": "2026.5",
+      "license_files": [
+        "LICENSE.txt"
+      ],
+      "license_declaration": "MIT",
+      "full_license_declaration_sha256": "e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "license_files": [
+        "LICENSE"
+      ],
+      "license_declaration": "MIT",
+      "full_license_declaration_sha256": "e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7"
+    },
+    {
+      "name": "scipy",
+      "version": "1.14.1",
+      "license_files": [],
+      "license_declaration": "Copyright (c) 2001-2002 Enthought, Inc. 2003-2024, SciPy Developers.",
+      "full_license_declaration_sha256": "089b0594c220e2adb5e1d89727efc66f7239f4bf62fc8a5174767b8c86cca90f"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "license_files": [
+        "LICENSE"
+      ],
+      "license_declaration": "MIT",
+      "full_license_declaration_sha256": "e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7"
+    },
+    {
+      "name": "tess-detectability",
+      "version": "1.0.0rc4",
+      "license_files": [
+        "LICENSE",
+        "LICENSE-CODE",
+        "LICENSE-DOCUMENTATION",
+        "NOTICE"
+      ],
+      "license_declaration": "",
+      "full_license_declaration_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6",
+      "license_files": [
+        "LICENSE",
+        "licenses/LICENSE_APACHE"
+      ],
+      "license_declaration": "Apache-2.0",
+      "full_license_declaration_sha256": "2af71558e438db0b73a20beab92dc278a94e1bbe974c00c1a33e3ab62d53a608"
+    }
+  ]
+}

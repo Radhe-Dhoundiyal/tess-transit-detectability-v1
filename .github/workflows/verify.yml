@@ -1,0 +1,32 @@
+name: Verify project
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Install local project
+        run: python -m pip install --index-url https://pypi.org/simple ".[test]"
+      - name: Check dependencies
+        run: python -m pip check
+      - name: Run numerical example
+        run: python examples/normalize_depth.py
+      - name: Run focused tests
+        run: python -m pytest -q
+      - name: Verify source and saved records
+        run: python scripts/verify_project.py

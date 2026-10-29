@@ -1,0 +1,8 @@
+# Split-license summary
+
+- First-party original source code and software configuration: MIT, see `LICENSE-CODE`.
+- First-party original documentation, reports, tables, and figures: CC BY 4.0, see `LICENSE-DOCUMENTATION`.
+- External data, factual metadata, literature, mission branding, and third-party software: not relicensed; see `THIRD_PARTY_AND_DATA_RIGHTS.md`.
+
+The machine-readable file-level authority is
+`results/tables/license_coverage_map_v1_0_0.csv`.

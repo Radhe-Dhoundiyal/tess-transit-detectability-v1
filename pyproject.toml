@@ -1,21 +1,28 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools==75.6.0", "wheel==0.45.1"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "tess-detectability"
-version = "1.0.0rc2"
-description = "Evidence-first TESS transit-detectability benchmark"
-requires-python = "==3.12.*"
+version = "1.0.0rc4"
+description = "Finite TESS transit recovery benchmark and sampled-depth normalization example"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
 dependencies = [
-  "astropy==7.2.2",
   "numpy==1.26.4",
-  "pandas==2.2.2"
+  "pandas==2.2.2",
+  "astropy==7.2.2",
+  "scipy==1.14.1",
 ]
+
+[project.optional-dependencies]
+test = ["pytest==8.3.4", "pyarrow==17.0.0"]
+
+[project.urls]
+Repository = "https://github.com/Radhe-Dhoundiyal/TESS-Transit-Detectability"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.pytest.ini_options]
-pythonpath = ["src"]
 testpaths = ["tests"]

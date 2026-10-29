@@ -1,0 +1,760 @@
+{
+  "scope": "current V1 source identities, not proof of historical consumption or personal authorship",
+  "roots": {
+    "V1": "protected local V1 project",
+    "MissionControl20261028": "reviewed present-day viewer"
+  },
+  "files": [
+    {
+      "destination": "src/tess_detectability/injection_model.py",
+      "source_root": "V1",
+      "source_path": "src/tess_detectability/injection_model.py",
+      "source_sha256": "a0d4f942e4216577c0a022b8f48bc344ef16094f6c7d4ff3793aa9085abbb826",
+      "destination_sha256": "a0d4f942e4216577c0a022b8f48bc344ef16094f6c7d4ff3793aa9085abbb826",
+      "bytes": 5195,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "src/tess_detectability/injection_design.py",
+      "source_root": "V1",
+      "source_path": "src/tess_detectability/injection_design.py",
+      "source_sha256": "76744a45e793eac2b363318712701c5a37363d1db7836303a6336004d7ad8950",
+      "destination_sha256": "76744a45e793eac2b363318712701c5a37363d1db7836303a6336004d7ad8950",
+      "bytes": 1917,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "src/tess_detectability/normalization.py",
+      "source_root": "V1",
+      "source_path": "src/tess_detectability/normalization.py",
+      "source_sha256": "677b8615d80b143c1ccb45e4cd4b97e8b34d194f8d4b48b8c22866718c79e293",
+      "destination_sha256": "677b8615d80b143c1ccb45e4cd4b97e8b34d194f8d4b48b8c22866718c79e293",
+      "bytes": 702,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "src/tess_detectability/detrending.py",
+      "source_root": "V1",
+      "source_path": "src/tess_detectability/detrending.py",
+      "source_sha256": "d1f63e003ac341d3417d728528f754a2bd7e04e897989350a3c3e5013e05750f",
+      "destination_sha256": "d1f63e003ac341d3417d728528f754a2bd7e04e897989350a3c3e5013e05750f",
+      "bytes": 1025,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "src/tess_detectability/lightcurve_reader.py",
+      "source_root": "V1",
+      "source_path": "src/tess_detectability/lightcurve_reader.py",
+      "source_sha256": "523f5a86b84f3c16a4880ee27ca262c9370704c804704fd235bd3c5d11d1c7a2",
+      "destination_sha256": "523f5a86b84f3c16a4880ee27ca262c9370704c804704fd235bd3c5d11d1c7a2",
+      "bytes": 5221,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "src/tess_detectability/preprocessing_config.py",
+      "source_root": "V1",
+      "source_path": "src/tess_detectability/preprocessing_config.py",
+      "source_sha256": "bd464a0c9013329da64f59d8920478d2e185558378951a712b944edebaf75329",
+      "destination_sha256": "bd464a0c9013329da64f59d8920478d2e185558378951a712b944edebaf75329",
+      "bytes": 1426,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "src/tess_detectability/preprocessing_pipeline.py",
+      "source_root": "V1",
+      "source_path": "src/tess_detectability/preprocessing_pipeline.py",
+      "source_sha256": "f0a2ead24d798c0c9c9538337ffb12b341e37bcf7eacde2e3bd927c7046dc607",
+      "destination_sha256": "f0a2ead24d798c0c9c9538337ffb12b341e37bcf7eacde2e3bd927c7046dc607",
+      "bytes": 5604,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "src/tess_detectability/quality_mask.py",
+      "source_root": "V1",
+      "source_path": "src/tess_detectability/quality_mask.py",
+      "source_sha256": "a3750820414da11757adf45b349da7202309590fc1c05d51ad2525dbd5298ec1",
+      "destination_sha256": "a3750820414da11757adf45b349da7202309590fc1c05d51ad2525dbd5298ec1",
+      "bytes": 289,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "src/tess_detectability/time_cleaning.py",
+      "source_root": "V1",
+      "source_path": "src/tess_detectability/time_cleaning.py",
+      "source_sha256": "492d71d68e1d2c09f0fe227274c01442da7fe197ef92c248282ccf69fb8d0503",
+      "destination_sha256": "492d71d68e1d2c09f0fe227274c01442da7fe197ef92c248282ccf69fb8d0503",
+      "bytes": 2716,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "src/tess_detectability/bls_grid.py",
+      "source_root": "V1",
+      "source_path": "src/tess_detectability/bls_grid.py",
+      "source_sha256": "6f8601b2a96cf2b47792e4b3bb23d5df66bfbd1a271beeeed5f0f574f91043e9",
+      "destination_sha256": "6f8601b2a96cf2b47792e4b3bb23d5df66bfbd1a271beeeed5f0f574f91043e9",
+      "bytes": 1321,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "src/tess_detectability/bls_search.py",
+      "source_root": "V1",
+      "source_path": "src/tess_detectability/bls_search.py",
+      "source_sha256": "fb85f9b0a9bff10c478f046ee232cf9c27bf83dbe4c385751524057a69345449",
+      "destination_sha256": "fb85f9b0a9bff10c478f046ee232cf9c27bf83dbe4c385751524057a69345449",
+      "bytes": 3686,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "src/tess_detectability/peak_extraction.py",
+      "source_root": "V1",
+      "source_path": "src/tess_detectability/peak_extraction.py",
+      "source_sha256": "9f2365aefdd5d628d8fb9afba870f0e895e0c816620346ae84a62ce1fe49c0dd",
+      "destination_sha256": "9f2365aefdd5d628d8fb9afba870f0e895e0c816620346ae84a62ce1fe49c0dd",
+      "bytes": 1290,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "src/tess_detectability/recovery_config.py",
+      "source_root": "V1",
+      "source_path": "src/tess_detectability/recovery_config.py",
+      "source_sha256": "ea9754e043a226f5a8c1238c50372a52d3aff9cc3a9f4e9efc039108be36cc07",
+      "destination_sha256": "ea9754e043a226f5a8c1238c50372a52d3aff9cc3a9f4e9efc039108be36cc07",
+      "bytes": 1081,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "src/tess_detectability/recovery_matching.py",
+      "source_root": "V1",
+      "source_path": "src/tess_detectability/recovery_matching.py",
+      "source_sha256": "2f8be4376b722e003414e85f211779c0e50e8cff2db00f8dc13434f4179bef63",
+      "destination_sha256": "2f8be4376b722e003414e85f211779c0e50e8cff2db00f8dc13434f4179bef63",
+      "bytes": 5281,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "src/tess_detectability/recovery_metrics.py",
+      "source_root": "V1",
+      "source_path": "src/tess_detectability/recovery_metrics.py",
+      "source_sha256": "fa8620e8244fe9ee6cd4329624d84f2ccda8254d72111c33dc10d9a0a1c286a7",
+      "destination_sha256": "fa8620e8244fe9ee6cd4329624d84f2ccda8254d72111c33dc10d9a0a1c286a7",
+      "bytes": 547,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "src/tess_detectability/detectability_grid.py",
+      "source_root": "V1",
+      "source_path": "src/tess_detectability/detectability_grid.py",
+      "source_sha256": "9c16d92321e6ce08244ef21ab1b77daf98174e44295313a2af5650a86d8c6c39",
+      "destination_sha256": "9c16d92321e6ce08244ef21ab1b77daf98174e44295313a2af5650a86d8c6c39",
+      "bytes": 1148,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "src/tess_detectability/modeling.py",
+      "source_root": "V1",
+      "source_path": "scripts/run_detectability_modeling_phase6b.py",
+      "source_sha256": "8bb327edf8de8917e150137b6173ef0e75cd5615432f350944afb11fc0cb97bd",
+      "destination_sha256": "b1ec2cd285a0550ef2b73cbd67721bd4837c0a5a1c985f24c7a8cdc212b239fa",
+      "transfer": "exact definition extraction; new import header",
+      "segments": [
+        {
+          "name": "SEED",
+          "start_line": 23,
+          "end_line": 23,
+          "text_sha256": "3869deb4f3e2a3ad95cfa94bbc3d2bf94ae1a1b891c04164ce7c6c9d15788c42",
+          "ast_sha256": "f4d5430597fcbc952b3d985161d7228de5edddf3551c55fa44ee4347cb421195"
+        },
+        {
+          "name": "BOOT_SEED",
+          "start_line": 24,
+          "end_line": 24,
+          "text_sha256": "dfe6d24c9f0f2b3adc3916fb719ccd19cd383a598ac67fadc551dc16739b6501",
+          "ast_sha256": "c1db3cf2858cf22582eadd1f92515bfc66e7d987344a6b4f5d1a67a96772b993"
+        },
+        {
+          "name": "DIFFICULTY",
+          "start_line": 25,
+          "end_line": 25,
+          "text_sha256": "ce7811f7e82e596203fb189b69e77d9956ce891666a6fbda3a95dd6ca358840e",
+          "ast_sha256": "534d9a73cdf7b3e0155eb79e02ca0f89bd72a0e576a15d1d751d8aafa0d42895"
+        },
+        {
+          "name": "CONT_A",
+          "start_line": 26,
+          "end_line": 27,
+          "text_sha256": "f7d0b5fd817ed40340b293c1860f4603d5517742ae0209e7aebb38f7e745899d",
+          "ast_sha256": "26e75cf35962909df6796eabd6f4f9bb51be4fc407bf1d2af52e26a780118b71"
+        },
+        {
+          "name": "CONT_B",
+          "start_line": 28,
+          "end_line": 29,
+          "text_sha256": "569e821140fc241e3e30053f2a45ba3304f95514b966e77d221c1bce5e5da39f",
+          "ast_sha256": "b3ec15177f8e1de9260fe29b2b02d3f3f20dbcf5c064204d4eaa812543b0a077"
+        },
+        {
+          "name": "scaling",
+          "start_line": 45,
+          "end_line": 53,
+          "text_sha256": "d89b7f7eacc0c4417989b1a19bea9956d8aa2393d2c9404d5ac77c0c6ae2a6d6",
+          "ast_sha256": "5501943ae1705b27a5a6602d7c03b5d3dde0ce07312542814baae0e6c64e02ab"
+        },
+        {
+          "name": "design",
+          "start_line": 56,
+          "end_line": 87,
+          "text_sha256": "4674a8daa688ad849becd8934e0a4d54c99510d700ba6dd33f68d9c8503cc8cc",
+          "ast_sha256": "0ac6b8ebbeddb0d9804f402f67d19051b7ee21e9ddf884c2f18c35eaa39d2a39"
+        },
+        {
+          "name": "fit_penalized",
+          "start_line": 90,
+          "end_line": 115,
+          "text_sha256": "21e84221eb0344dc36099d412e00d87061b7c34d4c0c605235d937370b9680da",
+          "ast_sha256": "f6668d0a3ea9ffa8f75d4818a1e9e8e6ff03880b7b892c8b0a4bca115249231a"
+        },
+        {
+          "name": "predict",
+          "start_line": 118,
+          "end_line": 119,
+          "text_sha256": "8556a0558ecdae21fc0e2c6398c3667de9fa396c9f86a381b1fd462a7480e4d8",
+          "ast_sha256": "cabf6d70bf5a1fe4b7ad246e83c7338747f008616d774e78f6e53c950de5c920"
+        },
+        {
+          "name": "auc",
+          "start_line": 122,
+          "end_line": 130,
+          "text_sha256": "4708db0274e23d006e0eef9384f7197529f87a3a2cda3a53bf0cd1f2af40f29a",
+          "ast_sha256": "58751303c7372be22ad69b5ece5207d6af330cb670930ab45c00b178aed9769c"
+        },
+        {
+          "name": "average_precision",
+          "start_line": 133,
+          "end_line": 140,
+          "text_sha256": "c1988a622649d47553c5126d8a36cdf9907cf395149c30663f1d5f176b75bf24",
+          "ast_sha256": "c53a0fcce7f516759116fdb027fc0ce3db1bbd56af2bf0b807732d6a4d9c2dc1"
+        },
+        {
+          "name": "calibration_parameters",
+          "start_line": 143,
+          "end_line": 147,
+          "text_sha256": "b16cdd4c392fcfd6681b5b56eed692855befced78076753476608b975b0c8e2d",
+          "ast_sha256": "12989f2dc697155aac69c17b44276fac6763dde383c200755aff5d671083e0bd"
+        },
+        {
+          "name": "metrics",
+          "start_line": 150,
+          "end_line": 169,
+          "text_sha256": "b1a31de1d86dbf34de3bb97e7a3edbae2abd5537626b3559a1e20cae92b6ff6d",
+          "ast_sha256": "6d597240cfaa065ac16d55cf11562be0a08fecd2f3ba66d3dea55dc1980ecb43"
+        },
+        {
+          "name": "cv",
+          "start_line": 172,
+          "end_line": 200,
+          "text_sha256": "ac09edfe2c53be81f8e69f7f99ee37908dc55f2cd23358f5b982c9c0817aaf64",
+          "ast_sha256": "c9801e6a117ed2ef83bed4faf9d3b3577d37a156c7c39e24f1c6d88d6474e5eb"
+        },
+        {
+          "name": "baseline_cv",
+          "start_line": 203,
+          "end_line": 221,
+          "text_sha256": "c78983f9ce7518b91c3718148067a5b13094e62c0d138257fd26dac26f71f13f",
+          "ast_sha256": "1935c2020a58093686a1219ed4cd0b60431145470dbd382ddecf5b469af47446"
+        },
+        {
+          "name": "bootstrap_intervals",
+          "start_line": 224,
+          "end_line": 244,
+          "text_sha256": "2409e56c10311b70c55c6e0dcb3b31d1fdb8ec427f329b35056e28de59f9e9f9",
+          "ast_sha256": "2ad283249af189d43c0ad133749d7824fec0118f0723699cef8207cf8c0814ce"
+        },
+        {
+          "name": "final_model",
+          "start_line": 247,
+          "end_line": 252,
+          "text_sha256": "5d0ec6d6fd17b9e0a86467a91251e60f37db0f2d587dd4f60eb9486bfbdb2542",
+          "ast_sha256": "247ba786b80689481466a3b050e449c025da4e4819b9e7ba093e4273482718a2"
+        }
+      ]
+    },
+    {
+      "destination": "src/tess_detectability/snr.py",
+      "source_root": "V1",
+      "source_path": "scripts/prepare_injection_recovery_phase6a.py",
+      "source_sha256": "09364355cb605f6912a7b193236993c1f9e855412958a56aa15050d0e35f15d0",
+      "destination_sha256": "63aa4cc1f60853d27e63c07d5ab5cd2b0d683f46dde34f2ef58ca45403fad50a",
+      "transfer": "new argument wrapper; exact original SNR expression",
+      "expression_ast_sha256": "b38f37c0fcb1c909b5bb06fff3829546e0ff3f7c321f5bdaa1743a8b7b343af9",
+      "start_line": 136,
+      "end_line": 138
+    },
+    {
+      "destination": "archive/v1_tests/test_transit_recovery.py",
+      "source_root": "V1",
+      "source_path": "tests/test_transit_recovery.py",
+      "source_sha256": "152def7bcbb0cccf653e6a525ea513c6d63a219ac376c818e439e08a4597b5ce",
+      "destination_sha256": "152def7bcbb0cccf653e6a525ea513c6d63a219ac376c818e439e08a4597b5ce",
+      "bytes": 5011,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "archive/v1_tests/test_injection_recovery.py",
+      "source_root": "V1",
+      "source_path": "tests/test_injection_recovery.py",
+      "source_sha256": "3b7955bedaa984fe0529bbf48df73eb6c6f6b6d1e6f76c855620c43e70862aff",
+      "destination_sha256": "3b7955bedaa984fe0529bbf48df73eb6c6f6b6d1e6f76c855620c43e70862aff",
+      "bytes": 5220,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "archive/v1_tests/test_lightcurve_preprocessing.py",
+      "source_root": "V1",
+      "source_path": "tests/test_lightcurve_preprocessing.py",
+      "source_sha256": "e8a18214cc7404a7811175b39b68d5ebecbdd5e6dfc07fedc12abc77dde74b0a",
+      "destination_sha256": "e8a18214cc7404a7811175b39b68d5ebecbdd5e6dfc07fedc12abc77dde74b0a",
+      "bytes": 7566,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "results/tables/transit_recovery_planet_results.csv",
+      "source_root": "V1",
+      "source_path": "results/tables/transit_recovery_planet_results.csv",
+      "source_sha256": "bf41d3831b7e1ba638b59f48b19cc19b6ef9f857dff096513e295964dfec8f57",
+      "destination_sha256": "bf41d3831b7e1ba638b59f48b19cc19b6ef9f857dff096513e295964dfec8f57",
+      "bytes": 38013,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "results/tables/transit_recovery_primary_endpoint.csv",
+      "source_root": "V1",
+      "source_path": "results/tables/transit_recovery_primary_endpoint.csv",
+      "source_sha256": "2115db8abcc05065af6050f01aaede625398eb740b0c044d657b9bf14a6ce34a",
+      "destination_sha256": "2115db8abcc05065af6050f01aaede625398eb740b0c044d657b9bf14a6ce34a",
+      "bytes": 276,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "results/tables/injection_recovery_primary_endpoint_v1_0_2.csv",
+      "source_root": "V1",
+      "source_path": "results/tables/injection_recovery_primary_endpoint_v1_0_2.csv",
+      "source_sha256": "8068acc2353fd069c98cfdbf8d6ae21a37a6a4965518876aedede689d6ae5b71",
+      "destination_sha256": "8068acc2353fd069c98cfdbf8d6ae21a37a6a4965518876aedede689d6ae5b71",
+      "bytes": 331,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "results/tables/detectability_calibration_v1_0_1.csv",
+      "source_root": "V1",
+      "source_path": "results/tables/detectability_calibration_v1_0_1.csv",
+      "source_sha256": "1f0d9f1e5df75c12bcf395ea43b96a8fb0d4362ebcf5cece9278f183bbd9278b",
+      "destination_sha256": "1f0d9f1e5df75c12bcf395ea43b96a8fb0d4362ebcf5cece9278f183bbd9278b",
+      "bytes": 631,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "results/tables/detectability_model_performance_v1_0_1.csv",
+      "source_root": "V1",
+      "source_path": "results/tables/detectability_model_performance_v1_0_1.csv",
+      "source_sha256": "64a38e41816abebad355003f0be03a3bc45d451d0975a2e8fccacfc386315729",
+      "destination_sha256": "64a38e41816abebad355003f0be03a3bc45d451d0975a2e8fccacfc386315729",
+      "bytes": 838,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "results/tables/detectability_cv_fold_assignment_v1_0_0.csv",
+      "source_root": "V1",
+      "source_path": "results/tables/detectability_cv_fold_assignment_v1_0_0.csv",
+      "source_sha256": "5c09da5e02ef73035a9334f9c48bc04278d11e19d5eeb1260d1338bcdd031824",
+      "destination_sha256": "5c09da5e02ef73035a9334f9c48bc04278d11e19d5eeb1260d1338bcdd031824",
+      "bytes": 11544,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "data/records/injection_recovery_results_v1_0_2.csv",
+      "source_root": "V1",
+      "source_path": "data/interim/injection_recovery_results_v1_0_2.csv",
+      "source_sha256": "7bc3ffa0a78514bbfc63b037cb7a2527d58a751f9fab7dca41faa6b537999715",
+      "destination_sha256": "7bc3ffa0a78514bbfc63b037cb7a2527d58a751f9fab7dca41faa6b537999715",
+      "bytes": 418297,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "data/records/detectability_oof_predictions_v1_0_1.csv",
+      "source_root": "V1",
+      "source_path": "data/interim/detectability_oof_predictions_v1_0_1.csv",
+      "source_sha256": "467b1b4c9b71578024f526c2615e62ee1d1bebc94292384f5d07fe055b6e1938",
+      "destination_sha256": "467b1b4c9b71578024f526c2615e62ee1d1bebc94292384f5d07fe055b6e1938",
+      "bytes": 175726,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "results/development/injection_recovery_failure_v1_0_0.json",
+      "source_root": "V1",
+      "source_path": "data/metadata/injection_recovery_failure_v1_0_0.json",
+      "source_sha256": "660fbb17b34b6338a8a4b56710ad62354219eab4af6a2f258a10172dbaa8d21e",
+      "destination_sha256": "660fbb17b34b6338a8a4b56710ad62354219eab4af6a2f258a10172dbaa8d21e",
+      "bytes": 2178,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "results/development/injection_recovery_amendment_failure_v1_0_1.json",
+      "source_root": "V1",
+      "source_path": "data/metadata/injection_recovery_amendment_failure_v1_0_1.json",
+      "source_sha256": "e7d682147c51957591e75308d18852cb8814fd1a3a06305bc5010bfded50fe53",
+      "destination_sha256": "e7d682147c51957591e75308d18852cb8814fd1a3a06305bc5010bfded50fe53",
+      "bytes": 1681,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "results/development/injection_model_normalization_validation_v1_0_2.json",
+      "source_root": "V1",
+      "source_path": "data/metadata/injection_model_normalization_validation_v1_0_2.json",
+      "source_sha256": "2d0bed54195f74471488508a3f93dba5fa893ecb9ec20b58f0b01a3d570c7088",
+      "destination_sha256": "2d0bed54195f74471488508a3f93dba5fa893ecb9ec20b58f0b01a3d570c7088",
+      "bytes": 204,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "results/development/injection_all_trial_normalization_preflight_v1_0_2.json",
+      "source_root": "V1",
+      "source_path": "data/metadata/injection_all_trial_normalization_preflight_v1_0_2.json",
+      "source_sha256": "8790c4ec5cb6913a578fc764b18f094bd49c0e174b376d5d53710ddb4ff54d29",
+      "destination_sha256": "8790c4ec5cb6913a578fc764b18f094bd49c0e174b376d5d53710ddb4ff54d29",
+      "bytes": 237,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "results/figures/held_out_calibration.png",
+      "source_root": "V1",
+      "source_path": "results/figures/detectability_modeling_v1_0_1/held_out_calibration.png",
+      "source_sha256": "0847a978abeddb69421f0d8e0edca63127b7b78179a49da4cbe0fdb70b7d372b",
+      "destination_sha256": "0847a978abeddb69421f0d8e0edca63127b7b78179a49da4cbe0fdb70b7d372b",
+      "bytes": 19549,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "results/figures/expected_snr_recovery_curve.png",
+      "source_root": "V1",
+      "source_path": "results/figures/detectability_modeling_v1_0_1/expected_snr_recovery_curve.png",
+      "source_sha256": "48d7b9ade83bd45be9ca123bcb4bfba6546c6f605ea4d96506176ba346eaf076",
+      "destination_sha256": "48d7b9ade83bd45be9ca123bcb4bfba6546c6f605ea4d96506176ba346eaf076",
+      "bytes": 20412,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "docs/original/INJECTION_MODEL_NORMALIZATION_DERIVATION.md",
+      "source_root": "V1",
+      "source_path": "docs/INJECTION_MODEL_NORMALIZATION_DERIVATION.md",
+      "source_sha256": "1a6d797b5360d44c00d9ff280fbdcadc3b6e195f8c7b9d41afd18cb0adc76164",
+      "destination_sha256": "1a6d797b5360d44c00d9ff280fbdcadc3b6e195f8c7b9d41afd18cb0adc76164",
+      "bytes": 458,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "docs/original/INJECTION_BASELINE_RESTORATION_DERIVATION.md",
+      "source_root": "V1",
+      "source_path": "docs/INJECTION_BASELINE_RESTORATION_DERIVATION.md",
+      "source_sha256": "2a5cfd8fc27fc739728692653926722263b6c3817c7f94541e9b1c7655b42735",
+      "destination_sha256": "2a5cfd8fc27fc739728692653926722263b6c3817c7f94541e9b1c7655b42735",
+      "bytes": 599,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "demo/index.html",
+      "source_root": "MissionControl20261028",
+      "source_path": "demo/index.html",
+      "source_sha256": "e14903c20c5c88cb23d2d6f692300693ebcf63058cb0c6229c3f7ac48b9464c5",
+      "destination_sha256": "145ff6260b817cfe7ceb941f3d61b5fc351e7d33e66794ab7762c4019b74a946",
+      "bytes": 10569,
+      "transfer": "presentation credits and footer wording; controls and scientific values unchanged"
+    },
+    {
+      "destination": "demo/app.js",
+      "source_root": "MissionControl20261028",
+      "source_path": "demo/app.js",
+      "source_sha256": "ece6486eddb8d675f4950e04da28759ad8de2b694bbd64b5a9461227b445cba6",
+      "destination_sha256": "ece6486eddb8d675f4950e04da28759ad8de2b694bbd64b5a9461227b445cba6",
+      "bytes": 19064,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "demo/style.css",
+      "source_root": "MissionControl20261028",
+      "source_path": "demo/style.css",
+      "source_sha256": "fb637c9e9635e4f4aa9a388e3f8453f77fec98234257e8863603ab17ce917f43",
+      "destination_sha256": "fb637c9e9635e4f4aa9a388e3f8453f77fec98234257e8863603ab17ce917f43",
+      "bytes": 16806,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "demo/recorded_data.js",
+      "source_root": "MissionControl20261028",
+      "source_path": "demo/recorded_data.js",
+      "source_sha256": "13c9430385a86c777cbce7b1bead3c63fa01690e04c120782267a3016d8807a7",
+      "destination_sha256": "1b0ea9d31ee1bf7b2050277ef8db214dc7fb2982f68330d0b55ccb824e7fdd66",
+      "bytes": 967958,
+      "transfer": "public path-label derivative; scientific values preserved"
+    },
+    {
+      "destination": "demo/curve_data.js",
+      "source_root": "MissionControl20261028",
+      "source_path": "demo/curve_data.js",
+      "source_sha256": "c9dc0a8d7c74f1b52715fea6b60703e52e744a0b377f1e2673b3b4815731160c",
+      "destination_sha256": "c9dc0a8d7c74f1b52715fea6b60703e52e744a0b377f1e2673b3b4815731160c",
+      "bytes": 567290,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "demo/calibration.png",
+      "source_root": "MissionControl20261028",
+      "source_path": "demo/calibration.png",
+      "source_sha256": "bca77463b4f3f364f6004189487fcb8f3f0b24ac54ff90ebfdc30682c193a74c",
+      "destination_sha256": "bca77463b4f3f364f6004189487fcb8f3f0b24ac54ff90ebfdc30682c193a74c",
+      "bytes": 400278,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "demo/inputs/recorded_data.json",
+      "source_root": "MissionControl20261028",
+      "source_path": "demo/inputs/recorded_data.json",
+      "source_sha256": "5b0919eb4ed5b40308435987380a24cb49675ee474886a4b68a6e4a504f82a19",
+      "destination_sha256": "980ec534603a8f8f6be60061400594ca5fe894ee749c216ff743c0023185f44d",
+      "bytes": 1174411,
+      "transfer": "public path-label derivative; scientific values preserved"
+    },
+    {
+      "destination": "tests/test_transit_recovery.py",
+      "source_root": "V1",
+      "source_path": "tests/test_transit_recovery.py",
+      "source_sha256": "152def7bcbb0cccf653e6a525ea513c6d63a219ac376c818e439e08a4597b5ce",
+      "destination_sha256": "d5cc556c40cbd0d12c756bbf75b385eeeda04a46e8e586ed86053f2de1ef434e",
+      "transfer": "selected exact original unit-test bodies; artifact-dependent checks excluded",
+      "selected_methods": [
+        {
+          "name": "test_period_and_duration_grids_are_deterministic",
+          "start_line": 22,
+          "end_line": 29,
+          "ast_sha256": "c93b5249e76acce0c032eed419bb3b1dde75cb8df0a5fe21ffb5e2fdb2c83d6b"
+        },
+        {
+          "name": "test_short_and_empty_grid_behavior",
+          "start_line": 31,
+          "end_line": 37,
+          "ast_sha256": "a549e3de7900dac74ff28bc47c6ccf22cae23027d86c7b1246ec53f7df8c7045"
+        },
+        {
+          "name": "test_peak_extraction_separation_tie_and_topk",
+          "start_line": 39,
+          "end_line": 45,
+          "ast_sha256": "0e2a3c45c06efefe0af11accdbfa82cb7a8a5872e93d010f75de245dc8e8814a"
+        },
+        {
+          "name": "test_clear_synthetic_transit_is_deterministic",
+          "start_line": 47,
+          "end_line": 59,
+          "ast_sha256": "2f41ae39ef550cf7b8f25327b71d933e96b18fc8fafc610f72583502e9c5876e"
+        },
+        {
+          "name": "test_direct_half_double_and_other_harmonic_matching",
+          "start_line": 61,
+          "end_line": 77,
+          "ast_sha256": "41327f113c201fabf71b13af218ab6cffa8ca79ff2b52934edae8dbe7bd4ed7b"
+        },
+        {
+          "name": "test_epoch_missing_and_duration_diagnostics",
+          "start_line": 79,
+          "end_line": 89,
+          "ast_sha256": "4613e665fe8196a1980d9ac5c45969e885dfc58fe6c952db051e9fcaa4794689"
+        },
+        {
+          "name": "test_blind_search_has_no_truth_dependency",
+          "start_line": 91,
+          "end_line": 96,
+          "ast_sha256": "54b0d6433bf8a11f571581f85d144c335236d9b2034e95fef97e7fe93b447098"
+        },
+        {
+          "name": "test_wilson_denominator_accounting",
+          "start_line": 98,
+          "end_line": 102,
+          "ast_sha256": "85ffc8ac4f9fba3def042d56338f0f95db9cdc2a7864449460193f98d0514ca0"
+        }
+      ],
+      "excluded_methods": [
+        "test_no_injection_or_model_dependency"
+      ]
+    },
+    {
+      "destination": "tests/test_injection_recovery.py",
+      "source_root": "V1",
+      "source_path": "tests/test_injection_recovery.py",
+      "source_sha256": "3b7955bedaa984fe0529bbf48df73eb6c6f6b6d1e6f76c855620c43e70862aff",
+      "destination_sha256": "c1a3f6c5c4a23edd7eea60b6d8040e9b51d3f82ca994cf982b74e6e7fd991f9b",
+      "transfer": "selected exact original unit-test bodies; artifact-dependent checks excluded",
+      "selected_methods": [
+        {
+          "name": "test_seed_is_stable_and_identity_sensitive",
+          "start_line": 17,
+          "end_line": 20,
+          "ast_sha256": "0522dbd700108e774c4400553a93f35dcc3a9671b17152a6ccb4bdfe35a18612"
+        },
+        {
+          "name": "test_design_bounds_and_all_depths",
+          "start_line": 22,
+          "end_line": 27,
+          "ast_sha256": "8855e0cfa88a16265969faf1fbe76c8c41e21c7f3aff3c0e275787f090a88908"
+        },
+        {
+          "name": "test_transit_model_is_deterministic_and_finite",
+          "start_line": 29,
+          "end_line": 35,
+          "ast_sha256": "9d76e4e96c87eb0d1b56dbe12a4661524aee8ec05f21dcfae591b0f215205c2b"
+        },
+        {
+          "name": "test_exposure_integration_changes_edge_samples",
+          "start_line": 37,
+          "end_line": 41,
+          "ast_sha256": "96912c7ae64c0900224578b2119d291c9583a1a27958665eaa49869aca40bb62"
+        },
+        {
+          "name": "test_zero_depth_and_multiplicative_equivalence",
+          "start_line": 43,
+          "end_line": 48,
+          "ast_sha256": "450e78b64f87e71d83f2897197f5c2950738b8b072e8070278b1e95b8d4c89a7"
+        },
+        {
+          "name": "test_observability_counts_events_and_points",
+          "start_line": 50,
+          "end_line": 55,
+          "ast_sha256": "9ac614fc9e6e8c9c5440cee24ebfe2701bc29dd8cdde202e19890c58e00e4f80"
+        },
+        {
+          "name": "test_invalid_geometry_fails_closed",
+          "start_line": 57,
+          "end_line": 59,
+          "ast_sha256": "6fa1a3771e76adc88d392b5966651e8e8810af62a77e6f6a46219a5e08a65c84"
+        },
+        {
+          "name": "test_sampled_depth_normalization_contract",
+          "start_line": 76,
+          "end_line": 88,
+          "ast_sha256": "650760cb59ccea66b9a20f655f3d8830b106e6109196699e58f97a37219829a7"
+        },
+        {
+          "name": "test_baseline_restored_injection_preserves_out_of_transit",
+          "start_line": 90,
+          "end_line": 95,
+          "ast_sha256": "0e432a5c5a3df9a518ac0008be15a70cce3cf5243b184e713db704c4904e03a1"
+        },
+        {
+          "name": "test_zero_depth_normalization_is_unity",
+          "start_line": 97,
+          "end_line": 101,
+          "ast_sha256": "5e3e3119094924a19de6698456d9c6f2ef66f4fb1dea91f5175e0f9002deba03"
+        },
+        {
+          "name": "test_normalization_edge_cases_fail_closed",
+          "start_line": 103,
+          "end_line": 110,
+          "ast_sha256": "7691ef6fd4698462331581c40bfac251a7a9b7ad6f15e64484e638633b503016"
+        }
+      ],
+      "excluded_methods": [
+        "test_blind_search_module_has_no_injection_truth_dependency",
+        "test_no_model_training_dependency"
+      ]
+    },
+    {
+      "destination": "tests/test_lightcurve_preprocessing.py",
+      "source_root": "V1",
+      "source_path": "tests/test_lightcurve_preprocessing.py",
+      "source_sha256": "e8a18214cc7404a7811175b39b68d5ebecbdd5e6dfc07fedc12abc77dde74b0a",
+      "destination_sha256": "285442fe7dcf6b2794710bf685b963cfa357dcda39d8763f9c45aabd32209875",
+      "transfer": "selected exact original unit-test bodies; artifact-dependent checks excluded",
+      "selected_methods": [
+        {
+          "name": "test_flux_and_uncertainty_hierarchy",
+          "start_line": 55,
+          "end_line": 62,
+          "ast_sha256": "634f92d0d9ce085270ddf9bfa00f57b30c5d71dc855d1ebdaab50c4dcf82cac9"
+        },
+        {
+          "name": "test_structural_fallback_is_not_visual",
+          "start_line": 64,
+          "end_line": 71,
+          "ast_sha256": "0ba9bf8423c26fc5169e8553a4009162bf1b3f180b499d6ff8bd62f48d1af7e3"
+        },
+        {
+          "name": "test_quality_policy",
+          "start_line": 73,
+          "end_line": 75,
+          "ast_sha256": "7a191b596cb3a55077792986a6a73ad152b79dd9e7f9e0585a293d53b651b238"
+        },
+        {
+          "name": "test_duplicate_rule_prefers_quality_zero_then_index",
+          "start_line": 77,
+          "end_line": 86,
+          "ast_sha256": "45876bdc6073698ae2143c53777fca836063fbbf191f94c06d51c140e1c67053"
+        },
+        {
+          "name": "test_sort_and_gap_segmentation",
+          "start_line": 88,
+          "end_line": 100,
+          "ast_sha256": "a7aacaca7077b62a5b1cf92fba120f47b336783472bdfeb67f6d393687b1843b"
+        },
+        {
+          "name": "test_normalization_and_fallback",
+          "start_line": 102,
+          "end_line": 109,
+          "ast_sha256": "d8a05a9b4e2ddce050b01c788cb9894108974526dd5313d3bb60f8be6ac81ab7"
+        },
+        {
+          "name": "test_window_is_cadence_specific_odd_and_edges_are_defined",
+          "start_line": 111,
+          "end_line": 121,
+          "ast_sha256": "cb13f8d35460b519824cd7dd1b74e507337e9abd9afc2408f533bc7fb9841e66"
+        },
+        {
+          "name": "test_pipeline_row_accounting_and_no_transit_or_outlier_removal",
+          "start_line": 123,
+          "end_line": 141,
+          "ast_sha256": "5034a2ea076e6e7525189af8933db0663bf9c2e87c9ae4eb8a28c712cc6a5d22"
+        },
+        {
+          "name": "test_atomic_parquet_is_deterministic",
+          "start_line": 143,
+          "end_line": 152,
+          "ast_sha256": "edce2ffbdb07213bf7fee800dc1cdb60b8cc399e662b65dd56f543c072cd4000"
+        }
+      ],
+      "excluded_methods": [
+        "test_no_period_search_or_recovery_dependencies"
+      ]
+    },
+    {
+      "destination": "demo/inputs/CURVE_SOURCE.json",
+      "source_root": "MissionControl20261028",
+      "source_path": "demo/inputs/CURVE_SOURCE.json",
+      "source_sha256": "6133713971a732c14b87347bb0bd420cba2afe1f09c4f3877136dca1eb2d9265",
+      "destination_sha256": "6133713971a732c14b87347bb0bd420cba2afe1f09c4f3877136dca1eb2d9265",
+      "bytes": 3929,
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "docs/original/TARGET_SELECTION_EXECUTION_REPORT.md",
+      "source_root": "V1",
+      "source_path": "docs/TARGET_SELECTION_EXECUTION_REPORT.md",
+      "source_sha256": "769dbaf56a75f451a6979e923e452f1e100d1421ba40926214b936a070bdd8f2",
+      "destination_sha256": "769dbaf56a75f451a6979e923e452f1e100d1421ba40926214b936a070bdd8f2",
+      "transfer": "byte-identical"
+    },
+    {
+      "destination": "docs/original/TARGET_SELECTION_PREREGISTRATION_v1_1_0.md",
+      "source_root": "V1",
+      "source_path": "docs/TARGET_SELECTION_PREREGISTRATION_v1_1_0.md",
+      "source_sha256": "98fd1f796ebd8d1e6d7b8575f93d2f4cb6a5979093fe61c67ed5b9a7e7e259d2",
+      "destination_sha256": "98fd1f796ebd8d1e6d7b8575f93d2f4cb6a5979093fe61c67ed5b9a7e7e259d2",
+      "transfer": "byte-identical"
+    }
+  ]
+}

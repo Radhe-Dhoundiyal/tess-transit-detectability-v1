@@ -1,8 +1,17 @@
-# Split-license summary
+# License boundaries
 
-- First-party original source code and software configuration: MIT, see `LICENSE-CODE`.
-- First-party original documentation, reports, tables, and figures: CC BY 4.0, see `LICENSE-DOCUMENTATION`.
-- External data, factual metadata, literature, mission branding, and third-party software: not relicensed; see `THIRD_PARTY_AND_DATA_RIGHTS.md`.
+First-party software in `src/`, `examples/`, `tests/`, `scripts/` and the
+viewer code in `demo/` uses the existing [MIT license](LICENSE-CODE).
+First-party prose and original analysis figures/tables use the existing
+[CC BY 4.0 terms](LICENSE-DOCUMENTATION). External data and third-party software retain their separate rights.
 
-The machine-readable file-level authority is
-`results/tables/license_coverage_map_v1_0_0.csv`.
+NASA/TESS/MAST observations, NASA Exoplanet Archive factual records, third-party
+software, literature, mission identifiers and trademarks are not relicensed.
+The saved-record viewer contains mixed-origin factual records and a small
+display sample derived from mission observations. Retain their provenance
+and acknowledgments. See [rights scope](THIRD_PARTY_AND_DATA_RIGHTS.md) and
+[file coverage](provenance/license_coverage.csv).
+
+Archived July files retain their recorded notices and historical coverage map.
+The RC1/RC2 labels inside preserved notices are historical, not the version of
+the current software version.

@@ -3,10 +3,10 @@ Creative Commons Attribution 4.0 International
 Copyright (c) 2026 Radhe Dhoundiyal
 
 First-party original documentation, reports, tables, and figures identified
-by `results/tables/license_coverage_map_v1_0_0.csv` are licensed under CC BY
+by `provenance/license_coverage.csv` are licensed under CC BY
 4.0. License text: https://creativecommons.org/licenses/by/4.0/legalcode
 
-Attribution: Radhe Dhoundiyal, “TESS Transit Detectability Benchmark: A Reproducible Injection–Recovery and Statistical Modeling Study”, version 1.0.0-rc.1.
+Attribution: Radhe Dhoundiyal, “TESS Transit Detectability Benchmark”, version 1.0.0-rc.4. The original RC1 notice is preserved in the July archive.
 
 This license does not apply to NASA/MAST/TESS/NASA Exoplanet Archive material,
 literature, upstream data, factual external metadata, third-party software,

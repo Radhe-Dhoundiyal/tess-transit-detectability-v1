@@ -1,65 +1,113 @@
-# TESS Transit Detectability Benchmark — RC2
+# TESS Transit Detectability
 
-## Overview
+**When can a transit search recover a signal that is present in a TESS light curve?**
 
-This evidence-first release candidate packages the frozen outputs of a fixed
-TESS transit-detectability benchmark with traceable protocols, hashes, and
-terminal authorities. It is intended for astronomy, statistics, and
-reproducibility reviewers. RC2 is not a public or final release.
+This project studies that question using archived observations, known catalogue
+signals and synthetic transit injections. It implements light-curve processing,
+a blind Box Least Squares (BLS) search, catalogue matching and statistical
+detectability modeling, with a small runnable example and an explorer of the
+saved results.
 
-## Scope and contents
+## Preview
 
-The benchmark contains evidence for 40 targets, 320 registered injection
-trials, eight target-grouped folds, 68 converged fits, and 14 frozen figures.
-RC2 includes reviewable scientific outputs and public notebooks but excludes
-raw FITS, Parquet light curves, restricted/source downloads, and private
-migration material.
+[![WASP-127 b: chronological and phase-folded views of the same retained TESS samples](docs/media/wasp127.png)](docs/media/wasp127.png)
 
-## Headline findings
+The same 8,000 saved WASP-127 samples in chronological and catalogue-folded
+coordinates. These are processed TESS observations, not a fitted or simulated
+transit. The saved recovery carries an ambiguity flag.
 
-Primary Model A log loss is 0.3198223626785455, Brier score
-0.1046725568285409, ROC AUC 0.9257676043390329, and PR AUC
-0.8056516447845964. These are fixed benchmark results, not external
-validation, causal evidence, or population-wide astrophysical claims.
+[![All 320 synthetic trial outcomes arranged by host and injection index](docs/media/synthetic-trials.png)](docs/media/synthetic-trials.png)
 
-## Installation and environment
+The accepted 40-host × 8-injection experiment: 98 direct, 25 additional
+harmonic, 12 alias and 185 nonrecovered outcomes. Open the image at full
+resolution for individual trial labels. [Image provenance](docs/MEDIA.md)
+records the source hashes and display transformations.
 
-Python 3.12 is supported. See `docs/CLEAN_MACHINE_SETUP_V1_0_0.md`,
-`docs/ENVIRONMENT_REPRODUCTION_GUIDE_V1_0_0.md`, and
-`requirements-lock.txt`. Identical dependency builds may not remain available
-on every platform.
+<details>
+<summary>Working saved-results explorer</summary>
 
-## Quick verification
+[![The working explorer displaying the saved WASP-127 b result](docs/media/explorer.png)](docs/media/explorer.png)
 
-Run `python scripts/verify_environment.py`, `python scripts/verify_hashes.py`,
-and `python scripts/verify_release_candidate.py`. These commands are read-only
-and require no restricted data.
+A genuine browser capture. Selecting a case reads saved records; the Depth
+test tab executes the small normalization example.
 
-## Reproducibility and lawful data reacquisition
+</details>
 
-Packaged-output verification requires no download. Scientific reruns require
-lawful reacquisition from the NASA Exoplanet Archive and MAST under a separate
-scientific authority; RC2 does not provide or trigger such acquisition.
-Verification, computational, and exact-environment reproducibility are
-distinguished in `docs/REPRODUCIBILITY_SCOPE_AND_LIMITATIONS_V1_0_0.md`.
+## What the pipeline does
 
-## Repository structure
+1. Read TESS light curves, apply deterministic quality/time handling, and
+   normalize and detrend each segment.
+2. Run a blind BLS search and retain separated candidate peaks before
+   consulting catalogue truth.
+3. Match periods and epochs, recording direct, harmonic, alias and
+   nonrecovery outcomes.
+4. Construct sampled transit models, normalize their depth and inject them
+   into observed substrates; model recovery with target-grouped validation.
 
-Protocols are in `config/`, authority and completion records in
-`data/metadata/`, documentation in `docs/`, figures and tables in `results/`,
-review notebooks in `notebooks/`, and read-only tools in `scripts/`.
+## Finite-benchmark results
 
-## Citation, licensing, and acknowledgments
+| Experiment | Direct recovery | Full accounting |
+|---|---|---|
+| Known catalogue signals | **15/51 eligible** | 15 direct + 10 harmonic + 1 alias + 25 nonrecovered; 19 additional entries outside the search range |
+| Accepted synthetic injections | **98/320** | 98 direct + 25 harmonic + 12 alias + 185 nonrecovered |
 
-Use `CITATION.cff` as candidate metadata. Repository URL and DOI remain
-`PENDING`. First-party code is MIT-licensed and identified first-party content
-is CC BY 4.0; third-party data and software retain their own terms. See
-`THIRD_PARTY_AND_DATA_RIGHTS.md`, `DEPENDENCY_NOTICES.md`, `DATA_SOURCES.md`,
-and `ACKNOWLEDGMENTS.md`.
+Synthetic direct-or-harmonic recovery is **123/320**, including the same 98
+direct recoveries. The experiments have different denominators. Model
+validation used eight folds grouped by target across 40 hosts.
 
-## Release status
+## A failure and its correction
 
-Version `1.0.0-rc.2`, built 2026-07-24. This is a release candidate, not
-publicly released. Recommended future repository name:
-`tess-transit-detectability-benchmark`. No owner, URL, DOI, or final release
-date is asserted.
+Multiplying a near-unity transit model into zero-centered residuals did not
+insert the intended depth. Restoring the baseline fixed that equation, but
+the raw limb-darkened model still missed the requested sampled depth.
+
+The correction scales the sampled decrement:
+`M_norm = 1 - delta_requested * (1 - M_raw) / delta_raw`, then injects it as
+`(1 + residual) * M_norm - 1`. The rejected 320-case depth preflight was a
+validation failure with no BLS executions, not 320 failed detections.
+[Development notes](docs/DEVELOPMENT.md) preserve the failure and correction.
+
+## Run locally
+
+Use **Python 3.12**. From the repository root, run in PowerShell:
+
+```powershell
+python -m venv .venv
+.venv\Scripts\python.exe -m pip install --index-url https://pypi.org/simple ".[test]"
+.venv\Scripts\python.exe examples/normalize_depth.py
+.venv\Scripts\python.exe -m pytest -q
+.venv\Scripts\python.exe scripts/verify_project.py
+.venv\Scripts\python.exe demo/serve_demo.py
+```
+
+Installation builds **this local project** and obtains its declared
+dependencies from PyPI. The example calls the original normalization function
+on five synthetic samples at 0, 100 and 500 ppm and reports realized depth
+and numerical error. Open [the explorer](http://127.0.0.1:8783/index.html)
+after the last command; stop it with Ctrl+C. Saved records also work by
+opening `demo/index.html` directly, with live calculation unavailable.
+[Getting started](docs/GETTING_STARTED.md) explains the output and commands.
+
+## Source and saved evidence
+
+See the [source guide](docs/SOURCE_GUIDE.md), [methods](docs/METHODS.md),
+[verification](docs/VERIFICATION.md) and [data provenance](DATA_SOURCES.md).
+Algorithms live in `src/`, examples in `examples/`, focused tests in `tests/`,
+and selected saved evidence in `results/` and `data/records/`. The
+[historical archive](archive/README.md) retains earlier records.
+
+## Scientific limitations
+
+These are finite, selected benchmark results and internally validated models,
+not population completeness, external validation or a new planet discovery.
+Exact originating-literature mappings for five catalogue parameter classes
+are missing from the saved metadata. V2 science and C2 qualification remain
+unfinished. See [limitations](docs/LIMITATIONS.md) for the scope of the code,
+data and reproducibility evidence.
+
+## Credits and licensing
+
+Observations come from NASA/TESS/MAST and catalogue metadata from the NASA
+Exoplanet Archive. The implementation uses Astropy, NumPy, pandas and SciPy.
+See [acknowledgments](ACKNOWLEDGMENTS.md) and [license boundaries](LICENSE)
+for software, original analysis and external-data rights.
