@@ -754,8 +754,8 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 568,
-      "sha256": "6fa98ebd088b91e2005c7dc85034b76c3bd53926523c65f3c9788dbe1cd384ff"
+      "bytes": 571,
+      "sha256": "61e1ed0fdcb385d0a74820c6e3588226ed263dcdec669a98abf60393aa172bdb"
     },
     {
       "path": "data/records/detectability_oof_predictions_v1_0_1.csv",
@@ -894,8 +894,8 @@
     },
     {
       "path": "docs/VERIFICATION.md",
-      "bytes": 2728,
-      "sha256": "220c3f7d93138ebd707681fbf69b75a764592ef1bf5462e11c76f5caafd85184"
+      "bytes": 2894,
+      "sha256": "26f2786aac4e93d506c11dbaa63d368fcb3436e5a92d2e1fcc5d8b5376f41e3e"
     },
     {
       "path": "examples/normalize_depth.py",
@@ -944,8 +944,8 @@
     },
     {
       "path": "pyproject.toml",
-      "bytes": 680,
-      "sha256": "b55c008874f7f8fa7547a6b15b0513f08fb4adc82f803e82b7cb0687fa6d35db"
+      "bytes": 683,
+      "sha256": "62454db0161889402c6764899aab7bbc3ad7f67e054cba6109aec341292dfd38"
     },
     {
       "path": "python-version.txt",

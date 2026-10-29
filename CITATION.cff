@@ -7,7 +7,7 @@ authors:
   - family-names: "Dhoundiyal"
     given-names: "Radhe"
     affiliation: "Independent student researcher"
-repository-code: "https://github.com/Radhe-Dhoundiyal/TESS-Transit-Detectability"
+repository-code: "https://github.com/Radhe-Dhoundiyal/tess-transit-detectability-v1"
 abstract: "A finite benchmark of known-signal and synthetic transit recovery, with curated V1 source and a runnable sampled-depth example."
 license:
   - MIT

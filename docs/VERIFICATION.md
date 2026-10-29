@@ -5,8 +5,10 @@ CPython 3.12.3. Installation builds the local project into a wheel and resolves
 declared dependencies from PyPI. This is isolated-environment evidence, not a
 clean-machine or cross-platform certification. The minimal
 [CI workflow](../.github/workflows/verify.yml) runs the same Python checks on
-a Windows runner. Its commands are tested locally; no remote workflow result
-is claimed before it has run on GitHub.
+a Windows runner. The workflow has also completed successfully on GitHub.
+See the [Actions page](https://github.com/Radhe-Dhoundiyal/tess-transit-detectability-v1/actions)
+for the current run history and status; a past successful run does not
+guarantee that a later revision passes.
 
 ```powershell
 python -m venv .venv
