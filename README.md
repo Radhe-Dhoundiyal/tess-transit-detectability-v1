@@ -2,11 +2,11 @@
 
 **When can a transit search recover a signal that is present in a TESS light curve?**
 
-This project studies that question using archived observations, known catalogue
-signals and synthetic transit injections. It implements light-curve processing,
-a blind Box Least Squares (BLS) search, catalogue matching and statistical
-detectability modeling, with a small runnable example and an explorer of the
-saved results.
+I investigated this question using archived TESS observations, known catalogue
+signals and synthetic transit injections. The project combines light-curve
+processing, a blind Box Least Squares (BLS) search, catalogue matching and
+statistical detectability modeling. It includes a small runnable example and
+an explorer of the saved results.
 
 ## Preview
 
@@ -20,8 +20,8 @@ transit. The saved recovery carries an ambiguity flag.
 
 The accepted 40-host × 8-injection experiment: 98 direct, 25 additional
 harmonic, 12 alias and 185 nonrecovered outcomes. Open the image at full
-resolution for individual trial labels. [Image provenance](docs/MEDIA.md)
-records the source hashes and display transformations.
+resolution for individual trial labels. [Preview notes](docs/MEDIA.md)
+explain the data and display choices.
 
 <details>
 <summary>Working saved-results explorer</summary>
@@ -63,9 +63,10 @@ the raw limb-darkened model still missed the requested sampled depth.
 
 The correction scales the sampled decrement:
 `M_norm = 1 - delta_requested * (1 - M_raw) / delta_raw`, then injects it as
-`(1 + residual) * M_norm - 1`. The rejected 320-case depth preflight was a
-validation failure with no BLS executions, not 320 failed detections.
-[Development notes](docs/DEVELOPMENT.md) preserve the failure and correction.
+`(1 + residual) * M_norm - 1`. The 320-case depth check failed before any
+BLS search; these were not 320 failed detections.
+[Development notes](docs/DEVELOPMENT.md) explain what went wrong and how
+the correction was checked.
 
 ## Run locally
 
@@ -88,13 +89,14 @@ after the last command; stop it with Ctrl+C. Saved records also work by
 opening `demo/index.html` directly, with live calculation unavailable.
 [Getting started](docs/GETTING_STARTED.md) explains the output and commands.
 
-## Source and saved evidence
+## Explore the code and results
 
-See the [source guide](docs/SOURCE_GUIDE.md), [methods](docs/METHODS.md),
-[verification](docs/VERIFICATION.md) and [data provenance](DATA_SOURCES.md).
+Start with the [source guide](docs/SOURCE_GUIDE.md), [methods](docs/METHODS.md)
+and [data sources](DATA_SOURCES.md).
 Algorithms live in `src/`, examples in `examples/`, focused tests in `tests/`,
 and selected saved evidence in `results/` and `data/records/`. The
 [historical archive](archive/README.md) retains earlier records.
+See [verification](docs/VERIFICATION.md) for the checks you can run.
 
 ## Scientific limitations
 

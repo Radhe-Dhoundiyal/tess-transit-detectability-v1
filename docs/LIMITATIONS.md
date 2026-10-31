@@ -16,31 +16,29 @@ SNR is a white-noise proxy, not a correlated-noise model or BLS significance.
 The sampled-depth contract concerns retained timestamps, not an unobserved
 continuous minimum. See [methods](METHODS.md) for matching and model details.
 
-## Catalogue-reference provenance
+## Missing catalogue references
 
-The saved NASA Exoplanet Archive metadata lacks exact originating-literature
-mappings for five classes: planet identity/target metadata, orbital periods,
-transit epochs, planet radii/depths and stellar parameters. Archive attribution
-and saved values are traceable; complete row-and-parameter paper mappings are
-not. The [historical bibliography](../archive/2026-07-25/results/tables/source_specific_bibliography_v1_0_0_rc2.csv)
-explicitly records that gap. Discovery references cannot substitute for each
-parameter's source, and a new catalogue lookup cannot establish historical
-consumption. No paper or DOI has been invented to fill missing fields.
+The saved NASA Exoplanet Archive metadata lacks links to the originating
+papers for five classes: planet identity/target metadata, orbital periods,
+transit epochs, planet radii/depths and stellar parameters. The saved values
+and Archive attribution remain available, but they do not replace paper-level
+references. The [historical bibliography](../archive/2026-07-25/results/tables/source_specific_bibliography_v1_0_0_rc2.csv)
+records these gaps.
 
-This scope supports a bounded software demonstration and inspection of saved
-results with the caveat retained. It does not support a claim of complete
-literature-provenance closure or publication-quality revalidation of every
-catalogue value. Repair would require authenticated original reference
-metadata, or a separately dated new source mapping.
+A discovery paper does not necessarily supply every parameter. Completing
+the mappings would require the original reference metadata; a new catalogue
+lookup would be a separately dated mapping, not evidence for the original
+snapshot. Until then, those historical inputs cannot be fully checked against
+their originating papers. No missing paper or DOI has been guessed.
 
 ## Modeling and unfinished work
 
 Validation is internal and grouped by target. The SciPy penalized logistic
 fallback is not a fitted hierarchical model. The original numeric-cadence
 sensitivity centers each frame locally, and its AUC helper does not average
-tied ranks; both are documented in [methods](METHODS.md). Preserving code is
-not silently correcting historical metrics. V2 science and C2 qualification
-remain unfinished and are not established by the portable example.
+tied ranks; both are documented in [methods](METHODS.md). These limitations
+remain in the code and historical metrics. V2 science and C2 qualification
+remain unfinished; the small example does not establish either.
 
 ## Reproduction scope
 
@@ -50,5 +48,4 @@ production orchestration are not bundled. Installation is not full pipeline
 reproduction. The viewer is a present-day interface over historical records;
 missing injected-flux arrays are not reconstructed. Tests were measured on
 Windows/CPython 3.12.3 and Chromium, not certified across operating systems
-or browser engines. Current source hashes identify bytes, not personal typing
-or exact historical execution. See [verification](VERIFICATION.md).
+or browser engines. See [verification](VERIFICATION.md).

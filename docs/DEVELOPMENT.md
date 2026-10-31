@@ -1,39 +1,55 @@
-# What changed during V1
+# Finding and fixing the injection problem
 
-The project did not begin with a successful injection pipeline. Its recorded
-failures distinguish a runnable algorithm from a valid experiment.
+My starting question was whether a blind search could recover a transit's
+period and epoch, not just whether the signal was present. Controlled
+injections offered a way to compare a known input with the search result in
+real TESS noise. Getting that input right turned out to be a problem of its own.
 
-1. **Zero-centered substrate.** The original injection multiplied detrended
-   residuals by a near-unity model. The residual median was zero, so this
-   did not impose the intended transit depth. The [original failure record](../results/development/injection_recovery_failure_v1_0_0.json)
-   preserves 320 completed but scientifically invalid trial outputs, 400 BLS
-   executions including controls, and zero valid recovery claims. Later
-   validation does not repair those products.
-2. **Baseline restoration was necessary but insufficient.** The equation
-   `(1+d)M-1` preserves the substrate when `M=1`. The [next failed preflight](../results/development/injection_recovery_amendment_failure_v1_0_1.json)
-   nevertheless found all 320 sampled-depth contracts failed, with roughly
-   15.38% relative depth error. No BLS execution or corrected trial was
-   completed in this preflight. These are not 320 failed detections.
-3. **Normalize the sampled decrement.** The raw central intensity had been
-   divided by a disk-average intensity; its depth parameter was not the
-   realized sampled minimum. Scaling `1-M_raw` by requested/raw sampled
-   depth repaired that contract while preserving the relative sampled shape.
-   The [19-case function validation](../results/development/injection_model_normalization_validation_v1_0_2.json)
-   and [320-plan preflight](../results/development/injection_all_trial_normalization_preflight_v1_0_2.json)
-   are historical accepted records, not tests newly run for this example.
-4. **Finite recovery remained imperfect.** The accepted injection study
-   yielded 98/320 direct and 123/320 direct-or-harmonic recovery. The
-   independent known-signal benchmark yielded 15/51 direct. The saved
-   outcomes are retained without selecting only successful examples.
+## The first injection did not add the intended signal
 
-The new `examples/normalize_depth.py` is a tiny synthetic demonstration of
-the correction using the current byte-pinned V1 function. It does not prove
-that every historical invocation consumed these exact current bytes. The
-source manifest records present source identity, separately from saved
-scientific result identity and personal authorship.
+The original approach multiplied detrended residuals by a near-unity transit
+model. Detrending had moved the baseline to zero, so this scaled the residuals
+rather than adding a transit with the requested depth. The
+[failure record](../results/development/injection_recovery_failure_v1_0_0.json)
+contains 320 completed but scientifically invalid trial outputs and 400 BLS
+executions including controls. Those outputs are not valid recovery results.
 
-V2's scientific extension remains unfinished. C2 qualification is a separate
-engineering obligation. Neither follows from the V1 results or the small
-example. The original July 25 Git commit and its real dates remain in the
-history; the scientific corrections are documented as corrections, not a
-fictional sequence of development commits.
+Restoring the baseline with `(1 + residual) * M - 1` fixed that equation:
+outside transit, where `M = 1`, the residual is unchanged. But the
+[next depth check](../results/development/injection_recovery_amendment_failure_v1_0_1.json)
+found a second problem. The limb-darkened model used disk-average intensity
+normalization, producing a sampled depth about 15.38% larger than requested.
+All 320 depth checks failed before any BLS search ran.
+
+## Measure and scale the sampled depth
+
+The correction measures `delta_raw = max(1 - M_raw)` on the retained
+timestamps, then scales the decrement:
+
+`M_norm = 1 - (delta_requested / delta_raw) * (1 - M_raw)`
+
+For positive depth, this sets the requested sampled depth while preserving
+the relative shape and contact timing. A zero requested depth gives a flat
+model. The baseline-restored injection then uses `M_norm`.
+The [derivation](original/INJECTION_MODEL_NORMALIZATION_DERIVATION.md)
+explains the calculation and its out-of-transit behavior.
+
+The recorded [19-case function validation](../results/development/injection_model_normalization_validation_v1_0_2.json)
+and [320-trial-plan depth check](../results/development/injection_all_trial_normalization_preflight_v1_0_2.json)
+passed. The latter checked signal construction without running BLS or drawing
+replacement trials. The small [normalization example](../examples/normalize_depth.py)
+now makes the calculation easy to inspect on five synthetic samples.
+
+## Correct injections still did not guarantee recovery
+
+The accepted experiment recovered 98/320 trials directly and 123/320 directly
+or at a harmonic. It also retained 12 aliases and 185 nonrecoveries.
+Separately, the known-catalogue benchmark recovered 15/51 eligible signals
+directly. Correct signal construction was necessary, but it did not make
+the search complete.
+
+These are results from a selected benchmark, not a population-wide recovery
+rate. V2 science and C2 qualification remain unfinished; see
+[limitations](LIMITATIONS.md). The failed outputs and checks remain alongside
+the accepted records so the correction can be followed without discarding
+what went wrong.

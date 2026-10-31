@@ -19,8 +19,8 @@
     },
     {
       "path": "ACKNOWLEDGMENTS.md",
-      "bytes": 1464,
-      "sha256": "3bffe57e4ef216162db9870b8ba98ca0d63e71fee0c6d503db97ad5081516f05"
+      "bytes": 1366,
+      "sha256": "ae8bf0b008413c1ee0609062c567d53d3e0c0ea1167687bc03f7110727db51c4"
     },
     {
       "path": "archive/2026-07-25/.gitattributes.snapshot",
@@ -829,8 +829,8 @@
     },
     {
       "path": "docs/DEVELOPMENT.md",
-      "bytes": 2657,
-      "sha256": "18cc630d4eac1a8273ad3981db5d592708fca333e04d65de5ca121ade3aa5f68"
+      "bytes": 2987,
+      "sha256": "2f5f585946f5f80002a59d93aa92f85d34a102ab2e333eca6ac30e1a45ff8923"
     },
     {
       "path": "docs/GETTING_STARTED.md",
@@ -839,8 +839,8 @@
     },
     {
       "path": "docs/LIMITATIONS.md",
-      "bytes": 3136,
-      "sha256": "47c557697795a8fae69bbe26a5100b479896adacdd94570dfa73e879d0eddb2e"
+      "bytes": 2856,
+      "sha256": "2e1fba3b7fde4b508742d1e8c2ccd0b5d781d710dfd62650a53ebbc0d05d21ae"
     },
     {
       "path": "docs/media/explorer.png",
@@ -889,13 +889,13 @@
     },
     {
       "path": "docs/SOURCE_GUIDE.md",
-      "bytes": 2621,
-      "sha256": "302bcdf03df0c4fe38a2fb68d63a96c9228eb02d5808acdc28d1efbc7c6443de"
+      "bytes": 2622,
+      "sha256": "6a87c5b840c744233ba0345a8fbb987f7504a429b2e5adb8632370bfc0f3622b"
     },
     {
       "path": "docs/VERIFICATION.md",
-      "bytes": 2894,
-      "sha256": "26f2786aac4e93d506c11dbaa63d368fcb3436e5a92d2e1fcc5d8b5376f41e3e"
+      "bytes": 2425,
+      "sha256": "2504778b80440befbadae4f3fdb58ee45612d206db60d33264ea544b88650cd0"
     },
     {
       "path": "examples/normalize_depth.py",
@@ -954,8 +954,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5246,
-      "sha256": "8028d6615588a68ff9d5412024f9b9783b54f350b66959b80b32b9f25931d0d4"
+      "bytes": 5279,
+      "sha256": "4519878295e10547051df2494809524df8b001f49dc70511b76986df18754eba"
     },
     {
       "path": "requirements-dev.txt",
