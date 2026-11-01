@@ -68,6 +68,17 @@ BLS search; these were not 320 failed detections.
 [Development notes](docs/DEVELOPMENT.md) explain what went wrong and how
 the correction was checked.
 
+## Follow the investigation
+
+For readers who want to trace the decisions behind the saved results:
+
+- **Target selection:** the [preserved selection protocol](docs/original/TARGET_SELECTION_PREREGISTRATION_v1_1_0.md) and [execution report](docs/original/TARGET_SELECTION_EXECUTION_REPORT.md).
+- **First injection failure:** the [invalid recovery record](results/development/injection_recovery_failure_v1_0_0.json) and the [development notes](docs/DEVELOPMENT.md) on the zero-centered baseline problem.
+- **Second failure and correction:** the [failed depth preflight](results/development/injection_recovery_amendment_failure_v1_0_1.json) and the [sampled-depth derivation](docs/original/INJECTION_MODEL_NORMALIZATION_DERIVATION.md).
+- **Accepted evidence:** the [saved injection outcomes](data/records/injection_recovery_results_v1_0_2.csv) and [verification scope](docs/VERIFICATION.md).
+
+The saved records document the historical benchmark. The runnable five-sample example demonstrates one function; it does not rerun the astronomical experiment.
+
 ## Run locally
 
 Use **Python 3.12**. From the repository root, run in PowerShell:
