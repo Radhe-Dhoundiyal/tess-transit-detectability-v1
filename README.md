@@ -72,6 +72,7 @@ the correction was checked.
 
 For readers who want to trace the decisions behind the saved results:
 
+- The [handwritten research notebook](docs/TESS_Engineering_Notebook.pdf) contains my original working calculations, diagrams, and corrections.
 - **Target selection:** the [preserved selection protocol](docs/original/TARGET_SELECTION_PREREGISTRATION_v1_1_0.md) and [execution report](docs/original/TARGET_SELECTION_EXECUTION_REPORT.md).
 - **First injection failure:** the [invalid recovery record](results/development/injection_recovery_failure_v1_0_0.json) and the [development notes](docs/DEVELOPMENT.md) on the zero-centered baseline problem.
 - **Second failure and correction:** the [failed depth preflight](results/development/injection_recovery_amendment_failure_v1_0_1.json) and the [sampled-depth derivation](docs/original/INJECTION_MODEL_NORMALIZATION_DERIVATION.md).
