@@ -17,16 +17,16 @@ definitions from the original analysis script with a new import header.
 The SNR adapter exposes the original planning expression through a small
 public interface. `grouped_validation.py` and `demonstration.py` are wrappers
 added for this package, not records of historical production runs. Original
-paths, file checks and extraction details are in the
-[source manifest](../provenance/source_manifest.json).
+paths, file hashes and extraction details are in the
+[source manifest](../provenance/source_manifest.json). See
+[verification](VERIFICATION.md#historical-provenance) to check those identities.
 
 The original orchestration scripts expect the full input archive, checkpoint
 layout and execution state. Installing this package does not recreate that
 pipeline or download observations. It provides the algorithms, small example
 and selected saved records for inspection.
 
-The portable tests use synthetic fixtures or bundled records. Selected V1
-unit-test bodies retain their original assertions; complete original test
-files are in [the test archive](../archive/v1_tests/). Tests that need omitted
-data and orchestration are outside this suite. See [verification](VERIFICATION.md)
-for the commands and [methods](METHODS.md) for the scientific assumptions.
+The portable tests use synthetic fixtures or bundled records. The
+[test archive](../archive/v1_tests/) preserves the original V1 tests,
+including those that need omitted data or orchestration. See [methods](METHODS.md)
+for the scientific assumptions.

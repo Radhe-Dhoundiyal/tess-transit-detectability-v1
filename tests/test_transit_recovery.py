@@ -1,17 +1,12 @@
-"""Selected portable V1 unit tests. Assertions unchanged; scope in source manifest."""
+"""Portable tests for candidate generation and catalogue matching."""
 from __future__ import annotations
 
 
-import inspect
-
-
-from pathlib import Path
-
-
+import subprocess
+import sys
 import tempfile
-
-
 import unittest
+from textwrap import dedent
 
 
 import numpy as np
@@ -102,12 +97,26 @@ class TransitRecoveryTests(unittest.TestCase):
             candidate, truth, baseline=20, config=FROZEN_RECOVERY_CONFIG)
         self.assertFalse(result["epoch_matches"])
         self.assertFalse(result["duration_matches"])
-    def test_blind_search_has_no_truth_dependency(self):
-        source = inspect.getsource(run_blind_search).casefold()
-        for token in [
-            "truth", "catalogue_period", "catalogue_epoch", "planet_name",
-            "recovery_matching"]:
-            self.assertNotIn(token, source)
+    def test_blind_search_runs_without_catalogue_matching(self):
+        script = dedent("""
+            import sys
+            import numpy as np
+
+            sys.modules["tess_detectability.recovery_matching"] = None
+            from tess_detectability.bls_search import run_blind_search
+            from tess_detectability.recovery_config import FROZEN_RECOVERY_CONFIG
+
+            time = np.arange(0, 20, 0.02)
+            phase = (time - 0.1 + 1.0) % 2.0 - 1.0
+            flux = np.where(np.abs(phase) < 0.06, -0.02, 0.0)
+            candidates, summary = run_blind_search(time, flux, FROZEN_RECOVERY_CONFIG)
+            assert summary["search_status"] == "SEARCH_COMPLETE"
+            assert abs(candidates.iloc[0].candidate_period - 2.0) < 0.05
+        """)
+        with tempfile.TemporaryDirectory() as empty_dir:
+            result = subprocess.run([sys.executable, "-c", script], cwd=empty_dir,
+                                    capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
     def test_wilson_denominator_accounting(self):
         low, high = wilson_interval(5, 10)
         self.assertLess(low, 0.5)

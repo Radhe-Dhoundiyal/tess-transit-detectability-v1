@@ -43,10 +43,9 @@ starting a server. [Explorer notes](../demo/README.md) explain its data.
 .venv\Scripts\python.exe scripts/verify_project.py
 ```
 
-Tests use synthetic fixtures and bundled records. Verification checks source
-and payload hashes, original archived files, image provenance, local links
-and saved result accounting. It does not download observations or refit the
-scientific model. [Verification scope](VERIFICATION.md) states what was tested.
+Tests use synthetic fixtures and bundled records. The verifier checks saved
+results, evidence hashes and local links. [Verification](VERIFICATION.md)
+also explains how to check historical source and archive identities.
 
 On macOS/Linux, use `.venv/bin/python` in place of
 `.venv\Scripts\python.exe`. Those command forms are provided for convenience;

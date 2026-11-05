@@ -1,8 +1,4 @@
-"""Local saved-record viewer and bounded calls to the installed V1 function.
-
-This release adapter uses the installed package and writes no execution outputs.
-Only explicit static assets are served; the repository itself is never exposed.
-"""
+"""Serve the explorer's allowlisted assets and run its depth example on loopback."""
 import argparse
 import json
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer

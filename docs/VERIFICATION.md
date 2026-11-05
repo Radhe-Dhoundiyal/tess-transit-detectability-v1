@@ -16,19 +16,42 @@ python -m venv .venv
 ```
 
 Installation builds this local project and gets its dependencies from PyPI.
-The focused suite uses synthetic arrays/FITS, temporary Parquet files and
-bundled saved records. It contains 28 selected V1 unit-test bodies with
-unchanged assertions, plus tests of the packaged interfaces. Complete
-original test files remain in [the archive](../archive/v1_tests/); tests that
-need omitted inputs are outside this suite. The small optimizer and
-cross-validation tests use synthetic targets, not a refit of the benchmark.
+The tests use synthetic arrays and FITS files, temporary Parquet files,
+and saved records. One test runs blind candidate generation in a fresh process
+with catalogue matching unavailable. The optimizer and cross-validation
+tests use small synthetic fixtures. The [archive](../archive/v1_tests/)
+preserves the complete V1 tests, including those that need omitted inputs.
 
-The [repository verifier](../scripts/verify_project.py) checks source and
-archive files, preview images, included-file completeness and local links.
-It also checks the observed/injected outcome counts, eight target-grouped
-fold assignments, 1,280 saved predictions and four pairs of log-loss/Brier
-calculations. The [source guide](SOURCE_GUIDE.md) explains which code is
-included and where it came from.
+The [verifier](../scripts/verify_project.py) checks saved record and figure
+hashes, current local links, and the two historical injection failure records.
+It recomputes observed and injected outcome counts and four pairs of log-loss
+and Brier scores from 1,280 saved predictions and checks the eight target-grouped
+folds. These checks use the bundled records without downloading observations
+or rerunning the study.
+
+### Historical provenance
+
+Run the optional provenance check from a full Git clone to compare the V1
+source and archived tests with the [source manifest](../provenance/source_manifest.json)
+and the July archive with its original Git tree.
+
+```powershell
+.venv\Scripts\python.exe scripts/verify_project.py --provenance
+```
+
+The [payload manifest](../provenance/payload_manifest.json) describes the
+repository at commit
+`93592297b5a8117aa6e2ef7d45c493764232d940`. To check the complete
+historical payload, use that revision's verifier in a separate worktree.
+
+```powershell
+git worktree add --detach ../tess-release-snapshot 93592297b5a8117aa6e2ef7d45c493764232d940
+Push-Location ../tess-release-snapshot
+python scripts/verify_project.py
+Pop-Location
+```
+
+## Example and explorer
 
 The normalization example produces:
 

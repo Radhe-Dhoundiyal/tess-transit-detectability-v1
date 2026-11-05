@@ -1,14 +1,13 @@
-"""New public boundary checks around the unchanged V1 modeling functions."""
-import numpy as np
+"""Validate target groups before calling the V1 model."""
 import pandas as pd
 from .modeling import cv
 
 
 def grouped_cv(data, folds, response="direct_recovery", model="A", interactions=False):
-    """Validate supplied target fold assignments, then call the original V1 CV.
+    """Run V1 cross-validation with caller-supplied, target-grouped folds.
 
-    This helper does not generate a split or reproduce the historical fit.
-    Numeric-cadence sensitivity is deliberately not exposed here.
+    This wrapper does not reproduce the historical fit or expose the
+    numeric-cadence sensitivity branch.
     """
     if not isinstance(folds, pd.Series) or not folds.index.equals(data.index):
         raise ValueError("fold index must match the data index exactly")

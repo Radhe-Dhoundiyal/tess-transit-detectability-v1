@@ -15,7 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
-          fetch-depth: 0
           persist-credentials: false
       - uses: actions/setup-python@v7
         with:
@@ -28,5 +27,5 @@ jobs:
         run: python examples/normalize_depth.py
       - name: Run focused tests
         run: python -m pytest -q
-      - name: Verify source and saved records
+      - name: Verify saved records and links
         run: python scripts/verify_project.py

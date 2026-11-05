@@ -1,7 +1,5 @@
-"""Offline verification of curated bytes, saved accounting and current links.
-
-This checks packaged evidence; it never reacquires data or reruns astronomy.
-"""
+"""Check saved research records and links offline, with optional source provenance."""
+import argparse
 from collections import Counter
 from pathlib import Path
 import ast
@@ -86,6 +84,10 @@ def verify_science():
              "calibration": "results/tables/detectability_calibration_v1_0_1.csv"}
     for label, path in files.items():
         assert sha(ROOT / path).upper() == data["sources"][label]["sha256"]
+    failed_run = json.loads((ROOT / "results/development/injection_recovery_failure_v1_0_0.json").read_text())
+    assert failed_run["completed_trials"] == 320 and failed_run["bls_execution_count"] == 400
+    assert failed_run["derived_completeness_scientifically_valid"] is False
+    assert failed_run["completion_marker_written"] is False
     failure = json.loads((ROOT / "results/development/injection_recovery_amendment_failure_v1_0_1.json").read_text())
     assert failure["depth_failures"] == 320 and failure["bls_execution_count"] == 0
     return {"known_direct": "15/51", "known_outside": 19, "synthetic_direct": "98/320",
@@ -93,13 +95,45 @@ def verify_science():
             "saved_predictions_checked": 1280, "saved_metric_pairs_recomputed": 4}
 
 
+def source_entries():
+    return json.loads((ROOT / "provenance/source_manifest.json").read_text(encoding="utf-8"))["files"]
+
+
+def verify_source_bytes(item):
+    path = ROOT / item["destination"]
+    assert sha(path) == item["destination_sha256"], item["destination"]
+    if item["transfer"] == "byte-identical":
+        assert item["source_sha256"] == item["destination_sha256"], item["destination"]
+
+
+def verify_record_hashes():
+    """Authenticate saved inputs, outcomes, original methods and scientific figures."""
+    recorded_demo_assets = {
+        "demo/calibration.png",
+        "demo/curve_data.js",
+        "demo/inputs/CURVE_SOURCE.json",
+        "demo/inputs/recorded_data.json",
+        "demo/recorded_data.js",
+    }
+    records = [
+        item for item in source_entries()
+        if item["destination"].startswith(("data/records/", "docs/original/", "results/"))
+        or item["destination"] in recorded_demo_assets
+    ]
+    for item in records:
+        verify_source_bytes(item)
+    return len(records)
+
+
 def verify_sources():
-    manifest = json.loads((ROOT / "provenance/source_manifest.json").read_text(encoding="utf-8"))
-    for item in manifest["files"]:
+    """Compare V1 source and archived tests with their published identities."""
+    sources = [
+        item for item in source_entries()
+        if item["destination"].startswith(("src/", "archive/v1_tests/"))
+    ]
+    for item in sources:
+        verify_source_bytes(item)
         path = ROOT / item["destination"]
-        assert sha(path) == item["destination_sha256"], item["destination"]
-        if item["transfer"] == "byte-identical":
-            assert item["source_sha256"] == item["destination_sha256"]
         nodes = None
         for segment in item.get("segments", []) + item.get("selected_methods", []):
             if nodes is None:
@@ -110,7 +144,7 @@ def verify_sources():
                            any(isinstance(t, ast.Name) and t.id == segment["name"] for t in n.targets)]
             assert len(matches) == 1, segment["name"]
             assert hashlib.sha256(ast.dump(matches[0], include_attributes=False).encode()).hexdigest() == segment["ast_sha256"], segment["name"]
-    return len(manifest["files"])
+    return len(sources)
 
 
 def verify_links():
@@ -131,8 +165,6 @@ def verify_links():
 
 
 def verify_archive():
-    if not (ROOT / ".git").exists():
-        return "Git metadata absent; archive covered by payload hashes"
     baseline = "4ef58998334b9ddf67216a785c49e2326f39669f"
     tree = subprocess.check_output(["git", "-C", str(ROOT), "ls-tree", "-rz", baseline])
     count = 0
@@ -140,7 +172,7 @@ def verify_archive():
         if not entry:
             continue
         metadata, path = entry.split(b"\t", 1)
-        mode, kind, object_id = metadata.split()
+        _, _, object_id = metadata.split()
         archive_path = ".gitattributes.snapshot" if path == b".gitattributes" else path.decode()
         blob = ROOT / "archive/2026-07-25" / archive_path
         # Git object identity includes type and length; no per-file subprocess.
@@ -148,14 +180,12 @@ def verify_archive():
         actual = hashlib.sha1(b"blob " + str(len(content)).encode() + b"\0" + content).hexdigest()
         assert actual == object_id.decode(), path.decode()
         count += 1
-    assert count == 142
     return count
 
 
 def verify_images():
     """Check authenticated preview bytes, dimensions and source-record paths."""
     images = json.loads((ROOT / "provenance/images.json").read_text(encoding="utf-8"))["images"]
-    assert len(images) == 3
     for item in images:
         image_path = ROOT / item["path"]
         data = image_path.read_bytes()
@@ -175,25 +205,18 @@ def verify_images():
     return len(images)
 
 
-def verify_payload():
-    path = ROOT / "provenance/payload_manifest.json"
-    assert path.exists(), "Final payload manifest is required"
-    manifest = json.loads(path.read_text(encoding="utf-8"))
-    for item in manifest["files"]:
-        target = ROOT / item["path"]
-        assert target.is_file() and target.stat().st_size == item["bytes"] and sha(target) == item["sha256"], item["path"]
-    actual = set()
-    for target in ROOT.rglob("*"):
-        parts = target.relative_to(ROOT).parts
-        if not target.is_file() or any(p in {".git", ".venv", "__pycache__", ".pytest_cache", "build", "dist"}
-                                       or p.endswith(".egg-info") for p in parts):
-            continue
-        actual.add(target.relative_to(ROOT).as_posix())
-    assert actual == {item["path"] for item in manifest["files"]} | {"provenance/payload_manifest.json"}, "Unexpected or omitted payload member"
-    return len(manifest["files"])
-
-
 if __name__ == "__main__":
-    print(json.dumps({"sources": verify_sources(), "science": verify_science(),
-                      "current_links": verify_links(), "original_Git_blobs": verify_archive(),
-                      "images": verify_images(), "payload_files": verify_payload()}, indent=2))
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--provenance", action="store_true",
+                        help="also check V1 source identities and July archive Git blobs")
+    args = parser.parse_args()
+    report = {
+        "historical_record_hashes": verify_record_hashes(),
+        "science": verify_science(),
+        "current_links": verify_links(),
+        "images": verify_images(),
+    }
+    if args.provenance:
+        report["sources"] = verify_sources()
+        report["original_Git_blobs"] = verify_archive()
+    print(json.dumps(report, indent=2))

@@ -110,8 +110,7 @@ calling them. The numeric-cadence sensitivity branch in the original `design`
 centers cadence separately per frame; it is preserved and disclosed, and is
 not exposed by the primary public wrapper. The historical AUC helper does
 not average tied probability ranks. These are source limitations, not
-silently corrected historical results. No full fit, bootstrap or sensitivity
-study is rerun in this release preparation.
+silently corrected historical results. The verification uses saved outputs.
 
 The included fold table, out-of-fold predictions, performance and calibration
 tables support inspection of the saved analysis. They do not prove

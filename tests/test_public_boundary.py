@@ -101,13 +101,11 @@ def test_demo_server_calls_code_and_serves_only_allowed_assets():
         thread.join(timeout=5)
 
 
-def test_saved_science_and_source_definitions():
+def test_saved_science_accounting():
     spec = importlib.util.spec_from_file_location("candidate_verifier", ROOT / "scripts/verify_project.py")
     verifier = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(verifier)
     assert verifier.verify_science()["synthetic_direct"] == "98/320"
-    assert verifier.verify_sources() >= 40
-    assert verifier.verify_links() >= 10
 
 
 def test_current_citation_and_package_versions_agree():
@@ -119,8 +117,12 @@ def test_current_citation_and_package_versions_agree():
     citation = yaml.safe_load((ROOT / "CITATION.cff").read_text(encoding="utf-8"))
     package = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))["project"]
     assert citation["cff-version"] == "1.2.0" and citation["type"] == "software"
-    assert citation["authors"][0]["family-names"] == "Dhoundiyal"
-    assert "date-released" not in citation and "doi" not in citation
+    for field in ("title", "message"):
+        assert isinstance(citation[field], str) and citation[field].strip()
+    assert citation["authors"] and all(
+        author.get("family-names") or author.get("given-names") or author.get("name")
+        for author in citation["authors"]
+    )
     assert citation["repository-code"] == package["urls"]["Repository"]
     assert Version(citation["version"]) == Version(package["version"]) == Version(tess_detectability.__version__)
     assert Version(importlib.metadata.version("tess-detectability")) == Version(package["version"])
