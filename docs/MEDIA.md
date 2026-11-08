@@ -1,29 +1,11 @@
-# Preview provenance
+# Figures and sources
 
-| Preview | Meaning and source |
+| Figure | What it shows |
 |---|---|
-| [WASP-127](media/wasp127.png) | Paired chronological/phase figure of the same 8,000 retained samples; footer shortened |
-| [Synthetic trial matrix](media/synthetic-trials.png) | 40-host × 8-injection display; all 320 saved outcomes retained; footer shortened |
-| [Explorer](media/explorer.png) | Genuine current browser capture of the working saved-record interface |
+| [WASP-127 b](media/wasp127.png) | The same 8,000 processed TESS observations plotted chronologically and folded using the catalogue period and epoch |
+| [Synthetic trial matrix](media/synthetic-trials.png) | All 320 accepted injections across 40 hosts; 98 direct, 25 harmonic, 12 alias and 185 nonrecoveries |
+| [Results explorer](media/explorer.png) | A browser capture of the saved-results interface |
 
-The two scientific figures retain their original dimensions, plots, labels
-and values. Only the trailing AI-assistance phrase was removed from each
-footer. The remaining credits read “NASA / TESS / MAST · NASA Exoplanet
-Archive · Astropy”. Repository [acknowledgments](../ACKNOWLEDGMENTS.md) retain
-the full assistance statement.
+The WASP-127 b figure uses BTJD and dimensionless, zero-centered detrended flux. The trial matrix identifies each experiment as `IR-{host row:02d}-{injection index:02d}`. These are synthetic transits inserted into observed light curves, not 320 newly observed planets.
 
-The WASP plot uses BTJD and dimensionless zero-centered detrended flux,
-with the recorded catalogue period and epoch. The synthetic matrix retains 98 direct,
-25 additional harmonic, 12 alias and 185 nonrecovered outcomes. Its cells are
-identified as `IR-{host row:02d}-{injection index:02d}`. They are synthetic
-trials in observed substrates, not 320 observed planets or independent hosts.
-
-Full-resolution files preserve readable axes, counts and detailed labels;
-click a README preview for exact trial labels. The explorer screenshot is
-an actual browser capture, not a mockup or continuous recording. Hashes,
-dimensions, classifications and source-data links are recorded in
-[image provenance](../provenance/images.json).
-
-Mission observations and catalogue records retain NASA/TESS/MAST and
-Exoplanet Archive attribution. Software and original analysis have the
-[repository's license boundaries](../LICENSE).
+The figures credit NASA/TESS/MAST, the NASA Exoplanet Archive and Astropy. File identities, figure transformations and linked records are in [image provenance](../provenance/images.json); software and collaboration credits are in [acknowledgments](../ACKNOWLEDGMENTS.md).

@@ -12,17 +12,6 @@
 | Group checks | `grouped_validation.grouped_cv` | Checking fold assignments before calling the modeling functions |
 | Small demonstration | `demonstration.normalization_case` | Calling V1 normalization on five explicitly synthetic samples |
 
-Most modules are copied unchanged from V1. `modeling.py` collects selected
-definitions from the original analysis script with a new import header.
-The SNR adapter exposes the original planning expression through a small
-public interface. `grouped_validation.py` and `demonstration.py` are wrappers
-added for this package, not records of historical production runs. Original
-paths, file hashes and extraction details are in the
-[source manifest](../provenance/source_manifest.json). See
-[verification](VERIFICATION.md#historical-provenance) to check those identities.
+The modules cover the original V1 scientific workflow. `modeling.py` brings together selected functions from the original fitting script; `grouped_validation.py` checks host-grouped folds, and `demonstration.py` provides the five-sample example. The [source manifest](../provenance/source_manifest.json) records original identities, and the [verification guide](VERIFICATION.md#optional-historical-provenance) explains how to check them.
 
-The original orchestration needs the full input archive and checkpoint
-layout. This package includes its algorithms, a small example and selected
-saved records. The [test archive](../archive/v1_tests/) preserves the complete
-V1 tests, including those that need omitted inputs.
-See [methods](METHODS.md) for the scientific assumptions.
+The complete astronomical input archive and historical orchestration are not bundled here. Start with [methods](METHODS.md) for scientific assumptions or the [test archive](../archive/v1_tests/) for the original V1 test sources.

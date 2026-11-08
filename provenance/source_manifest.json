@@ -465,18 +465,18 @@
       "source_root": "MissionControl20261028",
       "source_path": "demo/index.html",
       "source_sha256": "e14903c20c5c88cb23d2d6f692300693ebcf63058cb0c6229c3f7ac48b9464c5",
-      "destination_sha256": "145ff6260b817cfe7ceb941f3d61b5fc351e7d33e66794ab7762c4019b74a946",
-      "bytes": 10569,
-      "transfer": "presentation credits and footer wording; controls and scientific values unchanged"
+      "destination_sha256": "666a7034b743386432bf503339b11f202ed68f6a8da9777096955bb87cebaec8",
+      "bytes": 9265,
+      "transfer": "UI copy refinement; recorded scientific values, data and controls unchanged"
     },
     {
       "destination": "demo/app.js",
       "source_root": "MissionControl20261028",
       "source_path": "demo/app.js",
       "source_sha256": "ece6486eddb8d675f4950e04da28759ad8de2b694bbd64b5a9461227b445cba6",
-      "destination_sha256": "d4ac14e18e8f5ed2cc7bae43ec027eae5d94c5d50b78a984fd894dfadc52effb",
-      "bytes": 19040,
-      "transfer": "Receipt caption correction only; runtime behavior and scientific values unchanged"
+      "destination_sha256": "1ebb5dab170d4556bb095a0128d400378ca1b680104c956aa3d35173b35effe9",
+      "bytes": 18707,
+      "transfer": "UI copy refinement; recorded scientific values, data and controls unchanged"
     },
     {
       "destination": "demo/style.css",

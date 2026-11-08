@@ -15,8 +15,6 @@ The search uses Astropy BoxLeastSquares; numerical and statistical work uses
 NumPy, pandas and SciPy. Tests additionally use pytest and PyArrow. See the
 [BLS documentation](https://docs.astropy.org/en/stable/timeseries/bls.html) and
 [dependency notices](DEPENDENCY_NOTICES.md). No NASA endorsement is implied.
-The saved analysis does not document use of Zooniverse or Planet Hunters
-classifications.
 
 I directed the research questions, experimental approach and interpretation
 of results. ChatGPT and Codex assisted with software implementation,
