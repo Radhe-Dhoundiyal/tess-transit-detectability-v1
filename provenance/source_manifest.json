@@ -474,9 +474,9 @@
       "source_root": "MissionControl20261028",
       "source_path": "demo/app.js",
       "source_sha256": "ece6486eddb8d675f4950e04da28759ad8de2b694bbd64b5a9461227b445cba6",
-      "destination_sha256": "ece6486eddb8d675f4950e04da28759ad8de2b694bbd64b5a9461227b445cba6",
-      "bytes": 19064,
-      "transfer": "byte-identical"
+      "destination_sha256": "d4ac14e18e8f5ed2cc7bae43ec027eae5d94c5d50b78a984fd894dfadc52effb",
+      "bytes": 19040,
+      "transfer": "Receipt caption correction only; runtime behavior and scientific values unchanged"
     },
     {
       "destination": "demo/style.css",

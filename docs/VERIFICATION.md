@@ -15,12 +15,11 @@ python -m venv .venv
 .venv\Scripts\python.exe scripts/verify_project.py
 ```
 
-Installation builds this local project and gets its dependencies from PyPI.
-The tests use synthetic arrays and FITS files, temporary Parquet files,
-and saved records. One test runs blind candidate generation in a fresh process
-with catalogue matching unavailable. The optimizer and cross-validation
-tests use small synthetic fixtures. The [archive](../archive/v1_tests/)
-preserves the complete V1 tests, including those that need omitted inputs.
+The tests use synthetic arrays and FITS files, temporary Parquet files and
+saved records. They check blind candidate generation with catalogue matching
+unavailable, numerical behavior and target-grouped validation.
+The [archive](../archive/v1_tests/) preserves the complete V1 tests, including
+those that require omitted inputs.
 
 The [verifier](../scripts/verify_project.py) checks saved record and figure
 hashes, current local links, and the two historical injection failure records.
@@ -39,10 +38,9 @@ and the July archive with its original Git tree.
 .venv\Scripts\python.exe scripts/verify_project.py --provenance
 ```
 
-The [payload manifest](../provenance/payload_manifest.json) describes the
-repository at commit
-`93592297b5a8117aa6e2ef7d45c493764232d940`. To check the complete
-historical payload, use that revision's verifier in a separate worktree.
+The [historical payload manifest](https://github.com/Radhe-Dhoundiyal/tess-transit-detectability-v1/blob/93592297b5a8117aa6e2ef7d45c493764232d940/provenance/payload_manifest.json)
+and its verifier remain at commit `93592297b5a8117aa6e2ef7d45c493764232d940`.
+To check that complete snapshot, use a separate worktree.
 
 ```powershell
 git worktree add --detach ../tess-release-snapshot 93592297b5a8117aa6e2ef7d45c493764232d940

@@ -21,12 +21,8 @@ paths, file hashes and extraction details are in the
 [source manifest](../provenance/source_manifest.json). See
 [verification](VERIFICATION.md#historical-provenance) to check those identities.
 
-The original orchestration scripts expect the full input archive, checkpoint
-layout and execution state. Installing this package does not recreate that
-pipeline or download observations. It provides the algorithms, small example
-and selected saved records for inspection.
-
-The portable tests use synthetic fixtures or bundled records. The
-[test archive](../archive/v1_tests/) preserves the original V1 tests,
-including those that need omitted data or orchestration. See [methods](METHODS.md)
-for the scientific assumptions.
+The original orchestration needs the full input archive and checkpoint
+layout. This package includes its algorithms, a small example and selected
+saved records. The [test archive](../archive/v1_tests/) preserves the complete
+V1 tests, including those that need omitted inputs.
+See [methods](METHODS.md) for the scientific assumptions.

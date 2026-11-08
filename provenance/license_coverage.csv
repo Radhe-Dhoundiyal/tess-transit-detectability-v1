@@ -177,6 +177,7 @@ docs/original/INJECTION_MODEL_NORMALIZATION_DERIVATION.md,FIRST_PARTY_CONTENT,CC
 docs/original/TARGET_SELECTION_EXECUTION_REPORT.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 docs/original/TARGET_SELECTION_PREREGISTRATION_v1_1_0.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 docs/SOURCE_GUIDE.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+docs/TESS_Engineering_Notebook.pdf,FIRST_PARTY_NOTEBOOK,Copyright retained by Radhe Dhoundiyal. Reuse requires separate permission.
 docs/VERIFICATION.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 examples/normalize_depth.py,FIRST_PARTY_SOFTWARE,MIT
 LICENSE,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
@@ -186,14 +187,11 @@ NOTICE,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 provenance/dependencies.json,THIRD_PARTY_LICENSE_METADATA,Original dependency notices remain in distributions
 provenance/images.json,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 provenance/license_coverage.csv,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
-provenance/payload_manifest.json,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 provenance/source_manifest.json,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 pyproject.toml,FIRST_PARTY_SOFTWARE,MIT
-python-version.txt,FIRST_PARTY_SOFTWARE,MIT
 README.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 requirements-dev.txt,FIRST_PARTY_SOFTWARE,MIT
 requirements-lock.txt,FIRST_PARTY_SOFTWARE,MIT
-requirements.txt,FIRST_PARTY_SOFTWARE,MIT
 results/development/injection_all_trial_normalization_preflight_v1_0_2.json,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 results/development/injection_model_normalization_validation_v1_0_2.json,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 results/development/injection_recovery_amendment_failure_v1_0_1.json,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded

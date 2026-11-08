@@ -12,6 +12,10 @@ display sample derived from mission observations. Retain their provenance
 and acknowledgments. See [rights scope](THIRD_PARTY_AND_DATA_RIGHTS.md) and
 [file coverage](provenance/license_coverage.csv).
 
+The [handwritten notebook](docs/TESS_Engineering_Notebook.pdf) is shared for
+inspection. Radhe Dhoundiyal retains copyright, and reuse requires separate
+permission.
+
 Archived July files retain their recorded notices and historical coverage map.
 The RC1/RC2 labels inside preserved notices are historical, not the version of
 the current software version.

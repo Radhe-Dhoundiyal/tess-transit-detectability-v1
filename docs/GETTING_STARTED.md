@@ -1,7 +1,6 @@
 # Getting started
 
-Use Python 3.12 and open a terminal at the repository root. The commands below
-install the local project, not a separately published TESS package.
+Use Python 3.12 and open a terminal at the repository root.
 
 ## Install and run the example
 
@@ -11,12 +10,11 @@ python -m venv .venv
 .venv\Scripts\python.exe examples/normalize_depth.py
 ```
 
-The example creates five explicitly synthetic sampled model values and calls
-the original `normalize_sampled_depth` function at 0, 100 and 500 ppm. The
-JSON output includes requested depth, realized depth and absolute difference.
-The 100 ppm result is approximately `99.99999999998899 ppm`; an error around
-`1e-11 ppm` is ordinary floating-point rounding, below the `1e-6 ppm` check.
-This is arithmetic on a small model, not one of the historical 320 trials.
+The example calls the original `normalize_sampled_depth` function on five
+synthetic samples at 0, 100 and 500 ppm. Its JSON output reports requested
+depth, realized depth and absolute error. Floating-point rounding remains
+below the `1e-6 ppm` check. These example inputs are separate from the saved
+320-trial experiment.
 
 ## Open the explorer
 
@@ -48,8 +46,7 @@ results, evidence hashes and local links. [Verification](VERIFICATION.md)
 also explains how to check historical source and archive identities.
 
 On macOS/Linux, use `.venv/bin/python` in place of
-`.venv\Scripts\python.exe`. Those command forms are provided for convenience;
-the measured environment was Windows with CPython 3.12.3.
+`.venv\Scripts\python.exe`. See [verification](VERIFICATION.md) for the tested environment.
 
 Read [methods](METHODS.md), [source](SOURCE_GUIDE.md), [development](DEVELOPMENT.md)
 and [limitations](LIMITATIONS.md) to move from the example to the study.

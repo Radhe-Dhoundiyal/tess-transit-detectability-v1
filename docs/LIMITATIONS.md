@@ -25,11 +25,9 @@ and Archive attribution remain available, but they do not replace paper-level
 references. The [historical bibliography](../archive/2026-07-25/results/tables/source_specific_bibliography_v1_0_0_rc2.csv)
 records these gaps.
 
-A discovery paper does not necessarily supply every parameter. Completing
-the mappings would require the original reference metadata; a new catalogue
-lookup would be a separately dated mapping, not evidence for the original
-snapshot. Until then, those historical inputs cannot be fully checked against
-their originating papers. No missing paper or DOI has been guessed.
+Completing these mappings requires the original reference metadata.
+A new catalogue lookup would describe a later snapshot. The historical
+inputs remain only partially traceable to their originating papers.
 
 ## Modeling and unfinished work
 
@@ -42,10 +40,8 @@ remain unfinished; the small example does not establish either.
 
 ## Reproduction scope
 
-The package supplies working algorithms, a small example, focused tests and
-selected saved records. The complete astronomical input archive and private
-production orchestration are not bundled. Installation is not full pipeline
-reproduction. The viewer is a present-day interface over historical records;
-missing injected-flux arrays are not reconstructed. Tests were measured on
-Windows/CPython 3.12.3 and Chromium, not certified across operating systems
-or browser engines. See [verification](VERIFICATION.md).
+The package includes algorithms, examples, tests and selected saved records.
+Reproducing the complete pipeline requires the original astronomical inputs
+and production orchestration. The viewer displays historical records and
+leaves missing injected-flux arrays unavailable.
+[Verification](VERIFICATION.md) describes the software checks and tested environment.

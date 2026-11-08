@@ -22,21 +22,13 @@ catalogue-only reconstruction recorded 3,596 candidates, 3,593 eligible
 systems, 40 primaries and 12 alternates. See the original
 [selection report](original/TARGET_SELECTION_EXECUTION_REPORT.md) and
 [preregistration](original/TARGET_SELECTION_PREREGISTRATION_v1_1_0.md).
-The 70 catalogue entries are not a random sample of the sky. The historic
-selection and acquisition evidence is separate from the small records bundled
-here; no new observation is acquired by installation, tests or the demo.
-The preserved [source bibliography](../archive/2026-07-25/docs/SOURCE_SPECIFIC_BIBLIOGRAPHY_V1_0_0_RC2.md)
+The 70 catalogue entries come from this selected benchmark. The
+[source bibliography](../archive/2026-07-25/docs/SOURCE_SPECIFIC_BIBLIOGRAPHY_V1_0_0_RC2.md)
 and [data-source notes](../DATA_SOURCES.md) document upstream sources.
-
-The historical bibliography is explicitly partial: planet identity/target
-metadata, orbital periods, transit epochs, planet radii/depths and stellar
-parameters lack saved row-and-parameter originating-literature mappings.
-Database attribution is established; exact literature provenance for those
-five classes is not. The [original citation ledger](../archive/2026-07-25/results/tables/source_specific_bibliography_v1_0_0_rc2.csv)
-preserves those unresolved statuses. No references were inferred from current
-catalogue values or discovery papers. Closing this gap requires authenticated
-original reference metadata; a newly retrieved catalogue would need separate
-dating and would not prove what the historical snapshot consumed.
+Five classes of catalogue-to-literature mappings remain unresolved in the
+[original citation ledger](../archive/2026-07-25/results/tables/source_specific_bibliography_v1_0_0_rc2.csv).
+[Limitations](LIMITATIONS.md#missing-catalogue-references) lists the gaps and
+explains what would be needed to resolve them.
 
 The reader uses SPOC PDCSAP flux where its finite coverage reaches 50%, with
 SAP fallback under the same structural rule. It retains decisions explicitly.
@@ -72,13 +64,12 @@ requires the direct period assignment and epoch agreement.
 
 The empirical model represents a central circular transit with quadratic
 limb-darkening coefficients 0.30 and 0.20, finite exposure averaging with five
-samples, and its recorded ingress prescription. It is a modeling assumption,
-not a complete physical transit solver. The [original normalization derivation](original/INJECTION_MODEL_NORMALIZATION_DERIVATION.md)
-defines depth on retained timestamps, not an unobserved continuous minimum.
-For positive requested depth the original function rescales the decrement;
-for zero it returns unity. Nonfinite/degenerate raw depths and substantially
-negative normalized models fail explicitly. The supplied code retains the
-original edge behavior rather than claiming new input-domain guarantees.
+samples, and its recorded ingress prescription. The [original normalization derivation](original/INJECTION_MODEL_NORMALIZATION_DERIVATION.md)
+defines depth on retained timestamps. For positive requested depth the
+function rescales the decrement, and for zero it returns unity.
+Nonfinite or degenerate raw depths and substantially negative normalized
+models fail explicitly. The empirical profile and its numerical edge
+behavior remain as implemented in V1.
 
 `inject_baseline_restored` computes `(1 + d) * M_norm - 1`. The original
 `inject_multiplicatively` remains visible to explain the failed substrate
@@ -112,7 +103,7 @@ not exposed by the primary public wrapper. The historical AUC helper does
 not average tied probability ranks. These are source limitations, not
 silently corrected historical results. The verification uses saved outputs.
 
-The included fold table, out-of-fold predictions, performance and calibration
-tables support inspection of the saved analysis. They do not prove
-out-of-sample performance on other targets, false-alarm calibration,
-population completeness, or a planet discovery. V2 and C2 remain open.
+The fold assignments, out-of-fold predictions, performance and calibration
+tables preserve the saved analysis. Validation on other targets, false-alarm
+calibration and population completeness remain outside its scope.
+V2 and C2 remain unfinished.

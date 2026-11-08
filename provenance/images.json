@@ -2,29 +2,31 @@
   "images": [
     {
       "path": "docs/media/wasp127.png",
-      "sha256": "dcf2f3d82af49e65964a7da1d6408336f4c415cbad42520e564afe2f3acb69f4",
-      "bytes": 1015300,
+      "sha256": "e7f0a9003c5cb8c56cef62f035f9f4981b8f53328b02e6e4518c5e71c62c93da",
+      "bytes": 1006225,
       "dimensions": [
         3840,
         2700
       ],
       "classification": "saved observed samples in two coordinates",
       "origin": "Authenticated 2026-10-28 scientific figure collection: images/clean/IMG02_WASP127_chronological_and_folded.png",
-      "transfer": "byte-identical existing image; no pixel editing",
-      "source_data": "demo/inputs/CURVE_SOURCE.json"
+      "transfer": "Footer-only edit removing the trailing AI-assistance phrase. All other pixels, including the remaining credits and scientific content, are unchanged.",
+      "source_data": "demo/inputs/CURVE_SOURCE.json",
+      "source_sha256": "dcf2f3d82af49e65964a7da1d6408336f4c415cbad42520e564afe2f3acb69f4"
     },
     {
       "path": "docs/media/synthetic-trials.png",
-      "sha256": "d96cfd7f210c7904ad7c45275ffd65da0c5712cf283bcb9d599e22be482135f6",
-      "bytes": 646334,
+      "sha256": "36aad165352dc8c5d382dde97791ee0e9c18949f962e82d62c6f1832d6cf6c63",
+      "bytes": 637186,
       "dimensions": [
         3840,
         3960
       ],
       "classification": "320 saved synthetic trial outcomes",
       "origin": "Authenticated 2026-10-28 scientific figure collection: images/clean/IMG03_accepted_trial_matrix.png",
-      "transfer": "byte-identical existing image; no pixel editing",
-      "source_data": "data/records/injection_recovery_results_v1_0_2.csv"
+      "transfer": "Footer-only edit removing the trailing AI-assistance phrase. All other pixels, including the remaining credits and scientific content, are unchanged.",
+      "source_data": "data/records/injection_recovery_results_v1_0_2.csv",
+      "source_sha256": "d96cfd7f210c7904ad7c45275ffd65da0c5712cf283bcb9d599e22be482135f6"
     },
     {
       "path": "docs/media/explorer.png",

@@ -2,34 +2,31 @@
 
 **When can a transit search recover a signal that is present in a TESS light curve?**
 
-I investigated this question using archived TESS observations, known catalogue
-signals and synthetic transit injections. The project combines light-curve
-processing, a blind Box Least Squares (BLS) search, catalogue matching and
-statistical detectability modeling. It includes a small runnable example and
-an explorer of the saved results.
+I investigated signal recovery in archived TESS observations using known
+catalogue signals and synthetic transit injections. The project includes
+light-curve processing, blind Box Least Squares (BLS) searches, catalogue
+matching, statistical modeling and an explorer of the saved results.
 
 ## Preview
 
 [![WASP-127 b: chronological and phase-folded views of the same retained TESS samples](docs/media/wasp127.png)](docs/media/wasp127.png)
 
-The same 8,000 saved WASP-127 samples in chronological and catalogue-folded
-coordinates. These are processed TESS observations, not a fitted or simulated
-transit. The saved recovery carries an ambiguity flag.
+The same 8,000 processed TESS observations in chronological and catalogue-folded
+coordinates. The saved WASP-127 recovery carries an ambiguity flag.
 
 [![All 320 synthetic trial outcomes arranged by host and injection index](docs/media/synthetic-trials.png)](docs/media/synthetic-trials.png)
 
-The accepted 40-host × 8-injection experiment: 98 direct, 25 additional
-harmonic, 12 alias and 185 nonrecovered outcomes. Open the image at full
-resolution for individual trial labels. [Preview notes](docs/MEDIA.md)
-explain the data and display choices.
+All 320 accepted synthetic trials, arranged by host and injection index.
+Open the full-resolution image to read each trial label.
+[Preview notes](docs/MEDIA.md) explain the data and display choices.
 
 <details>
 <summary>Working saved-results explorer</summary>
 
 [![The working explorer displaying the saved WASP-127 b result](docs/media/explorer.png)](docs/media/explorer.png)
 
-A genuine browser capture. Selecting a case reads saved records; the Depth
-test tab executes the small normalization example.
+A browser capture of the explorer. Select a saved case or use Depth test
+to run the small normalization example.
 
 </details>
 
@@ -70,15 +67,11 @@ the correction was checked.
 
 ## Follow the investigation
 
-For readers who want to trace the decisions behind the saved results:
-
 - The [handwritten research notebook](docs/TESS_Engineering_Notebook.pdf) contains my original working calculations, diagrams, and corrections.
-- **Target selection:** the [preserved selection protocol](docs/original/TARGET_SELECTION_PREREGISTRATION_v1_1_0.md) and [execution report](docs/original/TARGET_SELECTION_EXECUTION_REPORT.md).
-- **First injection failure:** the [invalid recovery record](results/development/injection_recovery_failure_v1_0_0.json) and the [development notes](docs/DEVELOPMENT.md) on the zero-centered baseline problem.
-- **Second failure and correction:** the [failed depth preflight](results/development/injection_recovery_amendment_failure_v1_0_1.json) and the [sampled-depth derivation](docs/original/INJECTION_MODEL_NORMALIZATION_DERIVATION.md).
-- **Accepted evidence:** the [saved injection outcomes](data/records/injection_recovery_results_v1_0_2.csv) and [verification scope](docs/VERIFICATION.md).
-
-The saved records document the historical benchmark. The runnable five-sample example demonstrates one function; it does not rerun the astronomical experiment.
+- Target selection follows the [original protocol](docs/original/TARGET_SELECTION_PREREGISTRATION_v1_1_0.md) and [execution report](docs/original/TARGET_SELECTION_EXECUTION_REPORT.md).
+- The [first failure record](results/development/injection_recovery_failure_v1_0_0.json) and [development notes](docs/DEVELOPMENT.md) explain the injection problem.
+- The [failed depth preflight](results/development/injection_recovery_amendment_failure_v1_0_1.json) led to the [sampled-depth correction](docs/original/INJECTION_MODEL_NORMALIZATION_DERIVATION.md).
+- Inspect the [accepted injection outcomes](data/records/injection_recovery_results_v1_0_2.csv) and [verification scope](docs/VERIFICATION.md).
 
 ## Run locally
 
@@ -93,22 +86,18 @@ python -m venv .venv
 .venv\Scripts\python.exe demo/serve_demo.py
 ```
 
-Installation builds **this local project** and obtains its declared
-dependencies from PyPI. The example calls the original normalization function
-on five synthetic samples at 0, 100 and 500 ppm and reports realized depth
-and numerical error. Open [the explorer](http://127.0.0.1:8783/index.html)
-after the last command; stop it with Ctrl+C. Saved records also work by
-opening `demo/index.html` directly, with live calculation unavailable.
-[Getting started](docs/GETTING_STARTED.md) explains the output and commands.
+The example calls V1 normalization on five synthetic samples at 0, 100 and
+500 ppm and reports the depth and numerical error. Open
+[the explorer](http://127.0.0.1:8783/index.html) after the last command and stop
+the server with Ctrl+C. Saved records also open directly from `demo/index.html`.
+[Getting started](docs/GETTING_STARTED.md) explains both modes.
 
 ## Explore the code and results
 
-Start with the [source guide](docs/SOURCE_GUIDE.md), [methods](docs/METHODS.md)
-and [data sources](DATA_SOURCES.md).
-Algorithms live in `src/`, examples in `examples/`, focused tests in `tests/`,
-and selected saved evidence in `results/` and `data/records/`. The
-[historical archive](archive/README.md) retains earlier records.
-See [verification](docs/VERIFICATION.md) for the checks you can run.
+The [source guide](docs/SOURCE_GUIDE.md), [methods](docs/METHODS.md) and
+[data sources](DATA_SOURCES.md) describe the implementation and evidence.
+The [historical archive](archive/README.md) preserves the original records.
+See [verification](docs/VERIFICATION.md) for checks you can run.
 
 ## Scientific limitations
 
