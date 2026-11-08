@@ -12,6 +12,6 @@
 | Group checks | `grouped_validation.grouped_cv` | Checking fold assignments before calling the modeling functions |
 | Small demonstration | `demonstration.normalization_case` | Calling V1 normalization on five explicitly synthetic samples |
 
-The modules cover the original V1 scientific workflow. `modeling.py` brings together selected functions from the original fitting script; `grouped_validation.py` checks host-grouped folds, and `demonstration.py` provides the five-sample example. The [source manifest](../provenance/source_manifest.json) records original identities, and the [verification guide](VERIFICATION.md#optional-historical-provenance) explains how to check them.
+The modules cover the original V1 scientific workflow. `modeling.py` brings together selected functions from the original fitting script; `grouped_validation.py` checks host-grouped folds, and `demonstration.py` provides the five-sample example. The [source manifest](../provenance/source_manifest.json) records original identities, and the [verification guide](VERIFICATION.md#optional-source-and-figure-checks) explains how to check them.
 
-The complete astronomical input archive and historical orchestration are not bundled here. Start with [methods](METHODS.md) for scientific assumptions or the [test archive](../archive/v1_tests/) for the original V1 test sources.
+The complete astronomical input archive and historical orchestration are not bundled here. Start with [methods](METHODS.md) for scientific assumptions or the [original V1 tests](../provenance/v1_tests/) to inspect the test cases.

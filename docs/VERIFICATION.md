@@ -16,14 +16,15 @@ The verifier checks the saved evidence and its file identities, including the tw
 
 The [GitHub Actions workflow](../.github/workflows/verify.yml) runs these checks on Windows with Python 3.12; [Actions](https://github.com/Radhe-Dhoundiyal/tess-transit-detectability-v1/actions) shows actual run results. Browser checks also covered saved cases, trial-cell navigation, missing curves and the depth demo in Chromium. Browser tests are separate from this CI workflow.
 
-## Optional historical provenance
+## Optional source and figure checks
 
-From a full Git clone, use:
+For additional checks, use:
 
 ```powershell
 .venv\Scripts\python.exe scripts/verify_project.py --provenance
 ```
 
-This checks original V1 source identities, archived tests and the July 25 Git snapshot. A separate [historical payload manifest](https://github.com/Radhe-Dhoundiyal/tess-transit-detectability-v1/blob/93592297b5a8117aa6e2ef7d45c493764232d940/provenance/payload_manifest.json) and its verifier are available at that earlier commit.
+This checks original V1 source identities, the preserved V1 test sources and the
+14 saved modeling figures against their recorded checksums.
 
 The public package includes algorithms and selected saved records, not all original TESS inputs or production orchestration. See [limitations](LIMITATIONS.md).

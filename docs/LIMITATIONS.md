@@ -22,7 +22,7 @@ The saved NASA Exoplanet Archive metadata lacks links to the originating
 papers for five classes: planet identity/target metadata, orbital periods,
 transit epochs, planet radii/depths and stellar parameters. The saved values
 and Archive attribution remain available, but they do not replace paper-level
-references. The [historical bibliography](../archive/2026-07-25/results/tables/source_specific_bibliography_v1_0_0_rc2.csv)
+references. The [saved source-reference table](../results/tables/source_specific_bibliography_v1_0_0_rc2.csv)
 records these gaps.
 
 Completing these mappings requires the original reference metadata.

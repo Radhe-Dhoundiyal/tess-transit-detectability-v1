@@ -290,7 +290,7 @@
       "end_line": 138
     },
     {
-      "destination": "archive/v1_tests/test_transit_recovery.py",
+      "destination": "provenance/v1_tests/test_transit_recovery.py",
       "source_root": "V1",
       "source_path": "tests/test_transit_recovery.py",
       "source_sha256": "152def7bcbb0cccf653e6a525ea513c6d63a219ac376c818e439e08a4597b5ce",
@@ -299,7 +299,7 @@
       "transfer": "byte-identical"
     },
     {
-      "destination": "archive/v1_tests/test_injection_recovery.py",
+      "destination": "provenance/v1_tests/test_injection_recovery.py",
       "source_root": "V1",
       "source_path": "tests/test_injection_recovery.py",
       "source_sha256": "3b7955bedaa984fe0529bbf48df73eb6c6f6b6d1e6f76c855620c43e70862aff",
@@ -308,7 +308,7 @@
       "transfer": "byte-identical"
     },
     {
-      "destination": "archive/v1_tests/test_lightcurve_preprocessing.py",
+      "destination": "provenance/v1_tests/test_lightcurve_preprocessing.py",
       "source_root": "V1",
       "source_path": "tests/test_lightcurve_preprocessing.py",
       "source_sha256": "e8a18214cc7404a7811175b39b68d5ebecbdd5e6dfc07fedc12abc77dde74b0a",

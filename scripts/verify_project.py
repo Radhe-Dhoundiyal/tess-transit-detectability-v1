@@ -9,7 +9,6 @@ import json
 import math
 import re
 import struct
-import subprocess
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -126,10 +125,10 @@ def verify_record_hashes():
 
 
 def verify_sources():
-    """Compare V1 source and archived tests with their published identities."""
+    """Compare V1 source and retained tests with their published identities."""
     sources = [
         item for item in source_entries()
-        if item["destination"].startswith(("src/", "archive/v1_tests/"))
+        if item["destination"].startswith(("src/", "provenance/v1_tests/"))
     ]
     for item in sources:
         verify_source_bytes(item)
@@ -149,8 +148,6 @@ def verify_sources():
 
 def verify_links():
     checked = 0
-    # Frozen archive documents describe their original snapshot and are not
-    # current navigation. Their bytes are checked instead of editing history.
     files = list(ROOT.glob("*.md")) + [ROOT / "LICENSE"]
     files += list((ROOT / "docs").glob("*.md")) + [ROOT / "demo/README.md"]
     for file in files:
@@ -164,23 +161,17 @@ def verify_links():
     return checked
 
 
-def verify_archive():
-    baseline = "4ef58998334b9ddf67216a785c49e2326f39669f"
-    tree = subprocess.check_output(["git", "-C", str(ROOT), "ls-tree", "-rz", baseline])
-    count = 0
-    for entry in tree.split(b"\0"):
-        if not entry:
-            continue
-        metadata, path = entry.split(b"\t", 1)
-        _, _, object_id = metadata.split()
-        archive_path = ".gitattributes.snapshot" if path == b".gitattributes" else path.decode()
-        blob = ROOT / "archive/2026-07-25" / archive_path
-        # Git object identity includes type and length; no per-file subprocess.
-        content = blob.read_bytes()
-        actual = hashlib.sha1(b"blob " + str(len(content)).encode() + b"\0" + content).hexdigest()
-        assert actual == object_id.decode(), path.decode()
-        count += 1
-    return count
+def verify_model_figures():
+    """Check the retained V1 model figures against their recorded hashes."""
+    figures = rows("provenance/detectability_existing_figure_integrity_v1_0_4.csv")
+    assert len(figures) == 14
+    assert len({item["path"] for item in figures}) == 14
+    for item in figures:
+        path = ROOT / item["path"]
+        assert path.is_file() and path.read_bytes().startswith(b"\x89PNG\r\n\x1a\n"), item["path"]
+        assert sha(path).upper() == item["sha256"], item["path"]
+        assert path.stat().st_size == int(item["size_bytes"]), item["path"]
+    return len(figures)
 
 
 def verify_images():
@@ -208,7 +199,7 @@ def verify_images():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--provenance", action="store_true",
-                        help="also check V1 source identities and July archive Git blobs")
+                        help="also check V1 source identities, tests and saved model figures")
     args = parser.parse_args()
     report = {
         "historical_record_hashes": verify_record_hashes(),
@@ -218,5 +209,5 @@ if __name__ == "__main__":
     }
     if args.provenance:
         report["sources"] = verify_sources()
-        report["original_Git_blobs"] = verify_archive()
+        report["model_figures"] = verify_model_figures()
     print(json.dumps(report, indent=2))

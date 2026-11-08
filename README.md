@@ -96,7 +96,9 @@ the server with Ctrl+C. Saved records also open directly from `demo/index.html`.
 
 The [source guide](docs/SOURCE_GUIDE.md), [methods](docs/METHODS.md) and
 [data sources](DATA_SOURCES.md) describe the implementation and evidence.
-The [historical archive](archive/README.md) preserves the original records.
+The initial development took place in a separate private working archive.
+This public repository contains selected V1 code, results, tests and figures,
+including the [saved model figures](results/figures/detectability_modeling_v1_0_1/).
 See [verification](docs/VERIFICATION.md) for checks you can run.
 
 ## Scientific limitations
