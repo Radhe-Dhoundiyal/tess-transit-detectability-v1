@@ -1,23 +1,23 @@
-# Historical material
+# July 2026 research archive
 
-`2026-07-25/` preserves all 142 files of the historical July 25 tree
-as Git blob bytes. Its privacy-remediated historical root is
-`4ef58998334b9ddf67216a785c49e2326f39669f`. Author and committer dates remain
-2026-07-25T21:37:23+05:30; only their email metadata was replaced.
-It described RC2 in its README even though its commit message named RC3.
-One filename is intentionally inert: the original `.gitattributes` bytes are
-stored as `.gitattributes.snapshot`, so archived checkout rules cannot
-override the current byte-preservation policy. The verifier maps that name
-back to the original Git object; its content is unchanged.
+`2026-07-25/` preserves the 142 files in the project's July 25 snapshot,
+including scientific figures, result tables, notebooks, protocols, and release
+records. Some handovers and release guides were written as working instructions
+at the time. They are kept as part of the history, not as directions for using
+the current repository.
 
-These files are historical evidence. Their old version labels, paths,
-installation commands, manifests and release gates describe that snapshot
-and may refer to omitted material. Use the current root README for runnable
-commands and current manifests for this candidate. Historical verifier
-scripts are retained for inspection, not presented as working release tools.
-Nothing in the archive authorizes a scientific rerun or a public release.
+For the experiments themselves, start with the current [methods](../docs/METHODS.md),
+[development notes](../docs/DEVELOPMENT.md), and [verification guide](../docs/VERIFICATION.md).
+The original July [figures](2026-07-25/results/figures/detectability_modeling_v1_0_1/)
+and [result tables](2026-07-25/results/tables/) remain available here.
+`v1_tests/` retains the V1 test sources used to select the portable tests; it
+does not mean the full original test suite was run for this public package.
 
-`v1_tests/` contains complete current local V1 test sources from which
-portable unit tests were selected. Their existence does not mean the full
-private suite ran. The current verification script checks the historical
-snapshot against the original Git tree independently of old manifests.
+The snapshot is checked byte-for-byte against the privacy-remediated Git commit
+`4ef58998334b9ddf67216a785c49e2326f39669f` using
+`python scripts/verify_project.py --provenance` from a full clone. The original
+commit dates are preserved, but author email metadata was replaced. The old
+`.gitattributes` is named `.gitattributes.snapshot` here to avoid applying its
+checkout rules; its contents are unchanged. The snapshot's README calls itself
+RC2 although the original commit message says RC3. Use the root README for
+current commands and installation steps.
