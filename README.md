@@ -112,11 +112,11 @@ data and reproducibility evidence.
 
 ## Questions I want to explore next
 
-One of the most exciting surprises after sharing V1 was hearing from someone
-in the transit-search community who had actually examined the saved injection
-records. Their feedback made me wonder how many signals the capped frequency
-grid might miss on targets observed over several years, even when a transit
-ought to be reasonably strong. I'd love to investigate that.
+After sharing V1, I received thoughtful feedback from a member of the
+transit-search community who had examined the saved injection records.
+One question particularly caught my attention: could the capped frequency
+grid be missing otherwise recoverable signals for targets observed over
+several years? That is an important possibility to investigate.
 
 - **Period grid:** Compare the V1 grid with a baseline-dependent BLS grid,
   looking at both recovery rates and computational cost.
