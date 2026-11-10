@@ -110,6 +110,26 @@ are missing from the saved metadata. V2 science and C2 qualification remain
 unfinished. See [limitations](docs/LIMITATIONS.md) for the scope of the code,
 data and reproducibility evidence.
 
+## Questions I want to explore next
+
+One of the most exciting surprises after sharing V1 was hearing from someone
+in the transit-search community who had actually examined the saved injection
+records. Their feedback made me wonder how many signals the capped frequency
+grid might miss on targets observed over several years, even when a transit
+ought to be reasonably strong. I'd love to investigate that.
+
+- **Period grid:** Compare the V1 grid with a baseline-dependent BLS grid,
+  looking at both recovery rates and computational cost.
+- **Detection criteria:** Compare top-1 and top-10 period-and-epoch matches
+  with significance thresholds, using inverted light curves to check for
+  false alarms.
+- **Preprocessing and uncertainty:** Test transit-protecting detrending and
+  examine recovery uncertainty across hosts, building on the existing
+  target-grouped analysis.
+
+These are possible follow-up experiments. The saved V1 results still use
+their original search settings and recovery rules.
+
 ## Credits and licensing
 
 Observations come from NASA/TESS/MAST and catalogue metadata from the NASA
