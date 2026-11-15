@@ -1,14 +1,12 @@
 cff-version: 1.2.0
-message: "Cite this software using the repository URL and the exact version or commit inspected."
+message: "If you use this software, cite this version using its version-specific DOI when available, or the tagged GitHub release."
 type: software
 title: "TESS Transit Detectability Benchmark"
-version: "1.1.0-rc.1"
+version: "1.1.0"
 authors:
   - family-names: "Dhoundiyal"
     given-names: "Radhe"
     affiliation: "Independent student researcher"
 repository-code: "https://github.com/Radhe-Dhoundiyal/tess-transit-detectability-v1"
 abstract: "A finite benchmark of known-signal and synthetic transit recovery, with preserved V1 results, a controlled period-grid comparison and a runnable sampled-depth example."
-license:
-  - MIT
-  - CC-BY-4.0
+license: MIT

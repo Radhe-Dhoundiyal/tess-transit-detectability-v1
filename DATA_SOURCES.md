@@ -1,8 +1,8 @@
 # Data sources and included records
 
 V1 used NASA TESS/SPOC observations from MAST and catalogue metadata from the
-NASA Exoplanet Archive. The original source bibliographies remain in the
-July archive. This package includes selected derived records and figures,
+NASA Exoplanet Archive. The retained source-reference table records available original citations and
+documented gaps. This package includes selected derived records and figures,
 not the large raw FITS or processed Parquet archive.
 
 | Included item | Provenance and interpretation |

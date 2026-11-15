@@ -5,7 +5,7 @@ software and original prose/analysis. They do not relicense NASA, TESS,
 MAST or NASA Exoplanet Archive content, mission identifiers, trademarks,
 factual external metadata, upstream observations, literature or third-party
 software. The current `provenance/license_coverage.csv` distinguishes these
-scopes; the historical coverage map remains archived.
+scopes.
 
 Saved-record and curve-display files are mixed-origin analysis derivatives.
 Preserve service attribution, product identifiers and data provenance.
