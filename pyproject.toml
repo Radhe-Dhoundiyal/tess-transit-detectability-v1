@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tess-detectability"
-version = "1.0.0rc4"
-description = "Finite TESS transit recovery benchmark and sampled-depth normalization example"
+version = "1.1.0rc1"
+description = "Finite TESS transit recovery benchmark and controlled period-grid comparison"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
@@ -16,7 +16,8 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-test = ["pytest==8.3.4", "pyarrow==17.0.0"]
+test = ["pytest==8.3.4", "pyarrow==17.0.0", "PyYAML==6.0.2", "packaging==24.2"]
+plots = ["matplotlib==3.9.2"]
 
 [project.urls]
 Repository = "https://github.com/Radhe-Dhoundiyal/tess-transit-detectability-v1"

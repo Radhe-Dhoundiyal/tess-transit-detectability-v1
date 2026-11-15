@@ -128,7 +128,7 @@ def verify_sources():
     """Compare V1 source and retained tests with their published identities."""
     sources = [
         item for item in source_entries()
-        if item["destination"].startswith(("src/", "provenance/v1_tests/"))
+        if item["destination"].startswith(("src/", "provenance/v1_tests/", "provenance/v1_source/"))
     ]
     for item in sources:
         verify_source_bytes(item)
@@ -207,6 +207,10 @@ if __name__ == "__main__":
         "current_links": verify_links(),
         "images": verify_images(),
     }
+    from verify_grid_comparison import verify_records, SUMMARY
+    grid_summary = verify_records()
+    assert grid_summary == json.loads(SUMMARY.read_text(encoding="utf-8"))
+    report["period_grid_comparison"] = grid_summary["combined_finite_benchmark"]
     if args.provenance:
         report["sources"] = verify_sources()
         report["model_figures"] = verify_model_figures()

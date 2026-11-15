@@ -1,5 +1,5 @@
 {
-  "scope": "current V1 source identities, not proof of historical consumption or personal authorship",
+  "scope": "V1 source identities (original BLS runner retained under provenance/v1_source); V1.1 integration is separately authenticated.",
   "roots": {
     "V1": "protected local V1 project",
     "MissionControl20261028": "reviewed present-day viewer"
@@ -96,7 +96,7 @@
       "transfer": "byte-identical"
     },
     {
-      "destination": "src/tess_detectability/bls_search.py",
+      "destination": "provenance/v1_source/bls_search.py",
       "source_root": "V1",
       "source_path": "src/tess_detectability/bls_search.py",
       "source_sha256": "fb85f9b0a9bff10c478f046ee232cf9c27bf83dbe4c385751524057a69345449",

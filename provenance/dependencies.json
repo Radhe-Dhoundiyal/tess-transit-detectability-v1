@@ -1,6 +1,7 @@
 {
   "python": "3.12.3",
   "platform": "Windows-11-10.0.26300-SP0",
+  "scope": "Clean Windows verification environment with test and plots extras; dependencies installed separately",
   "packages": [
     {
       "name": "astropy",
@@ -27,7 +28,7 @@
     },
     {
       "name": "astropy-iers-data",
-      "version": "0.2026.10.19.0.52.1",
+      "version": "0.2026.11.9.0.35.9",
       "license_files": [
         "LICENSE.rst"
       ],
@@ -44,6 +45,32 @@
       "full_license_declaration_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "name": "contourpy",
+      "version": "1.3.3",
+      "license_files": [],
+      "license_declaration": "BSD 3-Clause License",
+      "full_license_declaration_sha256": "d3d2ca388bb40cfcabd217c061836db0275982a0efb18023a34e5cf845f4b193"
+    },
+    {
+      "name": "cycler",
+      "version": "0.12.1",
+      "license_files": [
+        "LICENSE"
+      ],
+      "license_declaration": "Copyright (c) 2015, matplotlib project",
+      "full_license_declaration_sha256": "f1218143d766da3fea66f13396b7f15df46a83303f29bf96ba6e98eb4d42f408"
+    },
+    {
+      "name": "fonttools",
+      "version": "4.68.0",
+      "license_files": [
+        "LICENSE",
+        "LICENSE.external"
+      ],
+      "license_declaration": "MIT",
+      "full_license_declaration_sha256": "e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7"
+    },
+    {
       "name": "iniconfig",
       "version": "2.3.1",
       "license_files": [
@@ -51,6 +78,22 @@
       ],
       "license_declaration": "MIT",
       "full_license_declaration_sha256": "e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7"
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.5.1",
+      "license_files": [
+        "LICENSE"
+      ],
+      "license_declaration": "=========================",
+      "full_license_declaration_sha256": "529c40e5f67f2f88904657a9f7879ae2f8dc76bc9bfef9cb10d988b48804ed61"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.9.2",
+      "license_files": [],
+      "license_declaration": "License agreement for matplotlib versions 1.3.0 and later",
+      "full_license_declaration_sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
     },
     {
       "name": "numpy",
@@ -61,14 +104,10 @@
     },
     {
       "name": "packaging",
-      "version": "26.3",
-      "license_files": [
-        "LICENSE",
-        "LICENSE.APACHE",
-        "LICENSE.BSD"
-      ],
-      "license_declaration": "Apache-2.0 OR BSD-2-Clause",
-      "full_license_declaration_sha256": "f83c2e92648be1cbb1637ae2858514e098ea39d79224eb8f79abb92fca93bf69"
+      "version": "24.2",
+      "license_files": [],
+      "license_declaration": "",
+      "full_license_declaration_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "name": "pandas",
@@ -78,14 +117,13 @@
       "full_license_declaration_sha256": "64b22376592d40c6c3493ee0c8f6795f7dab57035a2f98ff7063502680a4448a"
     },
     {
-      "name": "pip",
-      "version": "24.0",
+      "name": "pillow",
+      "version": "13.0.0",
       "license_files": [
-        "LICENSE.txt",
-        "AUTHORS.txt"
+        "LICENSE"
       ],
-      "license_declaration": "MIT",
-      "full_license_declaration_sha256": "e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7"
+      "license_declaration": "MIT-CMU",
+      "full_license_declaration_sha256": "3855f83eee504691f6f2d0eb2097e49d2568479d4fa3e2b9160a013d2b9eb2a5"
     },
     {
       "name": "pluggy",
@@ -116,6 +154,15 @@
       "full_license_declaration_sha256": "4e552d1df242cd8fc0e5bffeee215434f9a38f1bf6ffd834b11dc00c29c5eb3f"
     },
     {
+      "name": "pyparsing",
+      "version": "3.3.3",
+      "license_files": [
+        "LICENSE"
+      ],
+      "license_declaration": "MIT",
+      "full_license_declaration_sha256": "e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7"
+    },
+    {
       "name": "pytest",
       "version": "8.3.4",
       "license_files": [
@@ -127,16 +174,17 @@
     },
     {
       "name": "python-dateutil",
-      "version": "3.0.0",
+      "version": "4.0.0",
       "license_files": [
+        "AUTHORS.md",
         "LICENSE"
       ],
-      "license_declaration": "Dual License",
-      "full_license_declaration_sha256": "199628ddb098f90709bb2dc43f816a5a40fe31690de0e25d0f4d6455fe6bc609"
+      "license_declaration": "BSD-3-Clause",
+      "full_license_declaration_sha256": "118dbcd2d5c9f9b296a9ede9fcc469c5840f7b98ad2c88461055bf2ceda38037"
     },
     {
       "name": "pytz",
-      "version": "2026.5",
+      "version": "2026.6",
       "license_files": [
         "LICENSE.txt"
       ],
@@ -145,7 +193,7 @@
     },
     {
       "name": "PyYAML",
-      "version": "6.0.3",
+      "version": "6.0.2",
       "license_files": [
         "LICENSE"
       ],
@@ -158,27 +206,6 @@
       "license_files": [],
       "license_declaration": "Copyright (c) 2001-2002 Enthought, Inc. 2003-2024, SciPy Developers.",
       "full_license_declaration_sha256": "089b0594c220e2adb5e1d89727efc66f7239f4bf62fc8a5174767b8c86cca90f"
-    },
-    {
-      "name": "six",
-      "version": "1.17.0",
-      "license_files": [
-        "LICENSE"
-      ],
-      "license_declaration": "MIT",
-      "full_license_declaration_sha256": "e5dcffe836b6ec8a58e492419b550e65fb8cbdc308503979e5dacb33ac7ea3b7"
-    },
-    {
-      "name": "tess-detectability",
-      "version": "1.0.0rc4",
-      "license_files": [
-        "LICENSE",
-        "LICENSE-CODE",
-        "LICENSE-DOCUMENTATION",
-        "NOTICE"
-      ],
-      "license_declaration": "",
-      "full_license_declaration_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "name": "tzdata",

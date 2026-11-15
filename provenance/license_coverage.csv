@@ -5,49 +5,57 @@ path,scope,license_boundary
 ACKNOWLEDGMENTS.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 CITATION.cff,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 DATA_SOURCES.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+DEPENDENCY_NOTICES.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+LICENSE,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+LICENSE-CODE,LICENSE_NOTICE,Existing MIT or CC-BY-4.0 notice
+LICENSE-DOCUMENTATION,LICENSE_NOTICE,Existing MIT or CC-BY-4.0 notice
+NOTICE,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+README.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+THIRD_PARTY_AND_DATA_RIGHTS.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 data/records/detectability_oof_predictions_v1_0_1.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
 data/records/injection_recovery_results_v1_0_2.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+data/records/period_grid_candidates_v1_1_0.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+data/records/period_grid_known_candidates_v1_1_0.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+data/records/period_grid_known_subset_v1_1_0.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+data/records/period_grid_known_truth_v1_1_0.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+data/records/period_grid_pairs_v1_1_0.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+demo/README.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 demo/app.js,FIRST_PARTY_SOFTWARE,MIT
 demo/calibration.png,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 demo/curve_data.js,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
 demo/index.html,FIRST_PARTY_SOFTWARE,MIT
 demo/inputs/CURVE_SOURCE.json,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
 demo/inputs/recorded_data.json,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
-demo/README.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 demo/recorded_data.js,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
 demo/serve_demo.py,FIRST_PARTY_SOFTWARE,MIT
 demo/style.css,FIRST_PARTY_SOFTWARE,MIT
-DEPENDENCY_NOTICES.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 docs/DEVELOPMENT.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 docs/GETTING_STARTED.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 docs/LIMITATIONS.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 docs/MEDIA.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+docs/METHODS.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+docs/SOURCE_GUIDE.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+docs/TESS_Engineering_Notebook.pdf,FIRST_PARTY_NOTEBOOK,Copyright retained by Radhe Dhoundiyal. Reuse requires separate permission.
+docs/VERIFICATION.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 docs/media/explorer.png,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
 docs/media/synthetic-trials.png,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
 docs/media/wasp127.png,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
-docs/METHODS.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 docs/original/INJECTION_BASELINE_RESTORATION_DERIVATION.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 docs/original/INJECTION_MODEL_NORMALIZATION_DERIVATION.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 docs/original/TARGET_SELECTION_EXECUTION_REPORT.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 docs/original/TARGET_SELECTION_PREREGISTRATION_v1_1_0.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
-docs/SOURCE_GUIDE.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
-docs/TESS_Engineering_Notebook.pdf,FIRST_PARTY_NOTEBOOK,Copyright retained by Radhe Dhoundiyal. Reuse requires separate permission.
-docs/VERIFICATION.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 examples/normalize_depth.py,FIRST_PARTY_SOFTWARE,MIT
-LICENSE,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
-LICENSE-CODE,LICENSE_NOTICE,Existing MIT or CC-BY-4.0 notice
-LICENSE-DOCUMENTATION,LICENSE_NOTICE,Existing MIT or CC-BY-4.0 notice
-NOTICE,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 provenance/dependencies.json,THIRD_PARTY_LICENSE_METADATA,Original dependency notices remain in distributions
 provenance/detectability_existing_figure_integrity_v1_0_4.csv,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 provenance/images.json,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 provenance/license_coverage.csv,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+provenance/period_grid_v1_1_0.json,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 provenance/source_manifest.json,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+provenance/v1_source/bls_search.py,FIRST_PARTY_SOFTWARE,MIT
 provenance/v1_tests/test_injection_recovery.py,FIRST_PARTY_SOFTWARE,MIT
 provenance/v1_tests/test_lightcurve_preprocessing.py,FIRST_PARTY_SOFTWARE,MIT
 provenance/v1_tests/test_transit_recovery.py,FIRST_PARTY_SOFTWARE,MIT
 pyproject.toml,FIRST_PARTY_SOFTWARE,MIT
-README.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 requirements-dev.txt,FIRST_PARTY_SOFTWARE,MIT
 requirements-lock.txt,FIRST_PARTY_SOFTWARE,MIT
 results/development/injection_all_trial_normalization_preflight_v1_0_2.json,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
@@ -70,14 +78,19 @@ results/figures/detectability_modeling_v1_0_1/roc_curve.png,FIRST_PARTY_CONTENT,
 results/figures/detectability_modeling_v1_0_1/sensitivity_summary.png,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 results/figures/expected_snr_recovery_curve.png,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 results/figures/held_out_calibration.png,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+results/figures/period_grid_hosts_v1_1_0.png,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
+results/figures/period_grid_recovery_v1_1_0.png,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 results/tables/detectability_calibration_v1_0_1.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
 results/tables/detectability_cv_fold_assignment_v1_0_0.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
 results/tables/detectability_metric_recomputation_audit_v1_0_4.csv,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 results/tables/detectability_model_performance_v1_0_1.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
 results/tables/injection_recovery_primary_endpoint_v1_0_2.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+results/tables/period_grid_summary_v1_1_0.json,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 results/tables/source_specific_bibliography_v1_0_0_rc2.csv,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 results/tables/transit_recovery_planet_results.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
 results/tables/transit_recovery_primary_endpoint.csv,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+scripts/plot_grid_comparison.py,FIRST_PARTY_SOFTWARE,MIT
+scripts/verify_grid_comparison.py,FIRST_PARTY_SOFTWARE,MIT
 scripts/verify_project.py,FIRST_PARTY_SOFTWARE,MIT
 src/tess_detectability/__init__.py,FIRST_PARTY_SOFTWARE,MIT
 src/tess_detectability/bls_grid.py,FIRST_PARTY_SOFTWARE,MIT
@@ -85,6 +98,7 @@ src/tess_detectability/bls_search.py,FIRST_PARTY_SOFTWARE,MIT
 src/tess_detectability/demonstration.py,FIRST_PARTY_SOFTWARE,MIT
 src/tess_detectability/detectability_grid.py,FIRST_PARTY_SOFTWARE,MIT
 src/tess_detectability/detrending.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/grid_comparison.py,FIRST_PARTY_SOFTWARE,MIT
 src/tess_detectability/grouped_validation.py,FIRST_PARTY_SOFTWARE,MIT
 src/tess_detectability/injection_design.py,FIRST_PARTY_SOFTWARE,MIT
 src/tess_detectability/injection_model.py,FIRST_PARTY_SOFTWARE,MIT
@@ -92,6 +106,7 @@ src/tess_detectability/lightcurve_reader.py,FIRST_PARTY_SOFTWARE,MIT
 src/tess_detectability/modeling.py,FIRST_PARTY_SOFTWARE,MIT
 src/tess_detectability/normalization.py,FIRST_PARTY_SOFTWARE,MIT
 src/tess_detectability/peak_extraction.py,FIRST_PARTY_SOFTWARE,MIT
+src/tess_detectability/period_grid.py,FIRST_PARTY_SOFTWARE,MIT
 src/tess_detectability/preprocessing_config.py,FIRST_PARTY_SOFTWARE,MIT
 src/tess_detectability/preprocessing_pipeline.py,FIRST_PARTY_SOFTWARE,MIT
 src/tess_detectability/quality_mask.py,FIRST_PARTY_SOFTWARE,MIT
@@ -102,6 +117,6 @@ src/tess_detectability/snr.py,FIRST_PARTY_SOFTWARE,MIT
 src/tess_detectability/time_cleaning.py,FIRST_PARTY_SOFTWARE,MIT
 tests/test_injection_recovery.py,FIRST_PARTY_SOFTWARE,MIT
 tests/test_lightcurve_preprocessing.py,FIRST_PARTY_SOFTWARE,MIT
+tests/test_period_grid.py,FIRST_PARTY_SOFTWARE,MIT
 tests/test_public_boundary.py,FIRST_PARTY_SOFTWARE,MIT
 tests/test_transit_recovery.py,FIRST_PARTY_SOFTWARE,MIT
-THIRD_PARTY_AND_DATA_RIGHTS.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded

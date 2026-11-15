@@ -5,24 +5,50 @@ import numpy as np
 import pandas as pd
 from astropy.timeseries import BoxLeastSquares
 
-from .bls_grid import duration_grid, period_grid
+from .bls_grid import array_sha256, duration_grid, period_grid
+from .period_grid import alternative_period_grid, GRID_VERSION
 from .peak_extraction import select_peak_indices
 from .recovery_config import RecoveryConfig
 
 
 def run_blind_search(time: np.ndarray, flux: np.ndarray,
                      config: RecoveryConfig) -> tuple[pd.DataFrame, dict[str, object]]:
+    """Historical V1 interface and unchunked search settings."""
+    candidates, summary, _ = _run_search(time, flux, config, "v1", None)
+    return candidates, summary
+
+
+def run_grid_search(time: np.ndarray, flux: np.ndarray, *, grid_kind: str,
+                    config: RecoveryConfig, chunk_size: int | None = 2048
+                    ) -> tuple[pd.DataFrame, dict[str, object], dict[str, np.ndarray]]:
+    """Explicit V1/V1.1 search; arrays permit inspection without catalogue truth."""
+    if grid_kind not in ("v1", "v1.1"):
+        raise ValueError("grid_kind must be 'v1' or 'v1.1'")
+    if chunk_size is not None and (type(chunk_size) is not int or chunk_size < 1):
+        raise ValueError("chunk_size must be a positive integer or None")
+    candidates, summary, arrays = _run_search(time, flux, config, grid_kind, chunk_size)
+    if arrays:
+        summary.update({
+            "grid_version": GRID_VERSION if grid_kind == "v1.1" else "historical-v1",
+            "grid_array_sha256": array_sha256(arrays["period"]),
+            "chunk_size": len(arrays["period"]) if chunk_size is None else chunk_size,
+        })
+    return candidates, summary, arrays
+
+
+def _run_search(time, flux, config, grid_kind, chunk_size):
     time = np.asarray(time, dtype=float)
     flux = np.asarray(flux, dtype=float)
     if len(time) < 50:
-        return pd.DataFrame(), {"search_status": "INSUFFICIENT_ROWS"}
+        return pd.DataFrame(), {"search_status": "INSUFFICIENT_ROWS"}, {}
     baseline = float(time.max() - time.min())
     if baseline <= 2 * config.minimum_period_days:
-        return pd.DataFrame(), {"search_status": "INSUFFICIENT_BASELINE"}
-    periods = period_grid(baseline, config)
+        return pd.DataFrame(), {"search_status": "INSUFFICIENT_BASELINE"}, {}
+    periods = (period_grid(baseline, config) if grid_kind == "v1"
+               else alternative_period_grid(baseline, config))
     durations = duration_grid(config)
     if not len(periods):
-        return pd.DataFrame(), {"search_status": "PERIOD_GRID_EMPTY"}
+        return pd.DataFrame(), {"search_status": "PERIOD_GRID_EMPTY"}, {}
     bls = BoxLeastSquares(time, flux)
     best = {
         name: np.full(len(periods), np.nan, dtype=float)
@@ -32,19 +58,20 @@ def run_blind_search(time: np.ndarray, flux: np.ndarray,
         valid = duration < config.maximum_duration_period_fraction * periods
         if not valid.any():
             continue
-        result = bls.power(
-            periods[valid], float(duration),
-            objective="likelihood", method="fast")
-        indexes = np.flatnonzero(valid)
-        improve = ~np.isfinite(best["power"][indexes]) | (
-            np.asarray(result.power) > best["power"][indexes])
-        chosen = indexes[improve]
-        source = np.flatnonzero(improve)
-        for name in best:
-            if name == "duration":
-                best[name][chosen] = duration
-            else:
-                best[name][chosen] = np.asarray(getattr(result, name))[source]
+        valid_indices = np.flatnonzero(valid)
+        step = len(periods) if chunk_size is None else chunk_size
+        for start in range(0, len(valid_indices), step):
+            indexes = valid_indices[start:start + step]
+            result = bls.power(
+                periods[indexes], float(duration),
+                objective="likelihood", method="fast", oversample=10)
+            improve = ~np.isfinite(best["power"][indexes]) | (
+                np.asarray(result.power) > best["power"][indexes])
+            chosen = indexes[improve]
+            source = np.flatnonzero(improve)
+            for name in best:
+                best[name][chosen] = (duration if name == "duration"
+                                     else np.asarray(getattr(result, name))[source])
     indices = select_peak_indices(
         periods, best["power"],
         baseline_days=baseline, top_k=config.top_k)
@@ -73,10 +100,12 @@ def run_blind_search(time: np.ndarray, flux: np.ndarray,
             "alias_flags": "|".join(f"INTEGER_DAY_FREQUENCY_{item}" for item in daily),
             "search_grid_index": int(index),
         })
-    return pd.DataFrame(rows), {
+    summary = {
         "search_status": "SEARCH_COMPLETE", "baseline_days": baseline,
         "searched_min_period": float(periods.min()),
         "searched_max_period": float(periods.max()),
         "period_grid_count": len(periods),
         "duration_grid_count": len(durations),
     }
+    arrays = {"period": periods, **best}
+    return pd.DataFrame(rows), summary, arrays

@@ -47,3 +47,88 @@ Eight validation folds keep every host together, so injections from one system d
 Two implementation limitations remain: the numeric-cadence sensitivity branch centers cadence separately in each supplied frame, and the historical AUC helper does not average tied probability ranks. The saved fold assignments, out-of-fold predictions, performance and calibration tables allow inspection; [verification](VERIFICATION.md) recomputes counts and selected metrics.
 
 These results describe this finite benchmark. They do not establish external validation, population completeness or a planet discovery. The archived bibliography has five unresolved classes of originating-literature references (see [limitations](LIMITATIONS.md#missing-catalogue-references)). V2 and C2 work remains unfinished.
+
+## V1.1 period-grid comparison
+
+The completed follow-up changes search-grid construction alone. It uses the
+same retained time/flux arrays, sampled injections, unweighted Astropy BLS
+likelihood statistic (`method="fast"`, `oversample=10`), seven durations,
+duration/period restriction, separated-peak selection and historical matching.
+The frozen V1 configuration and preprocessing code are unchanged.
+
+For observed span `T`, minimum duration `d_min = 0.04 d`, period limits
+`P_min = 0.3 d`, `P_max = min(30 d, T/2)`, and oversampling `O = 2`, define
+`h_max = log1p(d_min / (O*T))` and
+`N = ceil(log(P_max/P_min) / h_max)`. The alternative is the sorted unique
+union of `geomspace(P_min, P_max, N+1)` and the exact historical V1 nodes.
+This bounds the log-grid relative spacing; it controls period-induced drift
+in transit-duration units over the full span. It is distinct from the
+historical matcher's phase-drift tolerance, which uses cycles. Every V1 node
+is retained. The allocation guard raises above 20 million log intervals;
+it never silently caps the scientific grid.
+
+`run_blind_search(time, flux, config)` retains V1's unchunked interface and
+settings. The shared kernel also exposes an explicit alternative:
+
+```python
+from tess_detectability.bls_search import run_grid_search
+from tess_detectability.recovery_config import FROZEN_RECOVERY_CONFIG
+
+candidates, diagnostics, arrays = run_grid_search(
+    time, flux, grid_kind="v1.1", config=FROZEN_RECOVERY_CONFIG,
+    chunk_size=2048,
+)
+```
+
+Use `grid_kind="v1"` for the capped grid through this interface. Catalogue
+truth is never passed to either search. Chunking limits BLS batch memory;
+duration order, strict power-improvement tie handling and peak rules stay
+fixed. The original V1 runner is preserved byte-for-byte in
+[`provenance/v1_source/bls_search.py`](../provenance/v1_source/bls_search.py).
+The campaign reproduced every historical injection class; candidate numeric
+comparisons used `rtol=1e-10, atol=1e-10` to allow CSV round trips. The
+compatibility tests compare the historical API with the retained runner
+exactly on small synthetic fixtures. They do not repeat the full campaign.
+
+The primary endpoint preserves historical assignment: compare all retained
+peaks and choose by match precedence, phase drift, epoch offset, then rank.
+A direct-period winner must also pass the epoch criterion. A literal rank-1
+direct match is recorded separately; it is not defined by the rank of the
+winning assignment. Harmonics and aliases retain the historical rules and
+do not require epoch agreement. Duration agreement remains diagnostic.
+
+| Cohort | Trials / hosts | V1 direct | V1.1 direct | Gains / losses |
+|---|---:|---:|---:|---:|
+| Original exploratory | 32 / 4 | 5 | 8 | 3 / 0 |
+| Later extension | 288 / 36 | 93 | 109 | 17 / 1 |
+| Combined finite benchmark | 320 / 40 | 98 | 117 | 20 / 1 |
+
+The exploratory hosts were chosen for a small, resource-aware investigation.
+The extension completed the remaining hosts from the existing benchmark;
+it did not select new targets or redraw injections. Cohorts remain explicit
+in every paired record. Counts are descriptive, without a population-wide
+or independent-replication claim. Alternative accounting is 117 direct,
+27 harmonic, 9 alias and 167 nonrecoveries. The single primary loss,
+`IR-36-07` on Kepler-1844, is retained in the data and host figure.
+
+The host bootstrap sorts host IDs, draws 40 hosts with replacement per
+combined replicate, and includes all eight trials whenever a host is drawn.
+It recomputes the trial-weighted difference for 100,000 draws using NumPy's
+`default_rng(20261111)` and linear 2.5/97.5 percentiles. Cohort intervals use
+the same seed with their own host counts. A multiplicity-based calculation
+checks the first 1,000 draws; all 256 ordered four-host resamples additionally
+check the exploratory interval. The combined difference is 0.059375, with
+descriptive interval [0.028125, 0.096875].
+
+The alternative known-signal search covers four selected hosts containing
+five catalogue entries; only three entries are eligible. In those three,
+the baseline has zero direct recoveries and the alternative has two direct
+and one harmonic recovery. Two entries remain outside the range. The
+historical 15/51 benchmark is unchanged and is not the alternative denominator.
+
+Runtime columns are measured process CPU seconds, per-search wall seconds,
+and 50 ms sampled peak RSS. Wall-time sums are not elapsed campaign time;
+RSS is not a complete machine-memory or thermal measurement. The paired
+injection searches sum to 22,296.8125 CPU seconds for baseline and
+678,876.3125 for alternative. The separately charged 212.64376736111112
+CPU-hours includes additional campaign work and accounting reserves.

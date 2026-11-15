@@ -28,3 +28,49 @@ This checks original V1 source identities, the preserved V1 test sources and the
 14 saved modeling figures against their recorded checksums.
 
 The public package includes algorithms and selected saved records, not all original TESS inputs or production orchestration. See [limitations](LIMITATIONS.md).
+
+## V1.1 saved-result checks
+
+The project verifier also runs the V1.1 saved-result checks. To run them
+separately:
+
+```powershell
+.venv\Scripts\python.exe scripts/verify_grid_comparison.py
+```
+
+This reclassifies all 6,400 retained injection peaks into the 320 paired
+outcomes, checks the baseline against historical V1 rows, reconstructs the
+grids and their float64 hashes, and recomputes all three cohort summaries.
+It verifies the known subset separately from the historical 51-signal
+denominator. The 100,000-draw host bootstrap uses seed `20261111`; independent
+host-multiplicity sums check 1,000 draws and exhaustive four-host draws check
+the exploratory interval. `--write-summary` regenerates the derived JSON
+after the numerical checks, without bypassing endpoint assertions.
+
+Tests cover exact V1-runner compatibility on small synthetic fixtures, union
+grid inclusion, spacing, bounds and allocation failure, chunking tolerance,
+explicit grid selection and separation of primary and literal rank-1 rules.
+The original V1 tests remain included. The test extra explicitly declares
+PyYAML and packaging, which the existing citation/version test imports.
+
+To recreate the figures:
+
+```powershell
+.venv\Scripts\python.exe -m pip install --index-url https://pypi.org/simple ".[plots]"
+.venv\Scripts\python.exe scripts/plot_grid_comparison.py
+```
+
+The [V1.1 manifest](../provenance/period_grid_v1_1_0.json) authenticates selected
+records, summary, implementation, tests, figure generator and image bytes.
+It records the originating research implementation identity, not a claim
+that the refactored source produced the historical files. The selected
+exports were checked against 640 saved checkpoint/candidate pairs and all
+320 alternative injection periodogram hashes before inclusion. Private
+checkpoints and periodograms are not bundled.
+
+The included `input_array_sha256` identifies identical baseline/alternative
+time/flux arrays in the saved checkpoints. It cannot reconstruct absent
+arrays. Input product identities remain in the historical V1 injection rows.
+See [data sources](../DATA_SOURCES.md) for retrieval scope. These commands
+verify saved results and small numerical examples; they do not rerun the
+212.64 charged CPU-hour investigation.

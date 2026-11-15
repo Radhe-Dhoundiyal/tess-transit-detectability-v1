@@ -6,6 +6,7 @@ archive/** -text -whitespace
 data/records/** -text
 docs/original/** -text
 results/** -text
+provenance/v1_source/** -text
 
 # These tracked files contain CRLF or mixed line endings.
 demo/curve_data.js -text

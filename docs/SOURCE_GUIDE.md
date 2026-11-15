@@ -15,3 +15,15 @@
 The modules cover the original V1 scientific workflow. `modeling.py` brings together selected functions from the original fitting script; `grouped_validation.py` checks host-grouped folds, and `demonstration.py` provides the five-sample example. The [source manifest](../provenance/source_manifest.json) records original identities, and the [verification guide](VERIFICATION.md#optional-source-and-figure-checks) explains how to check them.
 
 The complete astronomical input archive and historical orchestration are not bundled here. Start with [methods](METHODS.md) for scientific assumptions or the [original V1 tests](../provenance/v1_tests/) to inspect the test cases.
+
+## V1.1 additions
+
+`period_grid.alternative_period_grid` constructs the union grid;
+`bls_search.run_grid_search` requires an explicit `grid_kind` and shares the
+BLS kernel with the historical interface. `grid_comparison` applies frozen
+post-search injection rules and computes the descriptive host bootstrap.
+[`verify_grid_comparison.py`](../scripts/verify_grid_comparison.py) reclassifies
+saved candidates, and [`plot_grid_comparison.py`](../scripts/plot_grid_comparison.py)
+recreates the figures. The original BLS runner remains under
+[`provenance/v1_source/`](../provenance/v1_source/); all other historical
+scientific modules remain byte-identical.

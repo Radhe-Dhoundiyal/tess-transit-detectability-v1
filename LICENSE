@@ -1,7 +1,8 @@
 # License boundaries
 
-First-party software in `src/`, `examples/`, `tests/`, `scripts/` and the
-viewer code in `demo/` uses the existing [MIT license](LICENSE-CODE).
+First-party software in `src/`, `examples/`, `tests/`, `scripts/`, preserved
+V1 software in `provenance/`, and viewer code in `demo/` uses the existing
+[MIT license](LICENSE-CODE).
 First-party prose and original analysis figures/tables use the existing
 [CC BY 4.0 terms](LICENSE-DOCUMENTATION). External data and third-party software retain their separate rights.
 

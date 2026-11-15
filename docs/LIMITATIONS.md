@@ -45,3 +45,24 @@ Reproducing the complete pipeline requires the original astronomical inputs
 and production orchestration. The viewer displays historical records and
 leaves missing injected-flux arrays unavailable.
 [Verification](VERIFICATION.md) describes the software checks and tested environment.
+
+## V1.1 comparison scope
+
+The 320 saved pairs show 20 primary gains and one loss after adding grid
+nodes. The 32-trial/four-host exploratory cohort preceded the 288-trial
+extension on the remaining 36 hosts. Neither cohort is a fresh randomized
+population sample. The descriptive host-bootstrap interval measures
+resampling variation within these selected substrates; four exploratory
+hosts give especially limited uncertainty information.
+
+No calibrated false-alarm threshold, inverted-light-curve control or new
+transit-protecting detrending experiment was completed. A period-and-epoch
+match is not a significance-calibrated planet detection. Finer sampling
+alone cannot resolve all preprocessing, aliasing and peak-ranking failures;
+the saved outcomes do not establish a cause for every remaining miss.
+
+The alternative known-signal comparison has three eligible signals in four
+selected host searches (five entries including two outside the range).
+The other historical eligible signals were not searched with the new grid.
+The package permits saved-peak reclassification, statistical recounts and
+grid reconstruction, not a full light-curve rerun without external inputs.

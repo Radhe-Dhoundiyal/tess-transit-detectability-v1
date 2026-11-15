@@ -1,0 +1,36 @@
+{
+  "version": "1.1.0",
+  "grid_version": "v1-union-log-duration-bound-O2-v1",
+  "origin": "Completed local V1.1 investigation; selected exports checked against saved checkpoints before inclusion",
+  "originating_search_implementation_sha256": "9a7e477cbfa5f0a3b52bb22f79211e8aed1924b5a98150c097705bd10fbe6ce1",
+  "originating_extension_design_sha256": "29f36afa3697530e0ee0c07db3ae0a5750c2e115a7070528f1bfc44dbe5dc016",
+  "candidate_implementation": "Refactored shared kernel; fixture-verified against the originating implementation, not claimed to have generated historical files",
+  "baseline_candidate_comparison_tolerance": {
+    "rtol": 1e-10,
+    "atol": 1e-10
+  },
+  "charged_campaign_cpu_hours": 212.64376736111112,
+  "input_identity": "SHA256 of shape text plus C-contiguous little-endian float64 bytes for time, then injected flux",
+  "scope": "320 paired synthetic injections; four alternative known-host searches with three eligible catalogue signals; no full alternative 51-signal rerun",
+  "sha256": {
+    "data/records/period_grid_candidates_v1_1_0.csv": "445cd63659b2c11f98197759e36a878518bf8b09c17c86a5245d4f45c7465670",
+    "data/records/period_grid_known_candidates_v1_1_0.csv": "513a7dbc3669b765e497029251b0f5815f80da5bf71906750eb3e3b63655c023",
+    "data/records/period_grid_known_subset_v1_1_0.csv": "fa91b83346d311e5743819c7d40d35548927fb5e198141ea33c9535dc59aa893",
+    "data/records/period_grid_known_truth_v1_1_0.csv": "15f94c61b387c841d3d90f49db7b6a1393d84a30cb805ffde1cd0135758f7fcf",
+    "data/records/period_grid_pairs_v1_1_0.csv": "5f2ccb0268c1465420d737cc8f5d5e6a7fff7ba6668fc4d4ad1d942ae7c9000f",
+    "provenance/v1_source/bls_search.py": "fb85f9b0a9bff10c478f046ee232cf9c27bf83dbe4c385751524057a69345449",
+    "results/figures/period_grid_hosts_v1_1_0.png": "5ce10db62023bf028cb2d6780a4c6f63bdba6a4736e600d9fe5da37396e7ed0b",
+    "results/figures/period_grid_recovery_v1_1_0.png": "30e311c660ff185ad655060d0bf003e424c6bb0933f6178f5aacdecc1889e23a",
+    "results/tables/period_grid_summary_v1_1_0.json": "49cf476fcea8f33bb92c5e14479ac3269bb784376a225059606169b942dbc08b",
+    "scripts/plot_grid_comparison.py": "d33c8f27733abfeda5c19ed0a9a9980c00484335097469569ff0b38669bc84bc",
+    "scripts/verify_grid_comparison.py": "d3540affe6dfd2fb673b1ff75aee48f1e1411d7318c7fb4bb1cb9adc133f7672",
+    "src/tess_detectability/bls_grid.py": "6f8601b2a96cf2b47792e4b3bb23d5df66bfbd1a271beeeed5f0f574f91043e9",
+    "src/tess_detectability/bls_search.py": "fd2f728eba9047f33c986542d2f970e0114720b8c3132405a49a48962380a888",
+    "src/tess_detectability/grid_comparison.py": "30d681ca1b0ebdc2b167bc6fa535c61d84af588c59e2721f25fee6b11ffe1898",
+    "src/tess_detectability/peak_extraction.py": "9f2365aefdd5d628d8fb9afba870f0e895e0c816620346ae84a62ce1fe49c0dd",
+    "src/tess_detectability/period_grid.py": "d87cf692cae45f2846990a8eae66d4b291a2decb83dbb402ec0def4b686add7b",
+    "src/tess_detectability/recovery_config.py": "ea9754e043a226f5a8c1238c50372a52d3aff9cc3a9f4e9efc039108be36cc07",
+    "src/tess_detectability/recovery_matching.py": "2f8be4376b722e003414e85f211779c0e50e8cff2db00f8dc13434f4179bef63",
+    "tests/test_period_grid.py": "ec5ea5de8e01fb666dba87979e1ef8ff4f0af1236ade582de985587bfdf4f5f8"
+  }
+}
