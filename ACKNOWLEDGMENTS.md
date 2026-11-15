@@ -13,10 +13,14 @@ Original product identifiers and references are preserved. The five missing
 catalogue-literature mappings are described in [limitations](docs/LIMITATIONS.md).
 
 The search uses Astropy BoxLeastSquares; numerical and statistical work uses
-NumPy, pandas and SciPy. Tests additionally use pytest, PyArrow, PyYAML and packaging; figure
-generation uses Matplotlib. See the
+NumPy, pandas and SciPy. Tests additionally use pytest, PyArrow, PyYAML and
+packaging; figure generation uses Matplotlib. See the
 [BLS documentation](https://docs.astropy.org/en/stable/timeseries/bls.html) and
 [dependency notices](DEPENDENCY_NOTICES.md). No NASA endorsement is implied.
+
+I am grateful for the constructive feedback shared through the Planet
+Hunters TESS community on Zooniverse, particularly the discussion of
+period-grid resolution and computational cost.
 
 I directed the research questions, experimental approach and interpretation
 of results. ChatGPT and Codex assisted with software implementation,

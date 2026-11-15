@@ -23,6 +23,7 @@ demo/README.md,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excl
 demo/app.js,FIRST_PARTY_SOFTWARE,MIT
 demo/calibration.png,FIRST_PARTY_CONTENT,CC-BY-4.0; external/third-party material excluded
 demo/curve_data.js,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
+demo/grid_comparison.js,FIRST_PARTY_SOFTWARE,MIT
 demo/index.html,FIRST_PARTY_SOFTWARE,MIT
 demo/inputs/CURVE_SOURCE.json,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
 demo/inputs/recorded_data.json,MIXED_ORIGIN_DERIVATIVE,First-party analysis/arrangement CC-BY-4.0; external observations and factual records not relicensed
@@ -115,6 +116,7 @@ src/tess_detectability/recovery_matching.py,FIRST_PARTY_SOFTWARE,MIT
 src/tess_detectability/recovery_metrics.py,FIRST_PARTY_SOFTWARE,MIT
 src/tess_detectability/snr.py,FIRST_PARTY_SOFTWARE,MIT
 src/tess_detectability/time_cleaning.py,FIRST_PARTY_SOFTWARE,MIT
+tests/test_explorer_comparison.py,FIRST_PARTY_SOFTWARE,MIT
 tests/test_injection_recovery.py,FIRST_PARTY_SOFTWARE,MIT
 tests/test_lightcurve_preprocessing.py,FIRST_PARTY_SOFTWARE,MIT
 tests/test_period_grid.py,FIRST_PARTY_SOFTWARE,MIT

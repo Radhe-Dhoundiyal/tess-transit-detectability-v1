@@ -465,27 +465,27 @@
       "source_root": "MissionControl20261028",
       "source_path": "demo/index.html",
       "source_sha256": "e14903c20c5c88cb23d2d6f692300693ebcf63058cb0c6229c3f7ac48b9464c5",
-      "destination_sha256": "666a7034b743386432bf503339b11f202ed68f6a8da9777096955bb87cebaec8",
-      "bytes": 9265,
-      "transfer": "UI copy refinement; recorded scientific values, data and controls unchanged"
+      "destination_sha256": "3339e2828f85c7a5c50a44edfdd059f156faf02d42cb0ec9620a1c695b41dcc3",
+      "bytes": 12323,
+      "transfer": "V1 viewer extended with a V1.1 comparison tab; original saved records and scientific values unchanged"
     },
     {
       "destination": "demo/app.js",
       "source_root": "MissionControl20261028",
       "source_path": "demo/app.js",
       "source_sha256": "ece6486eddb8d675f4950e04da28759ad8de2b694bbd64b5a9461227b445cba6",
-      "destination_sha256": "1ebb5dab170d4556bb095a0128d400378ca1b680104c956aa3d35173b35effe9",
-      "bytes": 18707,
-      "transfer": "UI copy refinement; recorded scientific values, data and controls unchanged"
+      "destination_sha256": "e7bb39efbf9c64ac858aa3f6c0419b0ea88e4e9060deced236ca7c95abcae841",
+      "bytes": 18919,
+      "transfer": "V1 viewer extended with a V1.1 comparison tab; original saved records and scientific values unchanged"
     },
     {
       "destination": "demo/style.css",
       "source_root": "MissionControl20261028",
       "source_path": "demo/style.css",
       "source_sha256": "fb637c9e9635e4f4aa9a388e3f8453f77fec98234257e8863603ab17ce917f43",
-      "destination_sha256": "fb637c9e9635e4f4aa9a388e3f8453f77fec98234257e8863603ab17ce917f43",
-      "bytes": 16806,
-      "transfer": "byte-identical"
+      "destination_sha256": "07442ea414fd83636e3be4e5d8e328bc812161a2b95519a1d4edfae9af14803a",
+      "bytes": 17570,
+      "transfer": "V1 viewer extended with a V1.1 comparison tab; original saved records and scientific values unchanged"
     },
     {
       "destination": "demo/recorded_data.js",

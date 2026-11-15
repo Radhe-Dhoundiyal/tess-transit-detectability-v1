@@ -24,8 +24,12 @@ Ctrl+C stops it. Observed shows catalogue-match records; Injections shows the
 Depth test runs the small normalization example. Try WASP-127 b, then
 Kepler-31 b to compare saved direct and alias outcomes. Cases without retained curves show their recorded results.
 
+Grid comparison shows the V1.1 figures and the 320 paired outcomes. Filter
+by cohort or primary change, or search for a trial or host.
+
 The viewer contains its own assets. Opening `demo/index.html` directly also
 works for saved records, but executing the function needs the server.
+The V1.1 figures also work directly; the paired table needs the server.
 `python demo/serve_demo.py --check` checks the three arithmetic cases without
 starting a server. [Explorer notes](../demo/README.md) explain its data.
 

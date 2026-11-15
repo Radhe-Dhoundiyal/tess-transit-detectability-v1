@@ -55,10 +55,14 @@ population sample. The descriptive host-bootstrap interval measures
 resampling variation within these selected substrates; four exploratory
 hosts give especially limited uncertainty information.
 
-No calibrated false-alarm threshold, inverted-light-curve control or new
-transit-protecting detrending experiment was completed. A period-and-epoch
-match is not a significance-calibrated planet detection. Finer sampling
-alone cannot resolve all preprocessing, aliasing and peak-ranking failures;
+The investigation included limited sign-inversion diagnostics: one
+uninjected, inverted light curve on each of the four exploratory hosts,
+searched with both grids. Those diagnostics are not bundled in this public
+package and do not form a calibrated null ensemble or establish a false-alarm
+rate. No calibrated detection threshold or new transit-protecting detrending
+experiment was completed. A period-and-epoch match is not a
+significance-calibrated planet detection. Finer sampling alone cannot resolve
+all preprocessing, aliasing and peak-ranking failures;
 the saved outcomes do not establish a cause for every remaining miss.
 
 The alternative known-signal comparison has three eligible signals in four

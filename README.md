@@ -21,14 +21,13 @@ Open the full-resolution image to read each trial label.
 [Preview notes](docs/MEDIA.md) explain the data and display choices.
 
 <details>
-<summary>Historical V1 saved-results explorer</summary>
+<summary>Working saved-results explorer</summary>
 
 [![The working explorer displaying the saved WASP-127 b result](docs/media/explorer.png)](docs/media/explorer.png)
 
 A browser capture of the explorer. Select a saved case or use Depth test
 to run the small normalization example.
-The explorer displays V1 records; the V1.1 comparison uses the paired tables
-and figures below.
+The Grid comparison tab adds the V1.1 follow-up.
 
 </details>
 
@@ -56,37 +55,35 @@ validation used eight folds grouped by target across 40 hosts.
 
 ## V1.1: a controlled period-grid comparison
 
-After sharing V1, feedback from a member of the transit-search community
-raised a useful question: could the capped frequency grid miss recoverable
-signals over long observational baselines? I completed a paired comparison
-using the same processed light curves, injections, durations, BLS scoring,
-peak handling and recovery rules. The new grid adds duration-bounded
-log-period nodes while retaining every V1 node. This feedback was informal,
-not formal peer review or institutional endorsement.
+After sharing V1, discussion in the Planet Hunters TESS community on
+Zooniverse prompted me to ask whether the capped grid missed recoverable
+signals over long baselines. I compared it with a grid that adds
+duration-bounded log-period nodes while retaining every V1 node. Processing,
+injections, durations, BLS scoring, peak handling and recovery rules stayed fixed.
 
 | Endpoint | V1 grid | V1.1 grid |
 |---|---:|---:|
 | Primary direct top-10 | 98/320 | **117/320** |
 | Literal direct rank-1 | 72/320 | **94/320** |
 
-There were **20 primary gains and one loss**, with 299 unchanged outcomes.
-The difference is **+5.9375 percentage points**; a descriptive 95%
-host-bootstrap interval is **+2.8125 to +9.6875 points**. The saved records
-separate the original 32 exploratory trials on four hosts from the later
-288-trial extension on the other 36 hosts. This is the same selected finite
-benchmark, not a newly randomized sample.
+There were **20 primary gains, one loss and 299 unchanged outcomes**.
+The paired change is **+5.9375 percentage points**, with a descriptive 95%
+host-bootstrap interval of **+2.8125 to +9.6875 points**. The records separate
+32 exploratory trials on four hosts from the later 288-trial extension on
+the remaining 36 hosts.
 
 [![V1 and V1.1 recovery counts and the paired host-bootstrap difference](results/figures/period_grid_recovery_v1_1_0.png)](results/figures/period_grid_recovery_v1_1_0.png)
 
-These are period-and-epoch matches, not statistically confirmed planetary
-detections. The alternative known-signal subset has only **three eligible
-signals** (0→2 direct); it does not rerun all 51 historical eligible signals.
-The completed investigation recorded **212.64 charged CPU-hours**, including
-benchmarking and other campaign work. Per-search runtime records are included.
+These are period-and-epoch matches in the same selected benchmark. The
+alternative catalogue subset has only **three eligible signals** (0→2
+direct), rather than all 51 historical eligible signals. Calibrated
+detection significance and broader completeness remain open questions.
 
-Inspect the [paired outcomes](data/records/period_grid_pairs_v1_1_0.csv),
+The explorer's **Grid comparison** tab shows the figures and, with the local
+server, individual paired outcomes. Inspect the
+[records](data/records/period_grid_pairs_v1_1_0.csv),
 [retained peaks](data/records/period_grid_candidates_v1_1_0.csv),
-[host-level figure](results/figures/period_grid_hosts_v1_1_0.png) and
+[host changes](results/figures/period_grid_hosts_v1_1_0.png) and
 [methods](docs/METHODS.md#v11-period-grid-comparison).
 
 ## A failure and its correction
@@ -138,8 +135,7 @@ the server with Ctrl+C. Saved records also open directly from `demo/index.html`.
 The [source guide](docs/SOURCE_GUIDE.md), [methods](docs/METHODS.md) and
 [data sources](DATA_SOURCES.md) describe the implementation and evidence.
 The initial development took place in a separate private working archive.
-This repository contains selected V1 code, results, tests and figures plus
-the V1.1 grid comparison,
+This repository contains selected V1 code, results, tests and figures,
 including the [saved model figures](results/figures/detectability_modeling_v1_0_1/).
 See [verification](docs/VERIFICATION.md) for checks you can run.
 
@@ -156,12 +152,9 @@ data and reproducibility evidence.
 
 The period-grid comparison is complete, including paired rank-1 diagnostics
 and descriptive host uncertainty. I still want to test calibrated detection
-thresholds and inverted-light-curve controls, transit-protecting detrending,
-the remaining known signals, and the causes of residual failures. The
-selected hosts and shared substrates limit broader conclusions.
-
-The historical V1 records and notebook retain their original settings and
-interpretation. V1.1 adds a controlled follow-up; it does not replace them.
+thresholds with a full null ensemble, transit-protecting detrending, the
+remaining known signals, and the causes of residual failures. Limited
+inversion diagnostics were exploratory; they did not calibrate false alarms.
 
 ## Credits and licensing
 

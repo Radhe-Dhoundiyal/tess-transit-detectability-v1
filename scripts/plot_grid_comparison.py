@@ -1,4 +1,5 @@
 """Recreate the V1.1 comparison figures from the included paired records."""
+import argparse
 from pathlib import Path
 
 import matplotlib
@@ -29,7 +30,7 @@ def recovery_figure(frame, summary):
     n = summary["trials"]
     fig, axes = plt.subplots(1, 2, figsize=(12, 7), gridspec_kw={"width_ratios": [1.3, 1]})
     fig.subplots_adjust(left=.09, right=.97, bottom=.29, top=.72, wspace=.4)
-    fig.text(.07, .91, "A denser period grid recovers more injections", size=21, weight="bold")
+    fig.text(.07, .91, "Period-grid recovery on the selected benchmark", size=21, weight="bold")
     fig.text(.07, .84, f"{n} paired trials on {summary['hosts']} selected TESS host substrates", size=14, color=MUTED)
     x = np.arange(2)
     old = [summary["baseline_direct"], summary["baseline_direct_top1_literal"]]
@@ -101,8 +102,13 @@ def host_figure(frame):
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--figure", choices=("all", "recovery", "hosts"), default="all")
+    args = parser.parse_args()
     frame = read("period_grid_pairs_v1_1_0.csv")
     summary = summarize(frame)["combined_finite_benchmark"]
     style()
-    recovery_figure(frame, summary)
-    host_figure(frame)
+    if args.figure in ("all", "recovery"):
+        recovery_figure(frame, summary)
+    if args.figure in ("all", "hosts"):
+        host_figure(frame)

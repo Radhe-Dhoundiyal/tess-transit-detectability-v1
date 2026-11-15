@@ -14,7 +14,7 @@ The tests cover preprocessing, blind BLS candidates, catalogue matching, injecti
 
 The verifier checks the saved evidence and its file identities, including the two original injection failures. It recounts **15/51** known-signal and **98/320** synthetic direct recoveries, checks all eight target-grouped folds, and recomputes four log-loss/Brier pairs from 1,280 saved predictions. It does **not** rerun the astronomical survey.
 
-The [GitHub Actions workflow](../.github/workflows/verify.yml) runs these checks on Windows with Python 3.12; [Actions](https://github.com/Radhe-Dhoundiyal/tess-transit-detectability-v1/actions) shows actual run results. Browser checks also covered saved cases, trial-cell navigation, missing curves and the depth demo in Chromium. Browser tests are separate from this CI workflow.
+The [GitHub Actions workflow](../.github/workflows/verify.yml) runs these checks on Windows with Python 3.12; [Actions](https://github.com/Radhe-Dhoundiyal/tess-transit-detectability-v1/actions) shows actual run results. Local Chromium checks cover saved cases, trial-cell navigation, missing curves, the model and depth demo, and the V1.1 comparison. Server mode checks every paired table row and its filters; direct-file mode checks the saved views and companion figures. Browser checks are separate from this CI workflow.
 
 ## Optional source and figure checks
 
@@ -50,8 +50,7 @@ after the numerical checks, without bypassing endpoint assertions.
 Tests cover exact V1-runner compatibility on small synthetic fixtures, union
 grid inclusion, spacing, bounds and allocation failure, chunking tolerance,
 explicit grid selection and separation of primary and literal rank-1 rules.
-The original V1 tests remain included. The test extra explicitly declares
-PyYAML and packaging, which the existing citation/version test imports.
+The original V1 tests remain included.
 
 To recreate the figures:
 
@@ -62,8 +61,8 @@ To recreate the figures:
 
 The [V1.1 manifest](../provenance/period_grid_v1_1_0.json) authenticates selected
 records, summary, implementation, tests, figure generator and image bytes.
-It records the originating research implementation identity, not a claim
-that the refactored source produced the historical files. The selected
+The originating research implementation identity is retained separately
+from the refactored source. The selected
 exports were checked against 640 saved checkpoint/candidate pairs and all
 320 alternative injection periodogram hashes before inclusion. Private
 checkpoints and periodograms are not bundled.

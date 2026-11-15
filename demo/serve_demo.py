@@ -1,5 +1,6 @@
 """Serve the explorer's allowlisted assets and run its depth example on loopback."""
 import argparse
+import csv
 import json
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -12,10 +13,29 @@ ASSETS = {
     "/index.html": ("index.html", "text/html; charset=utf-8"),
     "/style.css": ("style.css", "text/css; charset=utf-8"),
     "/app.js": ("app.js", "text/javascript; charset=utf-8"),
+    "/grid_comparison.js": ("grid_comparison.js", "text/javascript; charset=utf-8"),
     "/recorded_data.js": ("recorded_data.js", "text/javascript; charset=utf-8"),
     "/curve_data.js": ("curve_data.js", "text/javascript; charset=utf-8"),
     "/calibration.png": ("calibration.png", "image/png"),
+    "/results/figures/period_grid_recovery_v1_1_0.png": (
+        "../results/figures/period_grid_recovery_v1_1_0.png", "image/png"),
+    "/results/figures/period_grid_hosts_v1_1_0.png": (
+        "../results/figures/period_grid_hosts_v1_1_0.png", "image/png"),
 }
+
+
+def grid_comparison():
+    records_path = ROOT.parent / "data/records/period_grid_pairs_v1_1_0.csv"
+    with records_path.open(encoding="utf-8", newline="") as stream:
+        records = list(csv.DictReader(stream))
+    identity = ("trial_id", "host_name", "cohort", "baseline_recovery_class", "alternative_recovery_class")
+    endpoints = ("baseline_direct_top10", "alternative_direct_top10",
+                 "baseline_direct_top1_literal", "alternative_direct_top1_literal")
+    rows = [{**{key: row[key] for key in identity},
+             **{key: row[key] == "True" for key in endpoints}} for row in records]
+    summary_path = ROOT.parent / "results/tables/period_grid_summary_v1_1_0.json"
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))["combined_finite_benchmark"]
+    return {"rows": rows, "summary": summary}
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -40,6 +60,11 @@ class Handler(BaseHTTPRequestHandler):
                 self.respond(200, json.dumps(output, allow_nan=False).encode())
             except Exception:
                 self.respond(500, b'{"error":"Function execution failed; no result substituted"}')
+        elif url.path == "/api/grid-comparison":
+            try:
+                self.respond(200, json.dumps(grid_comparison(), allow_nan=False).encode())
+            except Exception:
+                self.respond(500, b'{"error":"Saved comparison unavailable; no result substituted"}')
         elif url.path == "/api/health":
             self.respond(200, b'{"app":"TESS_SAVED_RECORDS","bind":"127.0.0.1"}')
         elif url.path in ASSETS:

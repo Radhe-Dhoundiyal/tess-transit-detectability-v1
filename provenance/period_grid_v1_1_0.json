@@ -20,9 +20,9 @@
     "data/records/period_grid_pairs_v1_1_0.csv": "5f2ccb0268c1465420d737cc8f5d5e6a7fff7ba6668fc4d4ad1d942ae7c9000f",
     "provenance/v1_source/bls_search.py": "fb85f9b0a9bff10c478f046ee232cf9c27bf83dbe4c385751524057a69345449",
     "results/figures/period_grid_hosts_v1_1_0.png": "5ce10db62023bf028cb2d6780a4c6f63bdba6a4736e600d9fe5da37396e7ed0b",
-    "results/figures/period_grid_recovery_v1_1_0.png": "30e311c660ff185ad655060d0bf003e424c6bb0933f6178f5aacdecc1889e23a",
+    "results/figures/period_grid_recovery_v1_1_0.png": "7ecf0e1ec2aa1b855317dd052097963268132a5e1036c11b8f2d77e308180754",
     "results/tables/period_grid_summary_v1_1_0.json": "49cf476fcea8f33bb92c5e14479ac3269bb784376a225059606169b942dbc08b",
-    "scripts/plot_grid_comparison.py": "d33c8f27733abfeda5c19ed0a9a9980c00484335097469569ff0b38669bc84bc",
+    "scripts/plot_grid_comparison.py": "0d57151b1267007f2be6ee8667ace6e2c6b26caf3c72fc22317eb8dba782cedd",
     "scripts/verify_grid_comparison.py": "d3540affe6dfd2fb673b1ff75aee48f1e1411d7318c7fb4bb1cb9adc133f7672",
     "src/tess_detectability/bls_grid.py": "6f8601b2a96cf2b47792e4b3bb23d5df66bfbd1a271beeeed5f0f574f91043e9",
     "src/tess_detectability/bls_search.py": "fd2f728eba9047f33c986542d2f970e0114720b8c3132405a49a48962380a888",
@@ -31,6 +31,12 @@
     "src/tess_detectability/period_grid.py": "d87cf692cae45f2846990a8eae66d4b291a2decb83dbb402ec0def4b686add7b",
     "src/tess_detectability/recovery_config.py": "ea9754e043a226f5a8c1238c50372a52d3aff9cc3a9f4e9efc039108be36cc07",
     "src/tess_detectability/recovery_matching.py": "2f8be4376b722e003414e85f211779c0e50e8cff2db00f8dc13434f4179bef63",
-    "tests/test_period_grid.py": "ec5ea5de8e01fb666dba87979e1ef8ff4f0af1236ade582de985587bfdf4f5f8"
+    "tests/test_period_grid.py": "ec5ea5de8e01fb666dba87979e1ef8ff4f0af1236ade582de985587bfdf4f5f8",
+    "demo/index.html": "3339e2828f85c7a5c50a44edfdd059f156faf02d42cb0ec9620a1c695b41dcc3",
+    "demo/app.js": "e7bb39efbf9c64ac858aa3f6c0419b0ea88e4e9060deced236ca7c95abcae841",
+    "demo/style.css": "07442ea414fd83636e3be4e5d8e328bc812161a2b95519a1d4edfae9af14803a",
+    "demo/serve_demo.py": "c74f62d4d44f2c3e8395045108a7fb691c7ef62f17201d2c9aa134f553c9509e",
+    "demo/grid_comparison.js": "a74d4a228f9b4f93812547491bfda0d1b246d529dad1551cea3422653976fd2b",
+    "tests/test_explorer_comparison.py": "9d8f1d2971495890a760680b9802ec9f8d071d16a4f7125f3aff44e577fa35a0"
   }
 }
