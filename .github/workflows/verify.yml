@@ -19,13 +19,15 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
+      - name: Create virtual environment
+        run: python -m venv .venv
       - name: Install local project
-        run: python -m pip install --index-url https://pypi.org/simple ".[test]"
+        run: .\.venv\Scripts\python.exe -m pip install --index-url https://pypi.org/simple ".[test]"
       - name: Check dependencies
-        run: python -m pip check
+        run: .\.venv\Scripts\python.exe -m pip check
       - name: Run numerical example
-        run: python examples/normalize_depth.py
+        run: .\.venv\Scripts\python.exe examples/normalize_depth.py
       - name: Run focused tests
-        run: python -m pytest -q
+        run: .\.venv\Scripts\python.exe -m pytest -q
       - name: Verify saved records and links
-        run: python scripts/verify_project.py
+        run: .\.venv\Scripts\python.exe scripts/verify_project.py
